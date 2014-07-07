@@ -29,6 +29,14 @@ For example, the main banner on harpjs.com uses a `.jumbotron` class from Bootst
 
 For quick and less modular changes, work with in a `.section` in `application.less`, using non-Bootstrap classes.
 
+## Deploying
+
+To deploy the project, you’ll need to be invited as a collaborator on [the Harp Platform](http://harp.io). First, make sure all your changes are commited, as all changes are deployed regardless. Then, as long as you have your Dropbox in the standard location, you can run:
+
+```bash
+npm run deploy
+```
+
 This will copy the `harpjs.com/` to your Dropbox. Now, just vist [the Harp Platform](http://harp.io) and hit deploy. This is a non-traditional setup with the Harp Platform, just to enable us to have the docs open source on GitHub.
 
 ## License
