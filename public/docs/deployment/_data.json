@@ -1,0 +1,89 @@
+{
+  "harp-platform": {
+    "title": "Harp Platform",
+    "description": "The easiest way to publish Harp applications: use Dropbox and the Harp Platform",
+    "tags": [ "apps", "sites" ]
+  },
+  "apache-cordova": {
+    "title": "Apache Cordova",
+    "description": "Build iOS, Android, and Blackberry apps with Harp and Apache Cordova",
+    "published": false,
+    "tags": [ "apps" ]
+  },
+  "phonegap-build": {
+    "title": "PhoneGap Build",
+    "description": "Build iOS, Android, and Blackberry apps with Harp and PhoneGap Build",
+    "published": false,
+    "tags": [ "apps" ]
+  },
+  "firefox-os": {
+    "title": "Firefox OS",
+    "description": "Build apps for Mozilla Firefox OS with Harp",
+    "published": false,
+    "tags": [ "apps" ]
+  },
+  "windows-8": {
+    "title": "Windows 8",
+    "description": "Build apps for Microsoft Windows 8 with Harp",
+    "published": false,
+    "tags": [ "apps" ]
+  },
+  "chrome-web-store": {
+    "title": "Chrome Web Store",
+    "description": "Build apps and extensions for the Google Chrome Web Store with Harp",
+    "published": false,
+    "tags": [ "apps" ]
+  },
+  "appcelerator": {
+    "title": "Appcelerator",
+    "description": "Build with Appcelerator and Harp",
+    "published": false,
+    "tags": [ "apps" ]
+  },
+  "github-pages": {
+    "title": "GitHub Pages",
+    "description": "Deploy your Harp application to GitHub Pages",
+    "tags": [ "sites" ]
+  },
+  "heroku": {
+    "description": "Deploy your Harp application to Heroku",
+    "title": "Heroku",
+    "tags": [ "apps", "sites" ]
+  },
+  "nodejitsu": {
+    "description": "Deploy your Harp application to Nodejitsu",
+    "title": "Nodejitsu",
+    "published": false,
+    "tags": [ "apps", "sites" ]
+  },
+  "digitalocean": {
+    "title": "Digital Ocean",
+    "description": "Deploy your Harp application to Digital Ocean",
+    "published": false,
+    "tags": [ "apps", "sites" ]
+  },
+  "amazon-s3": {
+    "title": "Amazon S3",
+    "description": "Deploy your Harp application to Amazon S3",
+    "published": false,
+    "tags": [ "apps", "sites" ]
+  },
+  "openshift": {
+    "title": "OpenShift",
+    "description": "Deploy your Harp application to Red Hat OpenShift",
+    "tags": [ "apps", "sites" ],
+    "published": false
+  },
+  "vps": {
+    "title": "VPS",
+    "description": "Running Harp on your own VPS",
+    "published": false,
+    "tags": [ "sites" ]
+  },
+  "shared-hosting": {
+    "title": "Shared Hosting",
+    "description": "Deploy your Harp application to your shared hosting",
+    "published": false,
+    "tags": [ "sites" ]
+  }
+}

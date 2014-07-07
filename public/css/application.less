@@ -1,0 +1,347 @@
+/**
+ * Mixins
+ */
+
+@import "_mixins/ui";
+@import "_mixins/vendor";
+@import "_mixins/rem";
+@import "_st";
+
+@import "_social";
+@import "_google-cs";
+@import "_identity";
+
+/**
+ * Bootstrap
+ *
+ * We import all of bootstrap.
+ * Do not modify, so things are predictable.
+ */
+
+@import "_bootstrap/bootstrap";
+
+/**
+ * Bootstrap Overrides
+ *
+ * Edit if you know what you are doing.
+ * These files will affect the whole site.
+ */
+
+@import "_override/override";
+@import "_blog";
+
+/**
+ * Typography
+ *
+ * Type, including font sizes, is taken care
+ * of in _override/type.less. Make changes in
+ * that file if it makes sense, or do what
+ * you’d like in the shame section below, and
+ * it can be moved into that module later.
+ */
+
+/**
+ * Shame Sections
+
+ *
+ * Put whatever heresy you need to below
+ * to get the results you need. Anything Goes.
+ */
+
+.wordmark-webfwd {
+  max-width: 10em;
+  margin-top: 2em;
+}
+
+.article-docs {
+  h1 + p:first-of-type {
+    .font-size(@font-size-large);
+    line-height: 1.6;
+  }
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body.is-open {
+  .github-fork {
+    .translate(240px, 0);
+  }
+}
+
+.btn-platform {
+  margin-top: 15px;
+  opacity: 0.5;
+  .transition(opacity .2s ease);
+  // background: none;
+  // text-shadow: none;
+  // border: none;
+  font-size: 0.8em;
+  &:hover {
+    // background: none;
+    opacity: 1;
+  }
+}
+
+// Add extra padding only to the outer-most
+// container, if there is enough room
+@media (min-width: @screen-medium) {
+  body {
+    .container {
+      padding-left: @grid-gutter-width / 2;
+      padding-right: @grid-gutter-width / 2;
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// Landing Page Stuff
+
+.section-splash {
+  padding-top: 2.5em;
+  overflow-x: hidden;
+  box-shadow: inset 0 -102px @body-bg;
+  .btn { // Stops the Get Started button from getting clipped by the waves image
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.section-waves {
+  width: 960px;
+  margin: 0 auto;
+  .translateX(3.5em);
+  display: block;
+  position: relative;
+}
+
+.section-install {
+  background: @blue-dark;
+  color: @blue-lighter;
+  border: none;
+  line-height: 1.125;
+  code {
+    white-space: pre-wrap;
+    word-break: normal;
+  }
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.image-feature {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  margin-top: 0.75em;
+  @media (min-width: @screen-medium) {
+    padding: 0;
+  }
+}
+
+.section-features, .section-nextsteps {
+  .feature-header {
+  }
+  margin-bottom: 10em;
+  .feature {
+    margin-bottom: 2.5em;
+    overflow: hidden;
+    padding-top: 2.5em;
+    & + .feature {
+      padding-top: 0;
+      &:before {
+        content: "";
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        height: 1px;
+        background: @gray-light;
+        margin-bottom: 5em;
+      }
+    }
+  }
+}
+
+.search {
+  display: none;
+  visibility: hidden;
+  .js & {
+    display: block;
+    visibility: visible;
+    background: darken(@beige, 1%);
+    .container {
+      padding: @grid-gutter-width / 2;
+
+      input[type="search"] {
+        border-radius: 1px;
+        padding: 0 0.66em;
+        height: 3em;
+        border: 0;
+        color: @gray-darker;
+        box-shadow: none;
+        .transition(color 10s);
+        background: lighten(@beige, 5%);
+      }
+      input[type="search"]:focus {
+        background: white;
+        color: @gray-dark;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: @grid-gutter-width * 2;
+  padding-bottom: @padding-large-bottom;
+  border-top:1px solid #ddd;
+}
+
+#vid{
+  margin-bottom: 0;
+  .well {
+    padding: 1em;
+    img {
+      border: 3px solid white;
+    }
+  }
+  .desc{
+    h3{
+      text-transform: capitalize;
+      margin-top: 0;
+    }
+  }
+}
+
+blockquote {
+  margin-top: 2em !important; // Overwriting bootstrap, improve.
+  padding-top: 0 !important; // ""
+}
+
+
+.github-fork {
+  display: none;
+  visibility: hidden;
+  @media (min-width: @screen-large) {
+    display: block;
+    visibility: visible;
+    width: 141px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 100;
+    img {
+      position: relative;
+      top: 0;
+      right: 0;
+      border: 0;
+    }
+  }
+}
+
+// IE8
+.ie {
+  .wordmark {
+    display: none; // It’s SVG
+  }
+  .navbar-toggle,
+  .nav-hidden-subnav,
+  .st-menu.st-menu--fallback {
+    display: none;
+    visibility: hidden;
+  }
+  .container {
+    max-width: @container-desktop;
+    margin: 0 auto;
+  }
+}
+
+.list-group-underlined {
+  // &:first-of-type {
+  //   border-top: 1px solid @gray-light;
+  // }
+  font-size: 0.75em;
+  // border-bottom: 1px solid @gray-light;
+  padding-top: @padding-large-top;
+  padding-bottom: @padding-large-bottom;
+}
+
+.chat {
+  border: 1px solid @gray;
+  border-radius: @border-radius-base;
+  min-height: 500px;
+}
+
+// @silent_rob’s landing page variant
+
+.window-title {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6em;
+  text-shadow: #cbcccc 0 1px 0;
+  color: #474747;
+  font-weight: normal;
+  margin-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background: #e0e0e0; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e0e0e0 0%, #cacaca 14%, #aaaaaa 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(14%,#cacaca), color-stop(100%,#aaaaaa)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* W3C */
+  border: 1px solid #565656;
+  border-top-color: #cbcbcb;
+  border-left-color: #a5a5a5;
+  border-right-color: #a5a5a5;
+  border-bottom: 0;
+}
+.logos li {
+  width:175px;
+  height:175px;
+  line-height:175px;
+  list-style-type:none;
+  float:left;
+  padding:18px;
+}
+
+.logos2 li {
+  width:175px;
+  height:100px;
+  line-height:100px;
+  list-style-type:none;
+  float:left;
+  padding:18px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: @gray-light;
+}

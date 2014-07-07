@@ -1,0 +1,56 @@
+!= partial("_shared/nav/nav", { "classes": "jumbotron-knockout" })
+.st-content#st-content
+  != partial("_shared/nav/navbar", { "classes": "jumbotron-knockout" })
+  != partial("_shared/opening")
+  .container.st-content-inner
+    .section-features
+      .row
+        .col-12.col-lg-10.col-offset-1
+          h2.h1.feature-header Here’s how Harp helps
+      .feature
+        .col-12.col-lg-5.col-offset-1
+          h3 It’s a fast, lightweight web server
+          p Harp intelligently compiles assets as the browser needs them, so it’s insanely fast. All you have to do is Save and Refresh.
+        .col-12.col-lg-5
+          img(src="/images/features/feature-server.png").image-feature
+      .feature
+        .col-12.col-lg-5
+          img(src="/images/features/feature-preprocessors.png").image-feature
+        .col-12.col-lg-5.col-offset-1
+          h3 Preprocessors are built-in
+          p Harp delivers HTML, CSS &amp; JavaScript to the browser from your Markdown, Jade, EJS, LESS, Stylus, Sass and CoffeeScript, without any configuration. Now you can focus on writing instead of wrangling.
+      .feature
+        .col-12.col-lg-5.col-offset-1
+          h3 The beloved Layout/Partial paradigm
+          p Keep your code clean and organized: reuse common elements with partials, and maintain a consistent site design with layouts. Harp makes both paradigms available to Jade and <abbr>EJS</abbr>.
+        .col-12.col-lg-5
+          img(src="/images/features/feature-layout-partial.png").image-feature
+      .feature
+        .col-12.col-lg-5
+          img(src="/images/features/feature-datajson.png").image-feature
+        .col-12.col-lg-5.col-offset-1
+          h3 Flexible, custom metadata
+          p Move from static assets to truly dynamic content by passing metadata into your views and pages. Using your favorite templating engine, variables and loops make writing Harp applications fun and powerful.
+      .feature
+        .col-12.col-lg-5.col-offset-1
+          h3 Compile and deploy
+          p Whether you’re making a GitHub project page, or a mobile application using Apache Cordova/PhoneGap, you can easily compile your code to <abbr>HTML</abbr>, <abbr>CSS</abbr> &amp; JavaScript and host it anywhere.
+          p Or, skip compiling all together, and publish from Dropbox with the <a href="http://harp.io/">Harp Platform</a>.
+        .col-12.col-lg-5
+          img(src="/images/features/feature-portable.png").image-feature
+      .feature
+        .col-12.col-lg-6.col-offset-3
+          h3 Get started
+          p Harp doesn’t require any configuration to get started. Install Harp through with <code>npm install -g harp</code> or follow the <a href="/docs/quick-start">Quick Start guide</a>.
+          != partial("_shared/install")
+          a.btn.btn-success.btn-large(href="/docs/quick-start") Install Harp
+          hr
+          != partial("_shared/social-list")
+
+
+
+    //- .section-nextsteps
+    //-   .row
+    //-     .col-12.col-lg-10.col-offset-1
+    //-       h2.h1.feature-header Find out more
+    //-       != partial("_shared/social-list-group")

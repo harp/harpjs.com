@@ -1,0 +1,15 @@
+//- This shows the what’s next link automatically,
+//- but probably needs to use a for loop instead of
+//- a foreach so it can go to the next category
+
+if typeof(public.docs[current.path[1]])==='object'
+  - var next = false;
+  each item, slug in public.docs[current.path[1]]._data
+    unless item.published === false
+      if slug === current.source
+        - var next = true;
+      else if next === true
+        a(href="/docs/#{ current.path[1] }/#{ slug }").text-center
+          h3 What’s Next?
+          p !{ item.description.replace(" (", " (<code>").replace(")", "</code>)") } &rarr;
+        - return

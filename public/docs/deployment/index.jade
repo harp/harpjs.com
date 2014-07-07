@@ -1,0 +1,13 @@
+!= partial("../../_shared/nav/nav", { "classes": "jumbotron-knockout" })
+.st-content#st-content
+  != partial("../../_shared/nav/navbar", { "classes": "jumbotron-knockout" })
+  != partial("../../_shared/search")
+  .container.st-content-inner
+    != partial("../_shared/nav")
+    article.col-12.col-lg-9.article-docs
+      :markdown
+        ## Deployment
+
+        Learn how to deploy Harp in production mode, and have it serve your application. Or, compile your project into HTML, CSS, and JavaScript, so it’s ready host it anywhere.
+
+        You can skip this entirely with [the Harp Platform](https://www.harp.io), the easiest way to get a Harp app online.

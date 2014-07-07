@@ -1,0 +1,22 @@
+doctype xml
+rss(version="2.0", xmlns:atom="http://www.w3.org/2005/Atom")
+  channel
+    title Harp Weekly
+    link= uri
+    atom:link(href="#{ uri }/blog/newsletter.xml", rel="self", type="application/rss+xml")
+    for article, slug in public.blog._data
+      if article.published === true && (article.tags && !article.tags.indexOf("harp-weekly"))
+        description #{ article.description ? (article.description.length > 119 ? article.description.substring(0, 119) + "…" : article.description) : description }
+        item
+          title= article.title.split(" – ")[1]
+          pubDate= new Date(article.date).toUTCString()
+          author #{ author.name }
+          link #{ uri }/blog/#{ slug }
+          guid(isPermaLink="true") #{ uri }/blog/#{ slug }
+          description.
+            <![CDATA[
+              !{ partial(slug).split("</h1>")[1].replace(/src="images/g, 'src="http://harpjs.com/blog/images') }
+              <p><a href="#{ uri }/blog/#{ slug }">View this edition of the <strong>Harp Newsletter</strong> online</a></p>
+            ]]>
+
+        - break

@@ -1,0 +1,11 @@
+if locals.videourl
+  .container#vid
+    .row
+      .col-12.thumb.well
+        .row
+          .col-12.col-lg-3
+            a(href="#")
+              img(src="/images/temp/harpjs-wave-video.svg")
+          .col-12.col-lg-9.desc
+            h3 #{ current.path[1] } &ndash; #{ title }
+            p Jump to a video on !{ description.split()[0].toLowerCase().replace("(", "<code>").replace(")", "</code>") }.

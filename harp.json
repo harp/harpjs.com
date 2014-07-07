@@ -1,0 +1,24 @@
+{
+  "globals": {
+    "title": "Harp",
+    "name": "Harp",
+    "tagline": "The static web server with built-in preprocessing",
+    "description": "Harp is a production-ready web server. Rapidly build static sites and client-side applications using Markdown, Sass, CoffeeScript, and more—no configuration necessary.",
+    "author": "Chloi Inc.",
+    "uri": "http://harpjs.com",
+    "bugs": "http://github.com/sintaxi/harp/issues",
+    "repository": "https://github.com/sintaxi/harp",
+    "version": "0.12.1",
+    "service": {
+      "analytics": "UA-42029678-1",
+      "twitter": "HarpWebServer",
+      "github": "sintaxi/harp",
+      "contributing": "harp/harpjs.com",
+      "irc": "harp",
+      "youtube": "https://www.youtube.com/watch?v=",
+      "prism": false
+    }
+  },
+  "domains": ["harpjs.com"],
+  "tags": ["v0-12-1"]
+}

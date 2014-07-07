@@ -1,0 +1,15 @@
+!= partial("../../_shared/nav/nav", { "classes": "jumbotron-knockout" })
+.st-content#st-content
+  != partial("../../_shared/nav/navbar", { "classes": "jumbotron-knockout" })
+  != partial("../../_shared/search")
+  .container.st-content-inner
+    != partial("../_shared/nav")
+    article.col-12.col-lg-9.article-docs
+      :markdown
+        ## Environment
+
+        Learn how to run Harp wherever you need it:
+
+        * [Locally](/docs/environment/install), while you design and develop static sites or client-side applications
+        * [As Middleware](/docs/environment/lib), making Harp the asset pipeline for a larger application built with Express and Node.js
+        * [In Production](/docs/environment/server), where Harp will act as a web server, caching and can serve static content

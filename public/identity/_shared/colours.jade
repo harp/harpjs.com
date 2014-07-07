@@ -1,0 +1,16 @@
+h2 Colours
+
+p Harp’s colour palette.
+
+p Generally, Blue, Off-white, Grey, and Dark are used. Light Blue and Dark Blue are used sparringly alongside Blue. Pink is rarely used; presently, it’s reserved for the main call to action on prominent landing pages.
+
+.row.row-full
+  each color, slug in public.identity._data.colours.colors
+    figure.col-12.col-sm-4
+      figcaption.caption-overlay
+        ul.identity-color-values(style="color:#{color.txt}")
+          li: strong #{ color.name }
+          li #{ color.hex }
+          li r#{ color.rgb[0] } g#{ color.rgb[1] } b#{ color.rgb[2] }
+          //- li #{ color.cmyk }
+      div.identity-color(class="identity-#{ slug }")

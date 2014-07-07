@@ -1,0 +1,17 @@
+!= partial("../_shared/nav/nav", { "classes": "jumbotron-knockout" })
+.st-content#st-content
+  != partial("../_shared/nav/navbar", { "classes": "jumbotron-knockout" })
+  != partial("../_shared/search")
+  .container.st-content-inner
+    != partial("_shared/nav")
+    article.col-12.col-lg-9.article-docs
+      //-!= partial("_shared/video")
+      unless published === false
+        != yield
+        footer
+          small.text-center See something that could be better?&nbsp;
+            a(href="https://github.com/" + service.contributing + "/edit/master/" + current.path.join('/') + ".md") Edit this page.
+          hr
+          != partial("_shared/next")
+      else
+        != partial("../404")

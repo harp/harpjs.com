@@ -1,0 +1,16 @@
+!= partial("../_shared/nav/nav")
+.st-content#st-content
+  != partial("../_shared/nav/navbar")
+  .container.st-content-inner.blog-container
+    .col-12.col-lg-10
+      article.post
+        if published === true || environment==='development'
+          header.post-header
+            h1.post-title!= yield.split("<h1>")[1].split("</h1>")[0]
+            if public.blog.contributors._data[author]
+              - author = public.blog.contributors._data[author]
+              span.post-meta #{ url ? 'External post by' : 'By' } <a href="http://twitter.com/#{ author.twitter }">#{ author.name }</a> on #{ date }
+          != yield.split("</h1>")[1]
+          != partial("../_shared/closing")
+        else
+          != partial("../404")

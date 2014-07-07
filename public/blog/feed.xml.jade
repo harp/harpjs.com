@@ -1,0 +1,16 @@
+doctype xml
+rss(version="2.0", xmlns:atom="http://www.w3.org/2005/Atom")
+  channel  
+    title !{ title !== name ? title + ' &ndash; ' : '' }#{ name }#{ (title.length + name.length + tagline.length) >= 70 ? '' : ', ' + tagline.toLowerCase() }
+    link= uri
+    description= description
+    atom:link(href="#{ uri }/feed.xml", rel="self", type="application/rss+xml")
+    for article, slug in public.blog._data
+      if article.published === true && !article.url
+        item
+          title= article.title
+          description
+            | <![CDATA[ !{ partial(slug) } ]]>
+          pubDate= new Date(article.date)
+          link #{ uri }/blog/#{ slug }
+          guid(isPermaLink="true") #{ uri }/blog/#{ slug }

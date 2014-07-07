@@ -1,0 +1,12 @@
+pre#install.section-install
+  code.language-sh
+    //- Don’t hard-code $
+    | <span class="prompt"></span><span class="sudo">sudo </span>npm install <span class="no-break">-g harp</span>
+    | <span class="prompt"></span>harp init myproject
+    | <span class="prompt"></span>harp server myproject
+//- Possibly show email form instead/in addtion on mobile?
+//-
+  aside
+    h5
+      | Harp requires <a href="http://nodejs.org")>Node.js</a>.
+    //- p New to using the command line? Don’t worry, it still easy to get Harp running.

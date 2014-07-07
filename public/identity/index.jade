@@ -1,0 +1,16 @@
+!= partial("../_shared/nav/nav")
+.st-content#st-content
+  != partial("../_shared/nav/navbar")
+  .container.st-content-inner
+
+    nav.col-12.col-lg-3
+      ul.nav.nav-pills.nav-stacked.nav-aside#nav-aside
+        each section, slug in public.identity._data
+          unless slug === 'index' || (section.published===false && environment!=='development')
+            li.nav-aside-item(class="#{ current.path[1] === slug ? 'active' : '' }")
+              a(href="#" + slug)= section.title
+
+    article.col-12.col-lg-9
+      each section, slug in public.identity._data
+        unless slug === 'index' || (section.published===false && environment!=='development')
+          section.identity-section(id=slug)!= partial("_shared/" + slug)

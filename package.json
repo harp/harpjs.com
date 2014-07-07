@@ -1,0 +1,27 @@
+{
+  "name": "harpjs.com",
+  "version": "0.0.0",
+  "description": "The website for Harp, the static web server with built-in preprocessing.",
+  "homepage": "http://harpjs.com",
+  "private": true,
+  "author": "Chloi <info@chloi.io> (http://chloi.io)",
+  "contributors": [
+    "Brock Whitten <brock@chloi.io>",
+    "Rob Ellis <rob@chloi.io>",
+    "Jorge Pedret <jorge@chloi.io>",
+    "Kenneth Ormandy <kenneth@chloi.io>"
+  ],
+  "repository": "git@github.com:harp/harpjs.com.git",
+  "keywords": [
+    "static web server",
+    "static site generator",
+    "website", "docs", "documentation",
+    "sass", "less", "stylus", "markdown", "jade", "ejs", "coffeescript"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\" && exit 1",
+    "start": "harp server",
+    "compile": "harp compile",
+    "deploy": "harp compile . ~/Dropbox/harp.io/apps/typebrigade.harp.io/public"
+  }
+}

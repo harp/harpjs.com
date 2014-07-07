@@ -1,0 +1,80 @@
+{
+  "overview": {
+    "title": "Overview"
+  },
+  "wordmark": {
+    "title": "Wordmark"
+  },
+  "name": {
+    "title": "Name"
+  },
+  "typography": {
+    "title": "Typography"
+  },
+  "colours": {
+    "title": "Colours",
+    "colors": {
+      "blue-lighter": {
+        "txt": "#fff",
+        "name": "Light Blue",
+        "hex": "#D3DEE1",
+        "rgb": [211, 222, 225],
+        "cmyk": [0,0,0,0]
+      },
+      "blue": {
+        "txt": "#fff",
+        "name": "Blue",
+        "hex": "#6B919E",
+        "rgb": [107, 145, 158],
+        "cmyk": [0,0,0,0]
+      },
+      "blue-dark": {
+        "txt": "#fff",
+        "name": "Dark Blue",
+        "hex": "#546D7A",
+        "rgb": [84, 109, 122],
+        "cmyk": [0,0,0,0]
+      },
+      "off-white": {
+        "txt": "#3B3B3B",
+        "name": "Off-white",
+        "hex": "#FCFCFC",
+        "rgb": [252, 252, 252]
+      },
+      "grey": {
+        "txt": "#fff",
+        "name": "Grey",
+        "hex": "#E5E5E5",
+        "rgb": [229, 229, 229],
+        "cmyk": [0,0,0,0]
+      },
+      "dark": {
+        "txt": "#fff",
+        "name": "Dark",
+        "hex": "#3B3B3B",
+        "rgb": [59, 59, 59],
+        "cmyk": [0,0,0,0]
+      },
+      "pink": {
+        "txt": "#fff",
+        "name": "Pink",
+        "hex": "#81586C",
+        "rgb": [129, 88, 108],
+        "cmyk": [0,0,0,0]
+      }
+
+    }
+  },
+  "illustration": {
+    "title": "Illustration",
+    "published": false
+  },
+  "voice": {
+    "title": "Voice",
+    "published": false
+  },
+  "questions": {
+    "title": "Questions",
+    "published": false
+  }
+}

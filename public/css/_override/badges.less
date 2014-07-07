@@ -1,0 +1,28 @@
+//
+// Badges
+// --------------------------------------------------
+
+
+// Base classes
+.badge {
+  display: inline-block;
+  min-width: auto;
+  padding: 0;
+  font-size: @font-size-small;
+  font-style: italic;
+  font-weight: 400;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+// Hover state, but only for links
+a.badge:hover,
+a.badge:focus,
+a:hover,
+a:focus {
+  .badge {
+    color: @badge-link-hover-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "rules": {
+    "title": "The Rules",
+    "description": "Five simple rules you can count on when making templates for a Harp Application"
+  },
+  "public": {
+    "title": "Public",
+    "description": "Public and private assets",
+    "release": "0.1.0"
+  },
+  "layout": {
+    "title": "Layout",
+    "description": "Using Layouts to keep your markup DRY. (_layout)",
+    "release": "0.9.2"
+  },
+  "yield": {
+    "title": "Yield",
+    "description": "Output your main content into a layout. (yield)",
+    "release": "0.4.5"
+  },
+  "partial": {
+    "title": "Partial",
+    "description": "Using the Partial function to easily reuse template fragments (partial)",
+    "release": "0.4.0"
+  },
+  "globals": {
+    "title": "Globals",
+    "description": "Using the Globals object for setting universal properties (globals)",
+    "release": "0.5.0"
+  },
+  "metadata": {
+    "title": "Metadata",
+    "description": "Adding flexible metadata to your files (_data)",
+    "release": "0.4.2"
+  },
+  "contents": {
+    "title": "Contents",
+    "description": "Accessing the file tree Harp outputs (_contents)",
+    "published": false
+  },
+  "current": {
+    "title": "Current",
+    "description": "Using the Current object to manage navigation state (current)",
+    "release": "0.4.1"
+  },
+  "environment": {
+    "title": "Environment",
+    "description": "Determining whether Harp is running in production or development (environment)"
+  },
+  "harp-json": {
+    "title": "harp.json",
+    "description": " (harp.json)",
+    "published": false
+  },
+  "basicauth": {
+    "title": "Basic Authentication",
+    "description": "Adding password protection to your entire site (basicAuth)",
+    "release": "0.11.1"
+  },
+  "404-not-found": {
+    "title": "404 Not Found",
+    "description": "Creating a custom 404 template (404)",
+    "release": "",
+    "published": true
+  },
+  "200-ok": {
+    "title": "200 OK",
+    "description": "Using a 200 template for client-side applications (200)",
+    "release": "0.10.0",
+    "published": true
+  },
+  "html": {
+    "title": "HTML",
+    "description": "Harp supports using plain HTML (.html)",
+    "tags": [ "markup" ],
+    "published": false
+  },
+  "markdown": {
+    "title": "Markdown",
+    "description": "Write using Markdown (.md)",
+    "tags": [ "preprocessor", "markup" ]
+  },
+  "ejs": {
+    "title": "EJS",
+    "description": "Writing your JavaScript using EJS (.ejs)",
+    "release": "0.8.0",
+    "tags": [ "preprocessor", "markup", "template" ]
+  },
+  "jade": {
+    "title": "Jade",
+    "description": "Writing your markup with Jade (.jade)",
+    "release": "0.2.0",
+    "tags": [ "preprocessor", "markup", "template" ]
+  },
+  "css": {
+    "title": "CSS",
+    "description": "Harp supports plain CSS (.css)",
+    "tags": [ "style" ],
+    "published": false
+  },
+  "less": {
+    "title": "LESS",
+    "description": "Writing your CSS using LESS (.less)",
+    "release": "0.2.6",
+    "tags": [ "preprocessor", "style" ]
+  },
+  "sass": {
+    "title": "Sass",
+    "description": "Writing your CSS using SCSS (.scss)",
+    "release": "0.10.2",
+    "tags": [ "preprocessor", "style" ]
+  },
+  "stylus": {
+    "title": "Stylus",
+    "description": "Writing your CSS using Stylus (.styl)",
+    "release": "0.8.0",
+    "tags": [ "preprocessor", "style" ]
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "description": "Harp supports plain JavaScript (.js)",
+    "tags": [ "script" ],
+    "published": false
+  },
+  "coffeescript": {
+    "title": "CoffeeScript",
+    "description": "Writing your JavaScript using CoffeeScript (.coffee)",
+    "release": "0.8.1",
+    "tags": [ "preprocessor", "script" ]
+  }
+}

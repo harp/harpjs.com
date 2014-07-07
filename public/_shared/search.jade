@@ -1,0 +1,15 @@
+- var opener = ["perhaps for", "maybe for", "why not for", "ex.", "try", "like"]
+- var messages = [];
+each item, i in public.docs._data
+  if typeof(public.docs[i]) === 'object'
+    each subitem in public.docs[i]._data
+      unless subitem.published === false
+        - messages.push(subitem.title)
+- function getMessage() { return messages[Math.floor(Math.random() * messages.length)]; }
+- function getOpener() { return opener[Math.floor(Math.random() * opener.length)]; }
+- var messageOne = getMessage();
+- var messageTwo = (getMessage()!=messageOne?getMessage():getMessage())
+
+.search
+  form.container(method="get", action="/docs/search")
+    input.form-control.input-large.search-query(type="search", name="q", placeholder!="Search the docs, #{ getOpener() } &#8220;#{ messageOne }&#8221; or &#8220;#{ messageTwo }&#8221;", autocomplete="off")

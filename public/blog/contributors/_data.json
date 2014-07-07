@@ -1,0 +1,30 @@
+{
+  "rob_ellis": {
+    "name": "Rob Ellis",
+    "twitter": "rob_ellis",
+    "github": "silentrob",
+    "email": "rob@chloi.io",
+    "url": "http://silentrob.me"
+  },
+  "sintaxi": {
+    "name": "Brock Whitten",
+    "twitter": "sintaxi",
+    "github": "sintaxi",
+    "email": "brock@chloi.io",
+    "url": "http://sintaxi.com"
+  },
+  "jorgepedret": {
+    "name": "Jorge Pedret",
+    "twitter": "jorgepedret",
+    "github": "jorgepedret",
+    "email": "jorge@chloi.io",
+    "url": "http://jorgepedret.com"
+  },
+  "kennethormandy": {
+    "name": "Kenneth Ormandy",
+    "twitter": "kennethormandy",
+    "github": "kennethormandy",
+    "email": "kenneth@chloi.io",
+    "url": "http://kennethormandy.com"
+  }
+}

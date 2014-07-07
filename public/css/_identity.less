@@ -1,0 +1,101 @@
+.list-success,
+.list-warning {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  li {
+    padding: 0 0 0 0;
+    margin: 0 0 0 (-1 * (@grid-gutter-width / 2) - 0.5em);
+  }
+  li:before {
+    font-weight: normal;
+    content: "\2717";
+    color: lighten(orangered, 20%);
+    display: inline-block;
+    padding-right: 0.5rem
+  }
+}
+
+.list-success {
+  li:before {
+    content: "\2713";
+    color: lightgreen;
+  }
+}
+
+.identity-section {
+  // Makes anchors jump to top of section
+  border-top: 1px solid transparent;
+  margin-bottom: 1em;
+  &:target {
+  }
+  &:last-child {
+    margin-bottom: 4em;
+  }
+}
+
+.identity-color {
+  width: 100%;
+  height: 15em;
+  margin-bottom: @grid-gutter-width;
+}
+
+.identity-color-values {
+  list-style-type: none;
+  line-height: @line-height-small;
+  .font-size(@font-size-small);
+  color: @text-color;
+  & li {
+    margin: 0;
+  }
+}
+
+.identity-blue {
+  background: @blue;
+  color: @gray-lighter;
+}
+
+.identity-blue-dark {
+  background: @blue-dark;
+}
+
+.identity-blue-lighter {
+  background: @blue-lighter;
+}
+
+.identity-pink {
+  background: @pink;
+}
+
+.identity-grey {
+  background: @gray-light;
+}
+
+.identity-off-white {
+  background: @body-bg;
+  border: 1px solid @gray-light;
+}
+
+.identity-dark {
+  // This is the text-level header color 
+  background: darken(@text-color, 10%);
+}
+
+.identity-wordmark-large {
+  padding: 3em;
+  margin-top: @grid-gutter-width;
+}
+.identity-wordmark-small {
+  padding: 2em;
+  margin-top: @grid-gutter-width;
+  @media (min-width: @screen-small) {
+    margin-bottom: @grid-gutter-width;
+  }
+}
+
+.identity-wordmark-spacing {
+  margin-top: @grid-gutter-width;
+  @media (min-width: @screen-small) {
+    margin-top: @grid-gutter-width / 2;
+  }
+}

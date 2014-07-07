@@ -1,0 +1,256 @@
+{
+  "v0-13-0-sass-indented-syntax-support": {
+    "title": "Harp v0.13.0 – Sass Indented Syntax Support",
+    "description": "A new version of Harp is now available!",
+    "author": "kennethormandy",
+    "date": "Jul 3, 2014",
+    "tags": ["harp-weekly", "release"],
+    "published": true
+  },
+  "v0-12-1-boilerplates": {
+    "title": "Harp v0.12.1 – Boilerplate support",
+    "description": "A new version of Harp is now available!",
+    "author": "kennethormandy",
+    "date": "Apr 3, 2014",
+    "tags": ["harp-weekly", "release"],
+    "published": true
+  },
+  "harp-weekly-2014-03-10": {
+    "title": "Harp Weekly – Community Checkin",
+    "description": "Use Gulp, Harp, Compass and Live Reload together in this Harp Weekly.",
+    "author": "kennethormandy",
+    "date": "Mar 10, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2014-03-03": {
+    "title": "Harp Weekly – Three Static Patterns",
+    "description": "Three recipes you can use—quickly—to make your static site better.",
+    "author": "kennethormandy",
+    "date": "Mar 03, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2014-02-24": {
+    "title": "Harp Weekly – Slides",
+    "description": "Get to know Harp anew with a talk by Raymond Camden of Adobe.",
+    "author": "kennethormandy",
+    "date": "Feb 24, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2014-02-17": {
+    "title": "Harp Weekly – Events and Calendars",
+    "description": "",
+    "author": "kennethormandy",
+    "date": "Feb 17, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2014-02-03": {
+    "title": "Harp Weekly – Harp v0.11.2",
+    "description": "A new version of Harp is available.",
+    "author": "kennethormandy",
+    "date": "Feb 03, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2014-01-27": {
+    "title": "Harp Weekly – Harp for Static Showdown",
+    "description": "Harp will help you out at Static Showdown, a Node Knockout-esque competiton for static apps.",
+    "author": "kennethormandy",
+    "date": "Jan 27, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2014-01-20": {
+    "title": "Harp Weekly – Static Ghosts and Draft Posts",
+    "description": "Use Ghost’s default theme as a static blog, and more in this edition of Harp Weekly.",
+    "author": "kennethormandy",
+    "date": "Jan 20, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "static-draft-posts-with-harp": {
+    "title": "Static draft posts with Harp",
+    "author": "kennethormandy",
+    "date": "January 16, 2014",
+    "url": "http://kennethormandy.com/journal/static-draft-posts-with-harp",
+    "published": true
+  },
+  "harp-weekly-2014-01-13": {
+    "title": "Harp Weekly – Harp v0.11.1 is authsome",
+    "description": "A new version of Harp is available, adding support for HTTP Basic Authentication.",
+    "author": "kennethormandy",
+    "date": "Jan 13, 2014",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "v0-11-1-basic-auth-support": {
+    "title": "Harp v0.11.1 – Basic Authentication support",
+    "author": "kennethormandy",
+    "date": "Jan 10, 2014",
+    "tags": ["release"],
+    "published": true
+  },
+  "no-more-config": {
+    "title": "If you’re writing configuration to manage your assets you’re doing it wrong.",
+    "author": "rob_ellis",
+    "date": "Jan 6, 2014",
+    "url": "http://silentrob.me/articles/no-more-config",
+    "published": true
+  },
+  "harp-weekly-2014-01-06": {
+    "title": "Harp Weekly – Project Hubs with Harp",
+    "author": "kennethormandy",
+    "date": "Jan 6, 2014",
+    "tags": ["harp-weekly"],
+    "description": "Learn to create static categories, a Project Hub, and change your site depending on the dev environment.",
+    "published": true
+  },
+  "harp-weekly-2013-12-22": {
+    "title": "Harp Weekly – Harp v0.11.0 and the year in review",
+    "author": "kennethormandy",
+    "date": "Dec 31, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "v0-11-0-sass-support": {
+    "title": "Harp v0.11.0 – Sass Support",
+    "author": "kennethormandy",
+    "date": "Dec 24, 2013",
+    "tags": ["release"],
+    "published": true
+  },
+  "harp-weekly-2013-12-15": {
+    "title": "Harp Weekly – Collect and Connect",
+    "author": "kennethormandy",
+    "date": "Dec 23, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2013-12-08": {
+    "title": "Harp Weekly – Appetisers",
+    "author": "kennethormandy",
+    "date": "Dec 16, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2013-12-01": {
+    "title": "Harp Weekly – Middlewear",
+    "author": "kennethormandy",
+    "date": "Dec 12, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2013-11-24": {
+    "title": "Harp Weekly – 3,000 downloads in November",
+    "author": "kennethormandy",
+    "date": "Dec 2, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2013-11-17": {
+    "title": "Harp Weekly – WordPress to Harp",
+    "author": "kennethormandy",
+    "date": "Nov 25, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2013-11-10": {
+    "title": "Harp Weekly – Harp v0.10.0 & Harp Platform is open",
+    "author": "kennethormandy",
+    "date": "Nov 18, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-platform-public-milestone-complete": {
+    "author": "jorgepedret",
+    "title": "Harp Platform public milestone complete",
+    "url": "http://jorgepedret.com/posts/harp-goes-public",
+    "date": "Nov 15, 2013",
+    "published": true
+  },
+  "harp-platform-now-public": {
+    "author": "sintaxi",
+    "title": "Harp Platform is now Public!",
+    "url": "http://blog.harp.io/posts/harp-platform-now-public",
+    "date": "Nov 15, 2013",
+    "published": true
+  },
+  "v0-10-0-200-catch-all": {
+    "title": "Harp v0.10.0 – 200 Catch All",
+    "author": "kennethormandy",
+    "date": "Nov 15, 2013",
+    "tags": ["release"],
+    "published": true
+  },
+  "harp-weekly-2013-11-03": {
+    "title": "Harp Weekly – The Week’s Workflow",
+    "author": "kennethormandy",
+    "date": "Nov 8, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2013-10-27": {
+    "title": "Harp Weekly – HTML5 Up Boilerplates",
+    "author": "kennethormandy",
+    "date": "Nov 1, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "harp-weekly-2013-10-20": {
+    "title": "Harp Weekly – #1 on GitHub",
+    "author": "kennethormandy",
+    "date": "Oct 25, 2013",
+    "tags": ["harp-weekly"],
+    "published": true
+  },
+  "v0-9-4-windows-support": {
+    "title": "Harp v0.9.4 – Windows Support",
+    "author": "sintaxi",
+    "date": "Oct 21, 2013",
+    "tags": ["release"],
+    "published": true
+  },
+  "introductory-screencast": {
+    "author": "sintaxi",
+    "title": "Introductory Screencast",
+    "url": "https://www.youtube.com/watch?v=JWU70PWVVbc",
+    "date": "Oct 15, 2013",
+    "published": true
+  },
+  "start-a-blog-with-harp": {
+    "author": "kennethormandy",
+    "title": "Start a blog with Harp",
+    "url": "http://kennethormandy.com/journal/start-a-blog-with-harp",
+    "date": "Oct 15, 2013",
+    "published": true
+  },
+  "introducing-harp": {
+    "author": "sintaxi",
+    "title": "Introducing Harp",
+    "url": "http://sintaxi.com/introducing-harp",
+    "date": "Oct 9, 2013",
+    "published": true
+  },
+  "hello-world": {
+    "title": "Hello World",
+    "date": "January 1, 1970",
+    "author": "sintaxi",
+    "published": false
+  },
+  "index": {
+    "title": "Harp Blog",
+    "description": "Updates, articles and a focus on the community around Harp, the static web server with built-in preprocessing."
+  },
+  "subscribe": {
+    "title": "Subscribe to Harp Weekly"
+  },
+  "feed": {
+    "layout": false
+  },
+  "newsletter": {
+    "layout": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "index": {
+    "title": "Documentation"
+  },
+  "quick-start": {
+    "title": "Quick Start"
+  },
+  "environment": {
+    "title": "Environment"
+  },
+  "development": {
+    "title": "Development"
+  },
+  "deployment": {
+    "title": "Deployment"
+  },
+  "recipes": {
+    "title": "Recipes"
+  }
+}

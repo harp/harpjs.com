@@ -1,0 +1,125 @@
+/* Google Custom Search */
+#search-results {
+  a {
+    color: @link-color;
+    text-decoration: none;
+  }
+  a:hover,
+  a:focus {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+  a:focus {
+    .tab-focus();
+  }
+  .gsc-control-cse, b {
+    margin: 0;
+    padding: 0;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    background: inherit !important;
+  }
+
+  .gsc-search-box {
+    display: none;
+    visibility: hidden;
+  }
+
+  .gsc-result-info {
+    font-style: italic;
+    color: @gray;
+  }
+
+  .gsc-orderby {
+    .gsc-orderby-label {
+
+    }
+    .gsc-option-menu-container {
+
+    }
+  }
+
+  .gsc-expansionArea {
+
+  }
+
+  .gsc-resultsbox-visible {
+    margin-top: 2.5em;
+    b {
+      font-weight: 600;
+      text-decoration: none;
+      // background: @blue-lighter !important;
+      // padding: 0.125em 0.25em;
+      // margin: -0.125em;
+      // border-radius: @border-radius-base;
+    }
+    .gsc-resultsRoot.gsc-tabData.gsc-tabdActive {
+      .gsc-results.gsc-webResult {
+        .gcsc-branding {
+          display: none;
+          visibility: hidden;
+        }
+        .gsc-webResult.gsc-result {
+          margin: 0 0 2em 0;
+          padding: 0;
+          background: inherit;
+          border: none;
+          .gs-webResult.gs-result {
+            .gsc-thumbnail-inside {
+              padding: 0;
+              height: auto;
+              .gs-title {
+                .font-size(@font-size-base);
+                line-height: @line-height-small;
+                overflow: visible;
+                display: inline-block;
+                a {
+                  text-decoration: none;
+                  border: none;
+                }
+              }
+            }
+            .gsc-url-top {
+              margin: 0;
+              padding: 0;
+            }
+            .gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long {
+              font-family: @font-family-monospace;
+              .font-size(@font-size-smaller);
+              line-height: @line-height-small;
+              margin: 0 0 1em 0;
+              padding: 0;
+              color: @gray;
+              font-weight: 400;
+            }
+            .gsc-table-result {
+              color: @text-color;
+              font-family: inherit;
+              code {
+                font-family: @font-family-monospace;
+              }
+            }
+            .gs-bidi-start-align.gs-snippet {
+              font-family: inherit;
+              font-size: inherit;
+              line-height: inherit;
+              background: inherit;
+              @media (min-width: @screen-medium) {
+                max-width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .gsc-cursor-box.gs-bidi-start-align {
+    .gsc-cursor {
+      .gsc-cursor-page.gsc-cursor-current-page {
+
+      }
+    }
+  }
+}
