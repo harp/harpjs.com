@@ -179,6 +179,9 @@ body.is-open {
         margin-bottom: 5em;
       }
     }
+    .row + .row {
+      margin-top: 2.5em;
+    }
   }
 }
 
@@ -290,39 +293,6 @@ blockquote {
   border: 1px solid @gray;
   border-radius: @border-radius-base;
   min-height: 500px;
-}
-
-// @silent_rob’s landing page variant
-
-.window-title {
-  text-align: center;
-  font-size: 13px;
-  line-height: 1.6em;
-  text-shadow: #cbcccc 0 1px 0;
-  color: #474747;
-  font-weight: normal;
-  margin-bottom: 0;
-  border-radius: 5px 5px 0 0;
-  background: #e0e0e0; /* Old browsers */
-  background: -moz-linear-gradient(top,  #e0e0e0 0%, #cacaca 14%, #aaaaaa 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(14%,#cacaca), color-stop(100%,#aaaaaa)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #e0e0e0 0%,#cacaca 14%,#aaaaaa 100%); /* W3C */
-  border: 1px solid #565656;
-  border-top-color: #cbcbcb;
-  border-left-color: #a5a5a5;
-  border-right-color: #a5a5a5;
-  border-bottom: 0;
-}
-.logos li {
-  width:175px;
-  height:175px;
-  line-height:175px;
-  list-style-type:none;
-  float:left;
-  padding:18px;
 }
 
 .logos2 li {

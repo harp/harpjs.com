@@ -8,23 +8,79 @@
         .col-12.col-lg-10.col-offset-1
           h2.h1.feature-header Here’s how Harp helps
       .feature
+        .row
+          .col-12.col-lg-5
+            img(src="/images/features/feature-preprocessors.png").image-feature
+          .col-12.col-lg-5.col-offset-1
+            h3 Automatic preprocessing
+            p Harp automatically delivers your Sass, LESS, Markdown, CoffeeScript, and more to the browser as HTML, CSS, JavaScript. Focus on writing instead of wrangling.
+            a(href="#") Read more
+        .row
+          .col-12.col-lg-6
+            h3.h2.text-center Write <code>main.scss</code>
+            pre
+              code(class="language-scss")
+                | $text-color: #F938AB;
+                | &nbsp;
+                | body {
+                |   color: $text-color;
+                | }
+          .col-12.col-lg-6
+            h3.h2.text-center …Harp serves <code>main.css</code> automatically
+            pre
+              code(class="language-css")
+                | body {
+                |  text-color: #F938AB; }
+            pre
+              code(class="language-markup")
+                | &lt;link href="main.css" rel="stylesheet"&gt;
+      .feature
+        .col-12.col-lg-4.col-offset-1
+          h3 Preprocessors are build-in
+          p Harp delivers HTML, CSS &amp; JavaScript to the browser from your Markdown, Jade, EJS, LESS, Stylus, Sass and CoffeeScript, without any configuration. Now you can focus on writing instead of wrangling.
+        .col-12.col-lg-6
+          .row
+            a.col-lg-6(href="/docs/development/less"): img(alt="Write CSS with LESS" src="/images/icons/less-logo.svg")
+            a.col-lg-6(href="/docs/development/sass"): img(alt="Write CSS with Sass" src="/images/icons/sass-logo.svg")
+            a.col-lg-6(href="/docs/development/stylus"): img(alt="Write CSS with Stylus" src="/images/icons/stylus-logo.svg")
+            a.col-lg-6(href="/docs/development/coffeescript"): img(alt="Write JavaScript with CoffeeScript" src="/images/icons/coffeescript-logo.svg")
+            a.col-lg-6(href="/docs/development/markdown"): img(alt="Markdown" src="/images/icons/markdown-logo.svg")
+            a.col-lg-6(href="/docs/development/jade"): img(alt="Jade" src="/images/icons/jade-logo.svg")
+      .feature
+        .row
+          .col-12.col-lg-5.col-offset-1
+            img(src="/images/features/feature-layout-partial.png").image-feature
+          .col-12.col-lg-5
+            h3 The beloved Layout/Partial paradigm
+            p Keep your code clean and organized: reuse common elements with partials, and maintain a consistent site design with layouts. Harp makes both paradigms available to Jade and <abbr>EJS</abbr>.
+        .row
+          .col-12.col-lg-6
+            h3.h2.text-center Write <code>main.scss</code>
+            pre
+              code(class="language-markup")
+                | &lt;!-- _nav.ejs --&gt;
+                | &lt;nav&gt;
+                |   &lt;a href="#">Home&lt;/a&gt;
+                |   &lt;a href="#"&gt;Product&lt;/a&gt;
+                |   &lt;a href="#"&gt;Services&lt;/a&gt;
+                | &lt;/nav&gt;
+          .col-12.col-lg-6
+            h3.h2.text-center Write <code>main.scss</code>
+            pre
+              code(class="language-markup")
+                | &lt;body&gt;
+                |   &lt;!-- Include _nav.ejs --&gt;
+                |   &lt;%= partial("_nav") %&gt;
+                |   &lt;h1&gt;Services&lt;/h1&gt
+                |   &lt;!-- etc. --&gt;
+                | &lt;/body&gt;
+      .feature
         .col-12.col-lg-5.col-offset-1
-          h3 It’s a fast, lightweight web server
+          h3 All inside a fast, lightweight web server
           p Harp intelligently compiles assets as the browser needs them, so it’s insanely fast. All you have to do is Save and Refresh.
         .col-12.col-lg-5
           img(src="/images/features/feature-server.png").image-feature
-      .feature
-        .col-12.col-lg-5
-          img(src="/images/features/feature-preprocessors.png").image-feature
-        .col-12.col-lg-5.col-offset-1
-          h3 Preprocessors are built-in
-          p Harp delivers HTML, CSS &amp; JavaScript to the browser from your Markdown, Jade, EJS, LESS, Stylus, Sass and CoffeeScript, without any configuration. Now you can focus on writing instead of wrangling.
-      .feature
-        .col-12.col-lg-5.col-offset-1
-          h3 The beloved Layout/Partial paradigm
-          p Keep your code clean and organized: reuse common elements with partials, and maintain a consistent site design with layouts. Harp makes both paradigms available to Jade and <abbr>EJS</abbr>.
-        .col-12.col-lg-5
-          img(src="/images/features/feature-layout-partial.png").image-feature
+
       .feature
         .col-12.col-lg-5
           img(src="/images/features/feature-datajson.png").image-feature
