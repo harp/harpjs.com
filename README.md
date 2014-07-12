@@ -19,16 +19,6 @@ harp server harpjs.com
 # Harp is now serving the project at http://localhost:9000
 ```
 
-## Contributing CSS
-
-This version of [harpjs.com](http://harpjs.com) uses [Bootstrap](https://github.com/twbs/bootstrap). Bootstrap is in `_bootstrap` and is not modified.
-
-To override the default behaviour of Bootstrap, make a copy of the component in `_override` and import it. Make the changes on top of Bootstrap, removing the lines that will not change from the original.
-
-For example, the main banner on harpjs.com uses a `.jumbotron` class from Bootstrap, which is located in `_bootstrap/jumbotron.less`. This is augmented with additional styles, like the additional `.jumbotron-knockout` class, in `_overrides/jumbotron.less`
-
-For quick and less modular changes, work with in a `.section` in `application.less`, using non-Bootstrap classes.
-
 ## Deploying
 
 To deploy the project, you’ll need to be invited as a collaborator on [the Harp Platform](http://harp.io). First, make sure all your changes are commited, as all changes are deployed regardless. Then, as long as you have your Dropbox in the standard location, you can run:
