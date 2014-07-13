@@ -5,7 +5,7 @@
     "author": "kennethormandy",
     "date": "Jul 3, 2014",
     "tags": ["harp-weekly", "release"],
-    "published": true
+    "published": false
   },
   "v0-12-1-boilerplates": {
     "title": "Harp v0.12.1 – Boilerplate support",
