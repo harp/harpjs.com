@@ -35,8 +35,7 @@
   },
   "contents": {
     "title": "Contents",
-    "description": "Accessing the file tree Harp outputs (_contents)",
-    "published": false
+    "description": "Accessing the file tree Harp outputs (_contents)"
   },
   "current": {
     "title": "Current",
