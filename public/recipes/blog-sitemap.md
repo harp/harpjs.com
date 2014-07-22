@@ -16,7 +16,7 @@ All we need is a `sitemap.xxx` file.
 
 ### Using Jade
 
-Create a new file named `sitemap.jade` and copy/paste the snippet below:
+Create a new file named `sitemap.jade` and copy/paste the snippet below.
 
 ```jade
 - var filter = /(\.html$)/;
@@ -37,6 +37,18 @@ h1 Sitemap
 ol
   mixin tree(public, "/")
 ```
+
+You may also name it `sitemap.xml.jade` if you’d prefer to build upon this snipper and create an XML file, rather than making a sitemap page on your site.
+
+If you are [using a `_layout`](../docs/development/layout), you’ll also need to add the following the the `_data.json` file in the same folder:
+
+```json
+"sitemap": {
+    "layout": false
+}
+```
+
+This will prevent the resulting `sitemap.xml` file from rendering inside your default `_layout`.
 
 ### Using EJS
 
@@ -70,6 +82,18 @@ Create a new file named `sitemap.ejs` and copy/paste the snippet below:
   <% tree(public, "/") %>
 </ol>
 ```
+
+You may also name it `sitemap.xml.ejs` if you’d prefer to build upon this snipper and create an XML file, rather than making a sitemap page on your site.
+
+If you are [using a `_layout`](../docs/development/layout), you’ll also need to add the following the the `_data.json` file in the same folder:
+
+```json
+"sitemap": {
+    "layout": false
+}
+```
+
+This will prevent the resulting `sitemap.xml` file from rendering inside your default `_layout`.
 
 ## How does it work?
 
