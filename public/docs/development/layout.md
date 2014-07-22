@@ -196,3 +196,36 @@ Adding the following to the `data.json` file will make `about.md` render as plai
 ```
 
 Since this has only been specified for the About page, `index.ejs` will continue to use `_layout.ejs` as a Layout.
+
+<h2 id="nested-layout">Nested Layouts</h2>
+
+If you are taking advantage of Harp’s built-in support for [Jade](jade), you may use the [Jade’s Block and Extends](http://www.devthought.com/code/use-jade-blocks-not-layouts/) features to create nested layouts.
+
+Harp itself doesn’t have a build-in way to create with nested layouts, as [`partial()`] already provides ways around this. For example, `_layout.ejs` might look like this:
+
+```ejs
+<!-- If the current page is blog/ but not blog/index.ejs… -->
+  <% if(current.path[0] == "blog" && current.source !== 'index') { %>
+    <!-- Render the partial blog/_nest -->
+    <%- partial(current.path[0] + "/_nest") %>
+  <% } else { %>
+  <!-- Otherwise, render the yield -->
+      <%- yield %>
+  <% } %>
+```
+
+This allows you to put a `_nest.ejs` [partial](partial) into the `blog/` directory, giving you the opportunity to create a nested layout. By including [`yield`] in the `_nest.ejs` partial, the contents of the page you’re trying to render will be available in this `_nest.ejs` partial. For example, `blog/_nest.ejs` might look like this:
+
+```ejs
+<article>
+  <%- yield %>
+</article>
+```
+
+Now, the `blog/` index page will render normally, while any blog posts like `blog/hello-world` will have their contents wrapped in the `<article>` tag you specified in the partial. There is a full example of this on [the hb-simurai](https://github.com/kennethormandy/hb-simurai) Harp boilerplate, which you can try out by running the following command:
+
+```
+harp init -b kennethormandy/hb-simurai my-nested-example
+```
+
+Note that the `_nest.ejs` file could be named anything you’d like, it is simply a regular [partial](partial).
