@@ -1,14 +1,14 @@
 # Yield
 
-`yield` is a propery indicating where the content wrapped by a [layout](layout) should go.
+`yield` is a variable that includes that a particular path’s contents. For example, when visiting `/blog`, the entire contents of `blog/index.jade` would be available within the variable `yield`.
 
 ## Why?
 
-When creating a layout, you need to indicate where the content from the page you are visiting will actually end up—sometimes you simply want the content in the `<body>` of the document, and other times you may need something more flexible.
+When using [Layouts](layout) and [Partials](partial), you will want to work with the content from the page that the Layout or Partial is wrapping. This content is contained within the variable `yield`, and can be placed wherever you’d like in a Partial or Layout.
 
 ## Usage
 
-`yield` will be available as a variable in any `_layout.jade` or `_layout.ejs` file. It will also be available in any explicit layout set in a `_data.json` file, which [is covered in the layouts page](layout).
+`yield` will be available as a variable in any `_layout.jade` or `_layout.ejs` file. It will also be available in any explicit layout set in a `_data.json` file, which [is covered in the Layouts documentation](layout). It’s also possible to use the `yield` variable in any [Partial](partial).
 
 ## Jade Example
 
