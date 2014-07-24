@@ -129,7 +129,7 @@ Rather than offering a complex feature set, Harp has simple rules on how it work
     }
     ```
 
-    This information will be available in all template as:
+    This information will be available in all templates as:
 
     ```js
     public.articles._data
