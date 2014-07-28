@@ -56,7 +56,7 @@ The easiest way to deploy your application to Heroku is with [@zeke’s Harp bui
   heroku open
   ```
 
-5. Set the production environment
+5. ## Set the production environment
 
 To get the best performance, you’ll need to set Harp’s production properly. The Heroku buildpack can’t take care of this for you [yet](https://github.com/zeke/harp-buildpack/issues/8):
 
