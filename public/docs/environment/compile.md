@@ -16,8 +16,53 @@ With Harp, you don’t need to compile or watch your project at all times—the 
 
 ## Usage
 
-```sh
+```
 harp compile [options] [projectPath] [outputPath]
+
+Options:
+
+    -h, --help           output usage information
+    -o, --output <path>  Specify the output directory for compiled assets (relative to project path)
+    
+```
+
+**Remember to test the outputted site, to ensure that paths to JS and CSS are correct!**
+
+# Example
+
+```sh
+harp init myBlog
+cd myblog
+harp compile
+```
+
+Harp has compiled your new blog into the `./www/` folder.
+
+You should now check that the compiled version works by running
+```
+harp server www # correct
+harp server # wrong way
+```
+
+The second command is **wrong** because if you test your site by going to
+`http://localhost:9000/out`, some paths could point to the main site and not the
+compiled one by using `/stylesheet.css`' paths and that would not be part of 
+`wwww`.
+
+
+If you want to compile it to a folder called `out` instead of standard `www`,
+you can use the `-output` or shorthand `-o` to specify that.
+
+```sh
+harp init myBlog
+cd myBlog
+harp compile -o out
+```
+
+to test that you should do
+
+```
+harp server out
 ```
 
 ## Mobile Example
@@ -47,9 +92,3 @@ harp compile ~/apps/example ~/Desktop/backup
 ```
 
 **Note** The backup folder is automatically created and is assumed to be empty.
-
-
-
-
-
-
