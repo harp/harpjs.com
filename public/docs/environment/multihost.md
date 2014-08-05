@@ -4,7 +4,7 @@
 
 ## Why?
 
-It’s important to stay organised while working on multiple project. Spinning up many servers on different ports is for the birds. Multihost provides all the same benefits, and more.
+It’s important to stay organised while working on multiple projects. Spinning up many servers on different ports is for the birds. Multihost provides all the same benefits, and more.
 
 ## Usage
 
@@ -23,7 +23,7 @@ harp multihost [options] [path]
 
 ## Example
 
-To server an entire folder located at `~/Sites`, run the following command:
+To serve an entire folder located at `~/Sites`, run the following command:
 
 ```sh
 harp multihost ~/Sites --port 3000
