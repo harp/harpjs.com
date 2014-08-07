@@ -201,7 +201,7 @@ Since this has only been specified for the About page, `index.ejs` will continue
 
 If you are taking advantage of Harp’s built-in support for [Jade](jade), you may use the [Jade’s Block and Extends](http://www.devthought.com/code/use-jade-blocks-not-layouts/) features to create nested layouts.
 
-Harp itself doesn’t have a build-in way to create with nested layouts, as [`partial()`] already provides ways around this. For example, `_layout.ejs` might look like this:
+Harp itself doesn’t have a built-in way to create with nested layouts, as [`partial()`] already provides ways around this. For example, `_layout.ejs` might look like this:
 
 ```ejs
 <!-- If the current page is blog/ but not blog/index.ejs… -->
