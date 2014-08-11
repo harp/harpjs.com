@@ -12,7 +12,7 @@ Harp’s Asset Pipeline is super easy to use. All the processing happens implici
 
 ## Example
 
-In this project, there is a `main.scss` and a `_variables.scss` file in the `css` directory, like so:
+In this project, there is an `app.coffee` file in the `js` directory, like so:
 
 ```
 myproject/
@@ -21,7 +21,7 @@ myproject/
     |- app.coffee
 ```
 
-Now, you would simply reference `main.css` in `index.ejs` as you would with any other CSS file:
+Now, you would simply reference `app.js` in `index.ejs` as you would with any other JS file:
 
 ```html
 <html>
