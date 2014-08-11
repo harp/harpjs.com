@@ -3,9 +3,9 @@
     "title": "Harp v0.13.0 – Sass Indented Syntax Support",
     "description": "A new version of Harp is now available!",
     "author": "kennethormandy",
-    "date": "Jul 3, 2014",
+    "date": "Aug 11, 2014",
     "tags": ["harp-weekly", "release"],
-    "published": false
+    "published": true
   },
   "v0-12-1-boilerplates": {
     "title": "Harp v0.12.1 – Boilerplate support",
