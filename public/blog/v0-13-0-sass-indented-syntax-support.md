@@ -3,9 +3,9 @@
 A new release of Harp is available today. We’re happily adding one of Harp’s most-requested features: built-in preprocessing of Sass’ indented syntax
 
 Now, you can write `.sass` files and they will be implicitly preprocessed as `.css` files, without any configuration necessary. This works exactly the same as with `.scss`, `.styl`, and `.less` files.
-<!--
-![Build a Harp application with Sass](http://placehold.it/800x300)
--->
+
+![Build a Harp application with Sass](images/v0-13-0-example.png)
+
 ### Get started
 
 To try out everything new, get latest version of Harp:
