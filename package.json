@@ -21,7 +21,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\" && exit 1",
     "start": "harp server",
-    "compile": "harp compile",
-    "deploy": "cp -R . ~/Dropbox/harp.io/apps/harpjs.harp.io/"
+    "deploy": "harp compile . ~/Dropbox/harp.io/apps/harpjs.harp.io/public"
   }
 }
