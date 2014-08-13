@@ -65,4 +65,4 @@ Harp also helps power the [Harp Platform](http://www.harp.io), a front-end publi
 
 ## What’s next for Harp
 
-We haven’t been posting on the Harp blog as much, but we have been just as involved with the community and are happy to see Harp more popular than ever. We have more planned for Harp in the near future. If you’d like to be the first to know about it, subscribe below or [follow Harp on Twitter](http://twitter.com/harpwebserver).
+We haven’t been posting on the Harp blog as much, but we have been just as involved with the community and are happy to see Harp more popular than ever. We have more planned for Harp in the near future. If you’d like to be the first to know about it, [follow Harp on Twitter](http://twitter.com/harpwebserver).
