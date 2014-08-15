@@ -72,7 +72,7 @@ Rather than offering a complex feature set, Harp has simple rules on how it work
 
 4. ## Dead simple asset pipeline.
 
-    Harp servers jade, ejs, stylus, less and coffee script. Just add an extension of `.jade`, `.ejs`, `.styl`, `.less` or `.coffee` to your file and harp's asset pipeline will do the rest.
+    Harp serves jade, ejs, stylus, less and coffee script. Just add an extension of `.jade`, `.ejs`, `.styl`, `.less` or `.coffee` to your file and harp's asset pipeline will do the rest.
 
     Harp automatically pre-compiles, just add the file extension, and reference its counterpart.
 
