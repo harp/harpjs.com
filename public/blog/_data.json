@@ -1,4 +1,12 @@
 {
+  "v0-14-0-implicit-autoprefixing": {
+    "title": "Harp v0.14.0 – Implicit Autoprefixing",
+    "description": "Autoprefixer is now built-in to Harp!",
+    "author": "kennethormandy",
+    "date": "Aug 21, 2014",
+    "tags": ["harp-weekly", "release"],
+    "published": false
+  },
   "v0-13-0-sass-indented-syntax-support": {
     "title": "Harp v0.13.0 – Sass Indented Syntax Support",
     "description": "A new version of Harp is now available!",
