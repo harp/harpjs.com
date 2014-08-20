@@ -1,20 +1,30 @@
 # Harp v0.13.0 – Sass Indented Syntax Support
 
-A new release of Harp is available today. We’re happily adding one of Harp’s most-requested features: built-in preprocessing of Sass’ indented syntax
+A new release of Harp is available today. We’re happily adding one of Harp’s most-requested features: built-in preprocessing of Sass’ indented syntax.
 
 Now, you can write `.sass` files and they will be implicitly preprocessed as `.css` files, without any configuration necessary. This works exactly the same as with `.scss`, `.styl`, and `.less` files.
 
 ![Build a Harp application with Sass](images/v0-13-0-example.png)
 
-### Get started
+### Updating Node
 
-To try out everything new, get latest version of Harp:
+This is the first version of [Harp to require Node v0.10.x](../v0-13-0-upgrading-node). First, check which version of Node you are running:
+
+```bash
+node --version
+```
+
+If you get `v0.10.x` (where `x` is any number), then you are ready. If you get `v0.8.x`, you will need to upgrade to the latest version of Node. Just visit [the Node website](http://nodejs.org), download, and install the latest version.
+
+## Installing Harp
+
+Now you’re ready to install Harp.
 
 ```bash
 npm update -g harp
 ```
 
-You may need to use `sudo npm install -g harp` depending on your setup. If you haven’t installed Harp yet, you may also want to take a look at the [quick start guide](http://harpjs.com/docs/quick-start). Now, you’re ready to try out Harp v0.13.0.
+You may need to use `sudo npm install -g harp` depending on your setup. (You may also want to take a look at the [quick start guide](http://harpjs.com/docs/quick-start).) Now, you’re ready to try out Harp v0.13.0.
 
 ### Using Sass’ indented syntax
 
