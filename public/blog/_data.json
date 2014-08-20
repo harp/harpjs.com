@@ -7,6 +7,14 @@
     "tags": ["harp-weekly", "release"],
     "published": false
   },
+  "v0-13-0-upgrading-node": {
+    "title": "Harp v0.13.0 – Upgrading Harp to Node v0.10.x",
+    "description": "Upgrade Harp from Node v0.8.x",
+    "author": "kennethormandy",
+    "date": "Aug 20, 2014",
+    "tags": [],
+    "published": true
+  },
   "v0-13-0-sass-indented-syntax-support": {
     "title": "Harp v0.13.0 – Sass Indented Syntax Support",
     "description": "A new version of Harp is now available!",
