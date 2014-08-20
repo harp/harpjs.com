@@ -8,7 +8,7 @@ Now, you can write `.sass` files and they will be implicitly preprocessed as `.c
 
 ### Updating Node
 
-This is the first version of [Harp to require Node v0.10.x](../v0-13-0-upgrading-node). First, check which version of Node you are running:
+This is the first version of [Harp to require Node v0.10.x](v0-13-0-upgrading-node). First, check which version of Node you are running:
 
 ```bash
 node --version

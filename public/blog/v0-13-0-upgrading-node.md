@@ -1,6 +1,6 @@
 # Harp v0.13.0 – Upgrading Harp to Node v0.10.x
 
-Harp v0.13.0 was recently released, which [includes the Sass indented syntax](../v0-13-0-sass-indented-syntax-support). This preprocessor requires a more recent version of Node, which you may need to install.
+Harp v0.13.0 was recently released, which [includes the Sass indented syntax](v0-13-0-sass-indented-syntax-support). This preprocessor requires a more recent version of Node, which you may need to install.
 
 If you are running Node v0.8.x or lower, you may be receiving an error message like this upon trying to instal Harp (but with a lot more lines):
 
