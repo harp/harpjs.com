@@ -83,17 +83,18 @@ Rather than offering a complex feature set, Harp has simple rules on how it work
     myfile.less          ->        myfile.css
     myfile.styl          ->        myfile.css
     myfile.scss          ->        myfile.css
+    myfile.sass          ->        myfile.css
     myfile.coffee        ->        myfile.js
     ```
 
-    If you like, you may specify which `mime type` the file will be served with by prefixing the extension with the desired extension.
+    If you like, you may explicitly specify which `mime type` the file will be served with, by prefixing the extension with the desired extension.
 
     ```
     myfile.jade          ->        myfile.html
     myfile.xml.jade      ->        myfile.xml
     ```
 
-    &hellip;but this is optional as every extension has a default output extension. The following is the same as above&hellip;
+    This is optional, however, as every extension already has a default `mime type`.  Both of the following will be served as `myfile.css` , for example:
 
     ```
     myfile.less          ->        myfile.css
