@@ -10,7 +10,7 @@ This is perfect for creating draft posts in a static blog, for example, or loadi
 
 ## Use
 
-The `environment` variable opens many possibilities: your blog can behave one way locally, and another way when it’s published on the [Harp Platform](https://www.harp.io) or served by Harp in production mode. Additionally, [`harp compile`, which flattens your blog into static HTML, CSS, and JavaScript](../environment/compile), is considered to be a `production` environment. This means that anything indented for `production` will still occur even when you’re hosting static files.
+The `environment` variable opens many possibilities: your blog can behave one way locally, and another way when it’s published on the [Harp Platform](https://www.harp.io) or served by Harp in production mode. Additionally, [`harp compile`, which flattens your blog into static HTML, CSS, and JavaScript](../environment/compile), is considered to be a `production` environment. This means that anything intended for `production` will still occur even when you’re hosting static files.
 
 ## EJS Example
 
