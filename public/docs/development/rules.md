@@ -26,7 +26,7 @@ Rather than offering a complex feature set, Harp has simple rules on how it work
          |   +- nav.jade          <-- a partial for navigation
          +- articles/             <-- pages in here will have "/articles/" in URL
              |- _data.json        <-- articles metadata goes here
-             +- hello-world.jade  <-- should have at least one `*.html`,  `*.jade`, `*.md` or `.ejs` file. file
+             +- hello-world.jade  <-- should have at least one .html,  .jade, .md or .ejs file.
     ```
 
 2. ## The root directory is public.
