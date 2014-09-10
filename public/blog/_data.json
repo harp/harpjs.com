@@ -1,9 +1,9 @@
 {
   "v0-14-0-implicit-autoprefixing": {
     "title": "Harp v0.14.0 – Implicit Autoprefixing",
-    "description": "Autoprefixer is now built-in to Harp!",
+    "description": "Autoprefixer is now built into Harp!",
     "author": "kennethormandy",
-    "date": "Aug 21, 2014",
+    "date": "Sept 11, 2014",
     "tags": ["harp-weekly", "release"],
     "published": false
   },
