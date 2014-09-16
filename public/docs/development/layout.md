@@ -10,7 +10,7 @@ A Layout is a common template that includes all content except for one main cont
 
 ## Why?
 
-Often sites and apps will have common headers and footers and the only area that needs to change is the body. This is ideal use case for a layout.
+Often sites and apps will have common headers and footers and the only area that needs to change is the body. This is an ideal use case for a layout.
 
 ## Usage
 
@@ -18,7 +18,7 @@ A Layout requires a layout file, written in EJS or Jade, and [a `yield` property
 
 <h2 id="ejs">Example using EJS Templating</h2>
 
-Given a really simple app / project with this structure.
+Given a really simple app / project with this structure:
 
 ```
 myapp.harp.io/
@@ -72,7 +72,9 @@ The final result:
 
 <h2 id="jade">Example using Jade Templating</h2>
 
-Harp allow you to apply a `.jade` file extension on your layout as well. Mixing and matching templates is allso acceptatble such as in this case where we have a `_layout.jade` and `index.ejs`Given a really simple app / project with this structure:
+Harp allows you to apply a `.jade` file extension on your layout as well. Mixing and matching templates is also acceptable such as in the following case where we have a `_layout.jade` and `index.ejs`. 
+
+Given a really simple app / project with this structure:
 
 ```
 myapp.harp.io/
@@ -122,7 +124,7 @@ The final result:
 
 <h2 id="multiple-layouts">Multiple Layouts</h2>
 
-You can take advantage of Layouts in multiple locations through your application. In the following example, there is a directory of articles which you&rsquo;d like to have a different layout than on the main page of your site.
+You can take advantage of Layouts in multiple locations through your application. In the following example, there is a directory of articles which you’d like to have a different layout than on the main page of your site.
 
 ```
 myapp.harp.io/
@@ -139,7 +141,7 @@ Here, `index.ejs` and `about.md` will use the `_layout.ejs` file in the root of 
 
 <h2 id="explicit-layouts">Explicit Layouts</h2>
 
-Layouts other that `_layout` can be specified in from a `_data.json`. This is useful if you need even finer control of Layouts, or if you want to name your Layout something other than `_layout`.
+Layouts other than `_layout` can be specified in a `_data.json`. This is useful if you need even finer control of Layouts, or if you want to name your Layout something other than `_layout`.
 
 ```
 myapp.harp.io/
@@ -169,13 +171,13 @@ Here, it’s possible to make `article-one.md` use `_an-example-layout.ejs` by s
 }
 ```
 
-Now, each article will used the specified Layout.
+Now, each article will use the specified Layout.
 
 <h2 id="no-layout">Opt out of a Layout</h2>
 
-It&rsquo;s possible for a file to be exempt from Layouts by using `"layout": false`.
+It’s possible for a file to be exempt from Layouts by using `"layout": false`.
 
-Take the following app as an example.
+Take the following app as an example:
 
 ```
 myapp.harp.io/
@@ -199,9 +201,9 @@ Since this has only been specified for the About page, `index.ejs` will continue
 
 <h2 id="nested-layout">Nested Layouts</h2>
 
-If you are taking advantage of Harp’s built-in support for [Jade](jade), you may use the [Jade’s Block and Extends](http://www.devthought.com/code/use-jade-blocks-not-layouts/) features to create nested layouts.
+If you are taking advantage of Harp’s built-in support for [Jade](jade), you may use [Jade’s Block and Extends](http://www.devthought.com/code/use-jade-blocks-not-layouts/) features to create nested layouts.
 
-Harp itself doesn’t have a built-in way to create with nested layouts, as [`partial()`] already provides ways around this. For example, `_layout.ejs` might look like this:
+Harp itself doesn’t have a built-in way to create nested layouts, as [`partial()`] already provides ways around this. For example, `_layout.ejs` might look like this:
 
 ```ejs
 <!-- If the current page is blog/ but not blog/index.ejs… -->
