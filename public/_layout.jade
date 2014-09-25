@@ -17,6 +17,7 @@ html(lang="en")
     != partial("_shared/webfonts")
     link(rel="stylesheet", href="/css/application.css", type="text/css")
     link(rel="shortcut icon", href="/favicon.ico")
+    link(rel="alternate" type="application/rss+xml" href="/blog/feed.xml" title="#{ name }")
   body
     //- pre= JSON.stringify(current, null, 2)
     if current.source === 'index' && current.path.length === 1
