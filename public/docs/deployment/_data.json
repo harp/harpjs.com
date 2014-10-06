@@ -85,5 +85,10 @@
     "description": "Deploy your Harp application to your shared hosting",
     "published": false,
     "tags": [ "sites" ]
+  },
+  "azure": {
+    "title": "Microsoft Azure",
+    "description": "Deploy your Harp application to Microsoft Azure",
+    "tags": [ "apps", "sites" ]
   }
 }
