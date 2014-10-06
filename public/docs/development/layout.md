@@ -79,7 +79,7 @@ Given a really simple app / project with this structure:
 ```
 myapp.harp.io/
 	|- _layout.jade
-	+- index.ejs
+	+- index.jade
 ```
 
 **_layout.jade**
@@ -96,11 +96,11 @@ doctype
 	  p Copyright (c) foobar
 ```
 
-**index.ejs**
+**index.jade**
 
-```ejs
-<h1>My Site</h1>
-<p>Welcome to my very first site.</p>
+```jade
+h1 My Site
+p Welcome to my very first site.
 ```
 
 The final result:
