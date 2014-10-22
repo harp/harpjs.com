@@ -4,7 +4,7 @@ Globals is JSON data stored in your `harp.json` file that is available to all pa
 
 ## Why?
 
-Harp isn’t just about static assets, pages can be created using dynamic content too. Adding content to the `globals` property will be nativaly available.
+Harp isn’t just about static assets, pages can be created using dynamic content too. Adding content to the `globals` property will be natively available.
 
 <!--
 
