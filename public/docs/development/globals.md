@@ -14,8 +14,6 @@ As of Harp v0.9.0, using global variables has been simplified. You can check whi
 
 -->
 
-## EJS Example
-
 harp.json
 
 ```json
@@ -27,6 +25,22 @@ harp.json
   }
 }
 ```
+
+## Jade Example
+
+index.jade
+
+```jade
+html
+  head
+    title #{ title }
+  body
+    h1 Hello #{ name }!
+  </body>
+</html>
+```
+
+## EJS Example
 
 index.ejs
 
