@@ -36,8 +36,6 @@ html
     title #{ title }
   body
     h1 Hello #{ name }!
-  </body>
-</html>
 ```
 
 ## EJS Example
