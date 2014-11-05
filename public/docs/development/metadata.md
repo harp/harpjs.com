@@ -20,7 +20,7 @@ myproject/
       └ hello-brazil.jade    <-- hello brazil article
 ```
 
-Your application could have several `_data.json` files, each living in their own folder.
+Your application could have several `_data.json` files, each living in their own folder. You can also include a `_data.json` inside the root directory in order to set the meta data for pages living in your root directory.
 
 Your `_data.json` file may contain the following…
 
