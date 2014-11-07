@@ -98,6 +98,6 @@ If you wanted to move where the output was in this template, it is now simply a 
 
 ## Also see
 
-- [Layouts](layouts)
+- [Layouts](layout)
 - [Jade](jade)
 - [EJS](ejs)
