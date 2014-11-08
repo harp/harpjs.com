@@ -70,6 +70,7 @@ Therefore, in `_layout.ejs`, you need to indicate where the output, or â€œyieldâ
 <html>
   <head>
     <title>Example</title>
+  </head>
   <body>
     <%- yield %>
   </body>
@@ -85,6 +86,7 @@ If you wanted to move where the output was in this template, it is now simply a 
 <html>
   <head>
     <title>Example</title>
+  </head>
   <body>
     <article>
       <h1>Hello, world</h1>
