@@ -182,12 +182,12 @@ Take the following app as an example:
 ```
 myapp.harp.io/
   |- _data.json
-	|- _layout.ejs
-	|- index.ejs
-	+- about.md
+  |- _layout.ejs
+  |- index.ejs
+  |- about.md
 ```
 
-Adding the following to the `data.json` file will make `about.md` render as plain HTML, never passing through a layout.
+Adding the following to the `_data.json` file will make `about.md` render as plain HTML, never passing through a layout.
 
 ```json
 {
