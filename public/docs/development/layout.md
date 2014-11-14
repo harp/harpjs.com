@@ -38,7 +38,7 @@ myapp.harp.io/
   <body>
 	<%- yield %>
 	<div id="footer">
-      <p>Copyright (c) foobar</p>
+      <p>Copyright © foobar</p>
     </div>
   </body>
 </html>
@@ -72,7 +72,7 @@ The final result:
 
 <h2 id="jade">Example using Jade Templating</h2>
 
-Harp allows you to apply a `.jade` file extension on your layout as well. Mixing and matching templates is also acceptable such as in the following case where we have a `_layout.jade` and `index.ejs`. 
+Harp allows you to apply a `.jade` file extension on your layout as well. Mixing and matching templates is also acceptable such as in the following case where we have a `_layout.jade` and `index.ejs`.
 
 Given a really simple app / project with this structure:
 
@@ -184,7 +184,7 @@ myapp.harp.io/
   |- _data.json
   |- _layout.ejs
   |- index.ejs
-  |- about.md
+  +- about.md
 ```
 
 Adding the following to the `_data.json` file will make `about.md` render as plain HTML, never passing through a layout.
