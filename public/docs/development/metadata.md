@@ -26,7 +26,7 @@ Your `_data.json` file may contain the following…
 
 ```json
 {
-  "hello-world": {  <-- avaliable everywhere as public.articles._data
+  "hello-world": {  <-- available everywhere as public.articles._data
     "title": "Hello World.",
     "date": "2013-02-28"
   },
