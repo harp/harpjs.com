@@ -47,14 +47,6 @@ This results in the following HTML:
 <img src="images/hello-jupiter.jpg" />
 ```
 
-This results in the following HTML:
-
-```html
-<img src="images/hello-world.jpg" />
-<img src="images/hello-saturn.jpg" />
-<img src="images/hello-jupiter.jpg" />
-```
-
 <!--
 ## Also see
 
