@@ -30,6 +30,14 @@ Now, within `index.jade` you can iterate over the `_contents`, referencing each 
 <% } %>
 ```
 
+This results in the following HTML:
+
+```html
+<img src="images/hello-world.jpg" />
+<img src="images/hello-saturn.jpg" />
+<img src="images/hello-jupiter.jpg" />
+```
+
 ### Using Jade
 
 Now, within `index.jade` you can iterate over the `_contents`, referencing each file.
@@ -37,14 +45,6 @@ Now, within `index.jade` you can iterate over the `_contents`, referencing each 
 ```jade
 for image in public.images._contents
   img(src="images/#{ image }")
-```
-
-This results in the following HTML:
-
-```html
-<img src="images/hello-world.jpg" />
-<img src="images/hello-saturn.jpg" />
-<img src="images/hello-jupiter.jpg" />
 ```
 
 This results in the following HTML:
