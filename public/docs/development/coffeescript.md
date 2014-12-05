@@ -27,7 +27,7 @@ Now, you would simply reference `app.js` in `index.ejs` as you would with any ot
 <html>
 	<head>
 		<!-- Here we reference a JS file that is auto generated -->
-		<script stc="js/app.js"></script>
+		<script src="js/app.js"></script>
 	</head>
 	<body>
 		…
