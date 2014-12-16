@@ -21,6 +21,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\" && exit 1",
     "start": "harp server",
-    "deploy": "harp compile . ~/Dropbox/harp.io/apps/harpjs.harp.io/public"
+    "compile": "harp compile",
+    "deploy": "npm run compile && surge ./www harpjs.com"
+  },
+  "devDependencies": {
+    "surge": "~0.5.1"
   }
 }
