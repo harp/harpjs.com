@@ -25,8 +25,12 @@ Now, within `index.jade` you can iterate over the `_contents`, referencing each 
 
 ```ejs
 <% for(var i in public.images._contents){ %>
-  <% var image = public.images._contents[i] %>
-  <img src="images/<%= image %>" />
+  <% var image = public.images._contents[i] %>
+  <% if ( image.match(/\b.(jpg|bmp|jpeg|gif|png|tif)\b/gi) ) { %>
+		<div>
+			<img src="images/<%= image %>" />
+		</div>
+  <% } %>
 <% } %>
 ```
 
