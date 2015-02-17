@@ -28,10 +28,8 @@ This example combines the power of express with all the benefits of Harp, in one
   var harp = require("harp");
   var app = express();
 
-  app.configure(function(){
-	  app.use(express.static(__dirname + "/public"));
-	  app.use(harp.mount(__dirname + "/public"));
-  });
+  app.use(express.static(__dirname + "/public"));
+  app.use(harp.mount(__dirname + "/public"));
 
   app.listen(9000);
 
