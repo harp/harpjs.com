@@ -93,6 +93,7 @@ These five steps will quickly walk you through deploying a Harp app to a project
   Now, clear out all the existing files out of the branch so a Harp app can go there instead.
 
   ```sh
+# Always ensure you’re in the right place before deleting files with this command
   git rm -rf .
   ```
  
