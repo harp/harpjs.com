@@ -64,6 +64,12 @@ Now, pass in the `title` when you call upon the Partial:
 
 Using Partials in Jade is very similar to EJS. Functions in Jade can be prefaced with `!= ` rather than wrapped in `<%- %>`, like in EJS. In both languages, this indicates the content should be rendered, so whatever code is in the partial will be rendered rather than escaped.
 
+```jade
+h1
+  != title
+p This content is in a Partial.
+```
+
 Jade may import EJS Partials and vice versa. Create a `contact.jade` file, for example, and include the same header Partial in Jade:
 
 ```jade
