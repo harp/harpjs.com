@@ -44,7 +44,7 @@ For example, if you run `harp multihost` on the following directory of apps:
 ```
 myapps/
   |- mysite/
-  |- mywebsite.com/
+  |- myproject.com/
   +- myotherproject.harp.io/
 ```
 
@@ -75,7 +75,7 @@ Using this directory of applications as an example,
 ```
 myapps/
   |- mysite/
-  |- mywebsite.com/
+  |- myproject.com/
   +- myotherproject.harp.io/
 ```
 
