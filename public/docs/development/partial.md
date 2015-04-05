@@ -112,7 +112,7 @@ doctype
         # now I can write Markdown here
 
         This is my Markdown post.
-        1. Chocoloate
+        1. Chocolate
         2. Strawberry
         3. Vanilla
 ```
