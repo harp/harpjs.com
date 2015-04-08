@@ -31,4 +31,8 @@ This will copy the `harpjs.com/` to your Dropbox. Now, just vist [the Harp Platf
 
 ## License
 
-Copyright © 2014 [Chloi Inc.](http://chloi.io)
+Copyright © 2013–2014 [Chloi Inc.](http://chloi.io)
+
+The Harp trademark and logo are Copyright © 2013–2014 [Chloi Inc.](http://chloi.io)<br/>
+The Harp boilerplate that makes up this website is [available under the MIT license](LICENSE.md).<br/>
+The <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Harp Documentation</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://chloi.io" property="cc:attributionName" rel="cc:attributionURL">Chloi Inc.</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br/>
