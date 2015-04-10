@@ -69,9 +69,9 @@ heroku config:set NODE_ENV="production"
 
 If you’d like to deploy a Harp application to Heroku manually, use the following instructions instead.
 
-1. ## Add `package.json`, `server.js` and a `Procfile`
+1. ## Add `package.json` and `server.js` 
 
-   There are three files you’ll need to add to the root of your Harp application (not inside the `public` directory). The first is `package.json`:
+   There are two files you’ll need to add to the root of your Harp application (not inside the `public` directory). The first is `package.json`:
 
   ```json
    {
@@ -98,12 +98,6 @@ If you’d like to deploy a Harp application to Heroku manually, use the followi
 
    ```js
    require('harp').server(__dirname, { port: process.env.PORT || 5000 })
-   ```
-
-   Finally, add a `Procfile` in the root as well. The `Procfile` is a text file that executes the `server.js` file you just created. It only needs to be this one line:
-
-   ```
-   web: node server.js
    ```
 
 2. ## Initialize your app as a Git repo
