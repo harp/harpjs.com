@@ -121,17 +121,11 @@ If you’d like to deploy a Harp application to Heroku manually, use the followi
    You’re ready to deploy to Heroku. Create the Harp app as a Heroku app, and then use `git` to push the app to Heroku.
 
    ```sh
-   heroku create
+   heroku create my-harp-app
    git push heroku master
    ```
 
-4. ## Rename your application
-
-   Heroku generates a name for your application, something like `lit-chamber-9232`. Chances are you don’t want this to be your app’s name. In the following example, the application will be renamed to `my-harp-app`, and should be immediately available at `my-harp-app.herokuapp.com`.
-
-   ```sh
-   heroku apps:rename my-harp-app
-   ```
+   In this example, the application will be named `my-harp-app`, and should be immediately available at `my-harp-app.herokuapp.com`.
 
 ##### What’s Next?
 
