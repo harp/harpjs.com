@@ -4,7 +4,7 @@ Export your harp site to flat static assets &ndash; HTML / CSS / JavaScript.
 
 ## Why?
 
-With Harp, you don’t need to compile or watch your project at all times—the compile files don’t need to appear alongside your source files, cluttering everything up. Still, there are still times when you might want to compile all your preprocessed files to HTMl, CSS, and JavaScript:
+With Harp, you don’t need to compile or watch your project at all times—the compile files don’t need to appear alongside your source files, cluttering everything up. Still, there are still times when you might want to compile all your preprocessed files to HTML, CSS, and JavaScript:
 
 1. ### Apache Cordova
     
