@@ -33,7 +33,7 @@
     "deploy": "npm run compile && surge ./www harpjs.com"
   },
   "devDependencies": {
-    "harp": "^0.15.2",
+    "harp": "^0.17.0",
     "surge": "^0.11.0"
   }
 }
