@@ -5,7 +5,7 @@
     "author": "kennethormandy",
     "date": "April 24, 2015",
     "tags": ["harp-weekly", "release"],
-    "published": false
+    "published": true
   },
   "v0-14-0-implicit-autoprefixing": {
     "title": "Harp v0.14.0 – Implicit Autoprefixing",
