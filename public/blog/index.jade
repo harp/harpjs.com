@@ -4,7 +4,7 @@
   .container.st-content-inner.blog-container
     .col-12.col-lg-10
       ul.post-list
-        i = 1
+        - var i = 1
         for article, slug in public.blog._data
           if article.published === true || article.published === false && environment==='development'
             li.post-item(class="#{ article.url ? 'post-link' : '' }#{ article.published!==true ? 'post-unpublished' : '' }")
