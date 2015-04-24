@@ -1,9 +1,9 @@
 {
   "v0-17-0": {
-    "title": "Harp v0.17.0",
-    "description": "",
+    "title": "Harp v0.17.0 – Major Preprocessor Updates",
+    "description": "Jade, Sass, Less, CoffeeScript, and more are updated!",
     "author": "kennethormandy",
-    "date": "April 21, 2015",
+    "date": "April 24, 2015",
     "tags": ["harp-weekly", "release"],
     "published": false
   },
