@@ -70,9 +70,9 @@ Now, you would simply reference `main.css` in `index.ejs` as you would with any 
 </html>	
 ```
 
-And your `main.scss` could reference the variables like this:
+And your `main.sass` could reference the variables like this:
 
-```scss
+```sass
 @import variables
 
 body
