@@ -38,7 +38,7 @@ Now, you would simply reference `main.css` in `index.ejs` as you would with any 
 And your `main.scss` could reference the variables like this:
 
 ```scss
-@import "variables”;
+@import "variables";
 
 body {
 	font: 12px Helvetica, Arial, sans-serif;
