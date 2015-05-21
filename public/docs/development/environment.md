@@ -37,6 +37,26 @@ else
  p Okay, Harp is in development mode right now.
 ```
 
+## Handlebars Example
+
+Handlebars templates are logic-less, so you can’t actually evaluate `environment`. You can, however, still use it within your tempaltes.
+
+```hbs
+<h1>Harp is in {{ environment }} mode.</h1>
+```
+
+Harp also allows you to mix and match template languages, so you could include a different Handlebars partial within an EJS or Jade file:
+
+```ejs
+<% if(environment == "production") { %>
+  <p>See? Harp is in production mode.</p>
+  <%- partial("path/to/_my-partial-1.hbs") %>
+<% } else { %>
+  <p>Okay, Harp is in development mode right now.</p>
+  <%- partial("path/to/_my-partial-2.hbs") %>
+<% } %>
+```
+
 ## Also see
 
 * [`harp server`](../environment/server), for changing Harp from development to production mode

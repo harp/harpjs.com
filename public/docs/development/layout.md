@@ -3,6 +3,7 @@
 A Layout is a common template that includes all content except for one main content area. You can think of a Layout as the inverse of a `partial`.
 
 * [Creating Layouts with EJS](#ejs)
+* [Creating Layouts with Handlebars](#handlebars)
 * [Creating Layouts with Jade](#jade)
 * [Multiple Layouts](#multiple-layouts)
 * [Explicit Layouts](#explicit-layouts)
@@ -64,7 +65,61 @@ The final result:
 	<h1>My Site</h1>
 	<p>Welcome to my very first site.</p>
 	<div id="footer">
-      <p>Copyright (c) foobar</p>
+      <p>Copyright © foobar</p>
+    </div>
+  </body>
+</html>
+```
+
+<h2 id="handlebars">Example using Handlebars Templating</h2>
+
+Given a really simple app / project with this structure:
+
+```
+myapp.harp.io/
+  |- _layout.hbs
+  +- index.hbs
+```
+
+**_layout.hbs**
+
+```hbs
+<html>
+  <head>
+    <title>My Site</title>
+    <script src="/javascripts/jquery.js">
+    </script><script src="/javascripts/app.js"></script>
+  </head>
+  <body>
+	{{{ yield }}}
+	<div id="footer">
+      <p>Copyright © foobar</p>
+    </div>
+  </body>
+</html>
+```
+
+**index.hbs**
+
+```html
+<h1>My Site</h1>
+<p>Welcome to my very first site.</p>
+```
+
+The final result:
+
+```html
+<html>
+  <head>
+    <title>My Site</title>
+    <script src="/javascripts/jquery.js">
+    </script><script src="/javascripts/app.js"></script>
+  </head>
+  <body>
+	<h1>My Site</h1>
+	<p>Welcome to my very first site.</p>
+	<div id="footer">
+      <p>Copyright © foobar</p>
     </div>
   </body>
 </html>
@@ -93,7 +148,7 @@ doctype
   body
   	!= yield
 	#footer
-	  p Copyright (c) foobar
+	  p Copyright © foobar
 ```
 
 **index.jade**
@@ -116,7 +171,7 @@ The final result:
 	<h1>My Site</h1>
 	<p>Welcome to my very first site.</p>
 	<div id="footer">
-      <p>Copyright (c) foobar</p>
+      <p>Copyright © foobar</p>
     </div>
   </body>
 </html>

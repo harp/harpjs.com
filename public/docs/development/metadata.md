@@ -51,6 +51,17 @@ for article, slug in public.articles._data
     h2= article.title
 ```
 
+The same thing, using Handlebars templates:
+
+```hbs
+{{#each public.articles._data}}
+  <a href="/articles/#{ @index }">
+    <2>{{ title }}</h2>
+  </a>
+{{/each}}
+```
+
+
 ## Also see
 
 - [Add a Custom Title and Description per page](../../recipes/custom-title-description)

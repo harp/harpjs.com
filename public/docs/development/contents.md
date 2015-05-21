@@ -21,17 +21,31 @@ myproject/
 
 ### Using EJS
 
-Now, within `index.jade` you can iterate over the `_contents`, referencing each file.
+Now, within `index.ejs` you can iterate over the `_contents`, referencing each file.
 
 ```ejs
 <% for(var i in public.images._contents){ %>
   <% var image = public.images._contents[i] %>
-  <% if ( image.match(/\b.(jpg|bmp|jpeg|gif|png|tif)\b/gi) ) { %>
-		<div>
-			<img src="images/<%= image %>" />
-		</div>
-  <% } %>
+	<img src="images/<%= image %>" />
 <% } %>
+```
+
+This results in the following HTML:
+
+```html
+<img src="images/hello-world.jpg" />
+<img src="images/hello-saturn.jpg" />
+<img src="images/hello-jupiter.jpg" />
+```
+
+### Using Handlebars
+
+You can do the same thing in a Handlebars file:
+
+```hbs
+{{#each public.images._contents }}
+	<img src="images/{{ this }}" />
+{{/each}}
 ```
 
 This results in the following HTML:
@@ -51,7 +65,7 @@ for image in public.images._contents
   img(src="images/#{ image }")
 ```
 
-This results in the following HTML:
+This results in the same HTML, too:
 
 ```html
 <img src="images/hello-world.jpg" />

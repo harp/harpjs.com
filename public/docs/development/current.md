@@ -17,7 +17,7 @@ Harp provides an array of the current page’s path, with the last item in the l
 
 For example, when visiting `/articles/hello-world`, the following information is available:
 
-```json
+```js
 {
   path: ["articles", "hello-world"],
   source: "hello-world"
@@ -26,7 +26,7 @@ For example, when visiting `/articles/hello-world`, the following information is
 
 Whereas a request to `/articles/` will have a current object that looks like the following:
 
-```json
+```js
 {
   path: ["articles", "index"],
   source: "index"

@@ -24,7 +24,8 @@
     "markdown",
     "jade",
     "ejs",
-    "coffeescript"
+    "coffeescript",
+    "handlebars"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\" && exit 1",
@@ -34,6 +35,6 @@
   },
   "devDependencies": {
     "harp": "^0.17.0",
-    "surge": "^0.11.0"
+    "surge": "^0.11.1"
   }
 }

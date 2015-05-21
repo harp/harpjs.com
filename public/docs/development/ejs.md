@@ -40,4 +40,5 @@ You may find yourself wanting to create another, markup-based file other than `.
 
 - [EJS documentation](https://github.com/visionmedia/ejs)
 - [Jade templating](jade)
+- [Handlebars templating](handlebars)
 - [Markdown](markdown)

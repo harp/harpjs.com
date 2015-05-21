@@ -41,3 +41,4 @@ You may find yourself wanting to create a file other than `html` using jade. No 
 
 - [Jade documentation](http://jade-lang.com)
 - [EJS templating](ejs)
+- [Handlebars templating](handlebars)

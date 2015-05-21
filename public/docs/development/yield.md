@@ -98,8 +98,57 @@ If you wanted to move where the output was in this template, it is now simply a 
 </html>
 ```
 
+## Handlebars Example
+
+Using the following directory structure:
+
+```
+myproject/
+  |- _layout.hbs
+  |- index.hbs
+  |- about.md
+```
+
+When visiting `/about`, the content from the `about.md` file needs to be shown. Likewise, visting `/index` should show the content in `index.hbs`. Both these files will be wrapped by `_layout.hbs` first.
+
+Therefore, in `_layout.hbs`, you need to indicate where the output, or “yield” will go:
+
+```hbs
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    {{{ yield }}}
+  </body>
+</html>
+```
+
+Now, the content from whatever page you are visiting will be included in the `<body>` element. Note that in Handlebars, using three `{{{` and `}}}` tags (instead of just `{{` and `}}`) indicates you don’t want the HTML to be escaped.
+
+If you wanted to move where the output was in this template, it is now simply a matter of moving the `yield` variable:
+
+```hbs
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <article>
+      <h1>Hello, world</h1>
+      <section>
+        {{{ yield }}}
+      </section>
+    </article>
+  </body>
+</html>
+```
+
 ## Also see
 
 - [Layouts](layout)
 - [Jade](jade)
 - [EJS](ejs)
+- [Handlebars](handlebars)

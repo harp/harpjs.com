@@ -81,8 +81,14 @@
   },
   "ejs": {
     "title": "EJS",
-    "description": "Writing your JavaScript using EJS (.ejs)",
+    "description": "Writing your markup using EJS (.ejs)",
     "release": "0.8.0",
+    "tags": [ "preprocessor", "markup", "template" ]
+  },
+  "handlebars": {
+    "title": "Handlebars",
+    "description": "Writing your markup using Handlebars (.hbs)",
+    "release": "0.18.0",
     "tags": [ "preprocessor", "markup", "template" ]
   },
   "jade": {

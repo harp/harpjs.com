@@ -4,6 +4,7 @@ Partials are first class citizens with Harp, and work the same way in all templa
 
 * [Using partials](#use)
 * [Using partials in an `.ejs` file](#ejs)
+* [Using partials in an `.hbs` file](#handlebars)
 * [Using partials in a `.jade` file](#jade)
 * [On Markdown and the `partial` function](#markdown)
 
@@ -58,6 +59,37 @@ Now, pass in the `title` when you call upon the Partial:
 
 ```ejs
 <%- partial("_header", { title: "About me", description: "This is my about page" }) %>
+```
+
+<h2 id="handlebars">Using partials in a Handlebars file</h2>
+
+Inside `index.hbs`, call `{{partial '_header' }}` to add in the content inside `_header.hbs`
+
+```hbs
+{{partial '_header' }}
+```
+
+Now, Harp will render `index.hbs` with the content from `_header.hbs`. You could repeat this process for `about.hbs`, but what if you wanted to change something between the two?
+
+In `_header.hbs`, the title in the `<h1>` tag was hard-coded, but what if you wanted it to change depending on which file it was apart of? This is possible with the `partial` function, too. When a file is referenced with `partial`, data can also be passed in that will replace the specified variables in that partial.
+
+Update `_header.hbs` so that the `<h1>` tag actually contains the variable `title`:
+
+```hbs
+<h1>{{ title }}</h1>
+<p>This content is in a Partial.</p>
+```
+
+Now, pass in the `title` when you call upon the Partial:
+
+```hbs
+{{partial '_header' '{ title: "About me" }' }}
+```
+
+`title` is an arbitrary variable name here, it could be called anything you want depending on the context. If you updated the `<p>` tag to contain a variable you named `description`, the partial function might look like this:
+
+```hbs
+{{partial '_header' '{ title: "About me", description: "This is my about page" }' %>
 ```
 
 <h2 id="jade">Using Partials in a Jade file</h2>
