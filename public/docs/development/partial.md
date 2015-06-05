@@ -94,7 +94,7 @@ If you’d like to set fallbacks for your variables—in this case, a fallback f
 
 It is not possible to use the `partial` function directly in a Markdown file, as Markdown is not a templating language.
 
-However, it is still possible to use the partial function to bring in a Markdown file into EJS or Jade. In the following example, there is a Markdown file named `an-example.md` in the direcotry `_shared`. To bring the content of the `an-example.md` into an `article` tag in a Jade file, you would use the following line:
+However, it is still possible to use the partial function to bring in a Markdown file into EJS or Jade. In the following example, there is a Markdown file named `an-example.md` in the directory `_shared`. To bring the content of the `an-example.md` into an `article` tag in a Jade file, you would use the following line:
 
 ```jade
 article!= partial("_shared/an-example")
