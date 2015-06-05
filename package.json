@@ -27,7 +27,7 @@
     "coffeescript"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\" && exit 1",
+    "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\"",
     "start": "harp server",
     "compile": "harp compile",
     "deploy": "npm run compile && surge ./www harpjs.com"
