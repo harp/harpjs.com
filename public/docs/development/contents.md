@@ -21,7 +21,7 @@ myproject/
 
 ### Using EJS
 
-Now, within `index.jade` you can iterate over the `_contents`, referencing each file.
+Now, within `index.ejs` you can iterate over the `_contents`, referencing each file.
 
 ```ejs
 <% for(var i in public.images._contents){ %>
