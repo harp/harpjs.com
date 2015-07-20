@@ -1,6 +1,6 @@
 # Harp文档                          
 
-[安装Harp]((http://harpjs.com/docs/quick-start)                 
+[安装Harp](http://harpjs.com/docs/quick-start)                 
 通过一个截屏和教程快速开始。                 
 
 [理解基本规则](http://harpjs.com/docs/development/rules)，5个基本规则，在你创建自己的harp应用时可以帮上忙。                
