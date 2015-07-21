@@ -30,7 +30,7 @@ You may also specify multiple basic accounts to authenticate against:
 
 ## The full `harp.json` file
 
-The `basicAuth` array or string sits alongside [any other properties in the `harp.json` file](harp-json). A longer `harp.json` could look like this:
+The `basicAuth` array or string sits alongside [any other properties in the `harp.json` file](globals). A longer `harp.json` could look like this:
 
 ```json
 {
