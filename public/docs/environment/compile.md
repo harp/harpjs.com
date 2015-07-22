@@ -48,7 +48,7 @@ harp compile ~/apps/example ~/Desktop/backup
 
 **Note** The backup folder is automatically created and is assumed to be empty.
 
-
+**Note** To prevent files from being compiled and deploy, put them in a private directory (starting with _) or put them above your public/ directory if you are using the framework file layout. Helps when pulling in Boostrap through bower and you're using either less or sass versions, for instance.
 
 
 
