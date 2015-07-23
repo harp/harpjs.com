@@ -34,7 +34,7 @@
   echo h1 Hello World >> index.jade
   ```                        
 
-  以上命令将会创建一个 hello-world 目录用于 Harp 应用。然后，在目录里面，一个 index.jade 被创建出来，然后被处理成 <h1>Hello world</h1>。            
+  以上命令将会创建一个 hello-world 目录用于 Harp 应用。然后，在目录里面，一个 index.jade 被创建出来，然后被处理成 `<h1>Hello world</h1>`。            
 
 ## 3.启动 web server                   
 
@@ -46,7 +46,7 @@
 
   打开浏览器访问 [localhost:9000](http://localhost:9000/) 即可看到以下内容                    
 
-  [!image](https://github.com/Leolusir/harp-docs/images/qs-start_web)                        
+  ![image](https://github.com/Leolusir/harp-docs/blob/master/images/qs-start_web.png)                        
 
 ## 4.编译项目
   
