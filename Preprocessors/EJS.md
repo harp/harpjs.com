@@ -24,11 +24,11 @@ myproject/
 
 `index.ejs` 和 `about.ejs` 都会被当作 `.html` 文件。因此，如下路径的请求都会成功：
 
-- / 
-- /index
-- /index.html
-- /about
-- /about.html
+- `/` 
+- `/index`
+- `/index.html`
+- `/about`
+- `/about.html`
 
 Harp 的编译步骤也会将文件导出为 `index.html` 和 `about.html`
 
