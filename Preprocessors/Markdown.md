@@ -74,7 +74,8 @@ Harp 将会把代码块当作 HTML 运行：
 你可能会想要使用 Markdown 创建另外一个基于 markup 的文件，而不是 `.html`。没问题：只需要把你想要的扩展名加到 `.md` 前面就行了。例如，`feed.xml.md` 会被 Harp 当作 `feed.xml` 进行解析。
 
 使用 [EJS](http://harpjs.com/docs/development/els) 和 [Jade](http://harpjs.com/docs/development/jade) 也是可以的，并且非常有用。
-还可以参见
+
+## 还可以参见
 
 - [Markdown 官方文档](http://daringfireball.net/projects/markdown/)
 - [GitHub 最爱的 Markdown 文档](https://help.github.com/articles/github-flavored-markdown)
