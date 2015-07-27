@@ -33,7 +33,7 @@ myproject/
 
 ## GitHub 最爱的 Markdown
 
-Harp 还支持 [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown) 补充语法。（这不包括Github 专用功能，例如任务列表和 `@mentions` 等等。）这可以让你写一个围起来的代码块：
+Harp 还支持 [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown) 补充语法。（这不包括 Github 专用功能，例如任务列表和 `@mentions` 等等。）这可以让你写一个围起来的代码块：
 
 ``` 
 	``` 
