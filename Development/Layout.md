@@ -225,4 +225,4 @@ Harp 没有一个内建的方式来创建嵌套布局，就像 [`partial()`] 已
  harp init -b kennethormandy/hb-simurai my-nested-example 
 ```
 
-注意，`_nest.js` 文件可以命名成任何你想要的，它只是一个中规中矩的 [局部视图](http://harpjs.com/docs/development/partial)。
+注意，`_nest.js` 文件可以命名成任何你想要的，它只是一个中规中矩的[局部视图](http://harpjs.com/docs/development/partial)。
