@@ -37,5 +37,5 @@ Harp 的编译过程也会将文件导出为 `index.html` 和 `about.html`。
 你可能会想要使用 Jade 创建 html 之外的文件。没问题，只需要将你想要的扩展名放在 `.jade` 前面。例如，`feed.xml.jade` 会被看作 `feed.xml` 。
 
 ## 还可以参见
-- [Jade文档](http://jade-lang.com/)
-- [EJS模板](http://harpjs.com/docs/development/ejs)
+- [Jade 文档](http://jade-lang.com/)
+- [EJS 模板](http://harpjs.com/docs/development/ejs)
