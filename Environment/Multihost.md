@@ -37,7 +37,7 @@ http://127.0.0.1:3000/
 
 ![image](https://github.com/Leolusir/harp-docs/tree/master/images/multihost-1.png)                      
 
-Harp 还把 http://127.0.0.1 映射到 http://harp.nu，所以你可以在本地访问多应用服务。每一个应用也可以用 [harp.nu](http://harp.nu/)的子域名访问                     
+Harp 还把 http://127.0.0.1 映射到 http://harp.nu ，所以你可以在本地访问多应用服务。每一个应用也可以用 [harp.nu](http://harp.nu/)的子域名访问                     
 
 例如你在下面的目录运行 harp multihost                     
 
