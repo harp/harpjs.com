@@ -2,7 +2,7 @@
 
 有时候，你已经拥有了一个服务，但是想将 Harp 作为 asset pipeline，来获取 Harp 预处理的优点。
 
-本示例在一个项目中，结合了 express 的长处和所有 Harp 的有点。 没有外部的预处理，没有复杂的配置，并且没有客户端的解析器；只有编码的幸福。最好的是，设置极其简单。
+本示例在一个项目中，结合了 Express 的长处和所有 Harp 的优点。 没有外部的预处理，没有复杂的配置，并且没有客户端的解析器；只有编码的幸福。最好的是，设置极其简单。
 
 ## 添加 Harp 作为依赖
 
@@ -47,7 +47,7 @@ app.listen(9000);
   /index.ejs 
 ```
 
-你可以用一个正常Harp应用同样的方式 [给模板传递数据](http://harpjs.com/docs/development/metadata)。例如，使用 _data.json：
+你可以用一个正常 Harp 应用同样的方式 [给模板传递数据](http://harpjs.com/docs/development/metadata)。例如，使用 _data.json：
 
 ```
   {
