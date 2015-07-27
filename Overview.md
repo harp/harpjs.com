@@ -1,4 +1,4 @@
-# Harp文档                          
+# Harp 文档                          
 
 [安装 Harp](http://harpjs.com/docs/quick-start)                 
 通过一个视频和教程快速开始。                 
@@ -22,7 +22,7 @@
 
 学习如何在生产模式下部署Harp，让它服务你的应用。或者，将你的项目编译成 HTML，CSS，以及 JavaScript，这样就可以部署在任何地方。                 
 
-通过[Harp平台](https://www.harp.io/)，在线获取一个 Harp 应用最简单的方式，你可以整个跳过。                  
+通过 [Harp 平台](https://www.harp.io/)，在线获取一个 Harp 应用最简单的方式，你可以整个跳过。                  
 
 # 贡献          
 
