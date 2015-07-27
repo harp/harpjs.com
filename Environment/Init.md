@@ -46,7 +46,7 @@ harp init myproject --boilerplate docs
 
 ## 将某一项目当成样板
 
-即便一个不是用作 Harp 样板的 GitHub 仓库也可以用来初始化一个项目。因为 Harp 是伺候 HTML， CSS 和 JavaScript 的，所以任何基于 web 技术的项目应该都可以。例如，你可以轻易的在本地伺候一个 Apache Cordova/PhoneGap 应用。                 
+即便一个不是用作 Harp 样板的 GitHub 仓库也可以用来初始化一个项目。因为 Harp 是伺候 HTML， CSS 和 JavaScript 的，所以任何基于 web 技术的项目应该都可以。例如，你可以轻易的在本地运行一个 Apache Cordova/PhoneGap 应用。                 
 
 ```
 harp init -b phonegap/phonegap-start                  
