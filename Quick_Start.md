@@ -18,7 +18,7 @@
 
 ### 在 windows 环境下                 
   
-  如果你在使用 Windows, Node.js 的安装包已经包含了一个 Node.js 的命令行程序。直接输入如下命令即可安装:                    
+  如果你在使用 Windows, Node.js 的安装包已经包含了一个 Node.js 的命令行程序。直接输入如下命令即可安装：                    
 
   ```
   npm install -g harp 
@@ -26,7 +26,7 @@
 
 ## 2.创建一个应用                    
   
-  Harp 可以非常容易的提供服务，简单到象一个 index.html 一样。因为 Harp 有一个内嵌的预处理器，所以你可以很方便的用模板语言来创建 HTML。比如，用下面的命令行来创建一个 index.jade 文件:               
+  Harp 可以非常容易的提供服务，简单到象一个 index.html 一样。因为 Harp 有一个内嵌的预处理器，所以你可以很方便的用模板语言来创建 HTML。比如，用下面的命令行来创建一个 index.jade 文件：               
 
   ```
   mkdir hello-world 
@@ -44,7 +44,7 @@
   harp server --port 9000
   ```                    
 
-  打开浏览器访问 [localhost:9000](http://localhost:9000/) 即可看到以下内容:                    
+  打开浏览器访问 [localhost:9000](http://localhost:9000/) 即可看到以下内容：                    
 
   ![image](https://github.com/Leolusir/harp-docs/blob/master/images/qs-start_web.png)                        
 
