@@ -4,7 +4,7 @@
 
 ## 为什么？
 
-当复用像导航这样的模板时，当前对象对于给导航应用一个激活状态是非常有用的，在还有可能以非传统的方式渲染布局或者局部视图。这让我们的应用代码保持“尽量不要重复自己（DRY）”，而又不会让应用的可用性打折扣。
+当复用像导航这样的模板时，当前对象对于给导航应用一个激活状态是非常有用的，还有可能以非传统的方式渲染布局或者局部视图。这让我们的应用代码保持“尽量不要重复自己（DRY）”，而又不会让应用的可用性打折扣。
 
 ## 属性
 
@@ -74,4 +74,4 @@ ul
 </ul>
 ```
 
-有了 `current.source` ， 你现在可以在导航上拥有依赖上下文的 classes。这些然后可以通过CSS样式化，或者你的预处理器选择：[Sass](http://harpjs.com/docs/development/sass)， [LESS](http://harpjs.com/docs/development/less)，或者 [Stylus](http://harpjs.com/docs/development/stylus)。
+有了 `current.source` ， 你现在可以在导航上拥有依赖上下文的 classes。这些然后可以通过 CSS 样式化，或者你的预处理器选择：[Sass](http://harpjs.com/docs/development/sass)， [LESS](http://harpjs.com/docs/development/less)，或者 [Stylus](http://harpjs.com/docs/development/stylus)。
