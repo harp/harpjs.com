@@ -1,10 +1,10 @@
 # Markdown
 
-Markdown 易写易读，语法在网页上写作很有用，并且很流行。
+Markdown 易写易读，语法在网页写作上很有用，并且很流行。
 
 ## 为什么
 
-Harp 默认包含普遍有用的预处理器。这意味着你没必要浪费时间在将你的 Markdown 转化成 HTML——每件事都会正常工作。另外，[Jade](http://harpjs.com/docs/development/jade) 和 [EJS](http://harpjs.com/docs/development/ejs) 文件可以把 Markdown 当作 [Partials](http://harpjs.com/docs/development/partial#markdown) 导入，让你可以有效地复用代码。
+Harp 默认包含普遍有用的预处理器。这意味着你没必要浪费时间在将你的 Markdown 转化成 HTML——每件事都会正常工作。另外，[Jade](http://harpjs.com/docs/development/jade) 和 [EJS](http://harpjs.com/docs/development/ejs) 文件可以把 Markdown 当作[局部视图](http://harpjs.com/docs/development/partial#markdown)导入，让你可以有效地复用代码。
 
 ## 用法
 
@@ -33,7 +33,7 @@ myproject/
 
 ## GitHub 最爱的 Markdown
 
-Harp 还支持 [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown) 补充语法。（这不包括Github 专用功能，例如任务列表和 @mentions 等等。）这可以让你写一个围起来的代码块：
+Harp 还支持 [GitHub Flavoured Markdown](https://help.github.com/articles/github-flavored-markdown) 补充语法。（这不包括 Github 专用功能，例如任务列表和 `@mentions` 等等。）这可以让你写一个围起来的代码块：
 
 ``` 
 	``` 

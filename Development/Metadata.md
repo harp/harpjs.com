@@ -37,7 +37,7 @@ myproject/
 
 因为 hello-world 匹配文件名，在服务启动时，这些变量会在 `hello-world.jade` 模板文件中可用。这个对象也可以作为 `public.articles._data.hello-world` 在所有的模板文件中使用。
 
-`_harp.json` 或者 `harp.json` 文件中的任何元数据都会被 `_data.json` 文件中的本地元数据所覆盖。这个特性允许你，例如，为整站指定一个标题，然后在具体的页面上覆盖它。（这里有 [一个样例](http://harpjs.com/recipes/custom-title-description)。
+`_harp.json` 或者 `harp.json` 文件中的任何元数据都会被 `_data.json` 文件中的本地元数据所覆盖。这个特性允许你，例如，为整站指定一个标题，然后在具体的页面上覆盖它。（这里有 [一个样例](http://harpjs.com/recipes/custom-title-description)）。
 
 没有必要在 `_data.json` 中包含文件扩展名。例如，"hello-world.jade":{...}，将会抛出一个错误。
 

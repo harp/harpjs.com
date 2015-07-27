@@ -2,7 +2,7 @@
 
 __开发 Harp 应用模板需要遵循的五个简单规则。__
 
-Harp 没有复杂的功能集，只有一些遵循工作地简单规则。Harp 是相对简单的武士刀，而非功能复杂的瑞士军刀。通过理解规则，你将学会如何有效使用 Harp。
+Harp 没有复杂的功能集，只有一些遵循工作的简单规则。Harp 是相对简单的武士刀，而非功能复杂的瑞士军刀。通过理解规则，你将学会如何有效使用 Harp。
 
 ## 1.多约定，少配置
 
@@ -69,7 +69,7 @@ Harp 应用可以选择性地以框架风格运行。当一个项目包含一个
            +- nav.jade
 ```
 
-## 4.静态简单asset pipeline
+## 4.静态简单 asset pipeline
 
 Harp 伺服 jade, ejs, stylus, less 以及 coffee script。只需添加 `.jade`, `.ejs`, `.styl`, `.less` 或者 `.coffee` 后缀，Harp asset pipeline 会负责剩余的事情。
 只需添加文件扩展名，引用类库，Harp 便会自动预编译。

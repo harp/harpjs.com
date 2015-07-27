@@ -1,6 +1,6 @@
 # LESS
 
-LESS 是一个 CSS 超集，使得 CSS 的预处理过程相当简单。它被用来有名的类库 [Bootstrap](http://getbootstrap.com/)；Harp 对 LESS 的源代码文件支持的非常好。
+LESS 是一个 CSS 超集，使得 CSS 的预处理过程相当简单。它被用来创建有名的类库 [Bootstrap](http://getbootstrap.com/)；Harp 对 LESS 的源代码文件支持的非常好。
 
 ## 为什么呢？
 
@@ -12,7 +12,7 @@ Harp 的 asset pipeline 用起来相当简单。所有的处理过程静默完�
 
 ## 示例
 
-本项目中，css 目录中有一个 main.less 文件和一个 `_variables.less` 文件，像这样：
+本项目中，css 目录中有一个 `main.less` 文件和一个 `_variables.less` 文件，像这样：
 
 ``` 
 myproject/
@@ -46,5 +46,5 @@ body {
 ```
 
 ## 还可以参见
-- [LESS文档](http://lesscss.org/)
-- [Harp以及Bootstrap简介](http://youtu.be/JWU70PWVVbc?t=7m9s)
+- [LESS 文档](http://lesscss.org/)
+- [Harp 以及 Bootstrap 简介](http://youtu.be/JWU70PWVVbc?t=7m9s)

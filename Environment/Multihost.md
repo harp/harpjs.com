@@ -1,6 +1,6 @@
 # Multihost
 
-`harp` 的 `multihost` 功能就好像 harp 服务加上了类固醇。如果要在同一个目录中伺候多个站点，这是最佳方案，而且只要一个命令。               
+`harp` 的 `multihost` 功能就好像 harp 服务加上了类固醇。如果要在同一个目录中运行多个站点，这是最佳方案，而且只需要一个命令。               
 
 ## 为什么呢？
 
@@ -37,7 +37,7 @@ http://127.0.0.1:3000/
 
 ![image](https://github.com/Leolusir/harp-docs/tree/master/images/multihost-1.png)                      
 
-Harp 还把 http://127.0.0.1 映射到 http://harp.nu，所以你可以在本地访问多应用服务。每一个应用也可以用 [harp.nu](http://harp.nu/)的子域名访问                     
+Harp 还把 http://127.0.0.1 映射到 http://harp.nu ，所以你可以在本地访问多应用服务。每一个应用也可以用 [harp.nu](http://harp.nu/)的子域名访问                     
 
 例如你在下面的目录运行 harp multihost                     
 
