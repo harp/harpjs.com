@@ -20,7 +20,7 @@ myproject/
   +- public
     |- index.jade
     +- about.jade
-``
+```
 
 `index.jade` 和 `about.jade` 都会被当作 `.html` 文件，所以下面路径的请求都会成功：
 
