@@ -6,7 +6,7 @@
 
   [视频](http://www.youtube.com/embed/SEA0G9kpVJM?rel=0)          
 
-  首先，安装 [Node.js](http://nodejs.org/download/). 虽然 Harp 使用了 Node.js，但即便不了解 Node.js, 或者没有接触过 JavaScript ，也是可以上手 Harp 的。在 Node.js 安装完成后，就可以使用 Node.js 的包管理器 mighty npm 来安装 Harp 了。这是个基于命令行的工具。              
+  首先，安装 [Node.js](http://nodejs.org/download/)。虽然 Harp 使用了 Node.js，但即便不了解 Node.js, 或者没有接触过 JavaScript ，也是可以上手 Harp 的。在 Node.js 安装完成后，就可以使用 Node.js 的包管理器 mighty npm 来安装 Harp 了。这是个基于命令行的工具。              
 
 ### 在 OS X 和 Linux 环境下            
 
@@ -26,7 +26,7 @@
 
 ## 2.创建一个应用                    
   
-  Harp 可以非常容易的提供服务，简单到象一个 index.html 一样。因为 Harp 有一个内嵌的预处理器，所以你可以很方便的用模板语言来创建 HTML。比如，用下面的命令行来创建一个 index.jade 文件：               
+  Harp 可以非常容易的提供服务，简单到像一个 index.html 一样。因为 Harp 有一个内嵌的预处理器，所以你可以很方便的用模板语言来创建 HTML。比如，用下面的命令行来创建一个 index.jade 文件：               
 
   ```
   mkdir hello-world 
@@ -64,7 +64,7 @@
   NODE_ENV=production sudo harp server --port 80
   ```                    
 
-  你无需在生产环境中手工跑 Harp 来上线新版本。事实上，最简单的办法是使用 [Harp Platform](https://www.harp.io/)，你可以使用 Dropbox 来创建 Harp App，不仅如此，还能多人协作之。                
+  你无需在生产环境中手工跑 Harp 来上线新版本。事实上，最简单的办法是使用 [Harp Platform](https://www.harp.io/)，你可以使用 Dropbox 来创建 Harp App，不仅如此，还能多人协作。                
 
   你还可以在 [Heroku](http://harpjs.com/docs/deployment/heroku), 上面运行生产环境的 Harp，将 Harp 部署到 [GitHub Pages](http://harpjs.com/docs/deployment/github-pages)， 针对 Apache Cordova/PhoneGap 编译 Harp 应用。                 
 
