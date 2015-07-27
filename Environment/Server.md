@@ -1,6 +1,6 @@
 # Harp 服务器
 
-Harp的主要设计目的是当作 server 或者 multihost 来运行的。下面这个命令运行后可以伺候一个本地单应用。                  
+Harp 的主要设计目的是当作 server 或者 multihost 来运行的。下面这个命令运行后可以运行一个本地单应用。                  
 
 ## 用法    
 
@@ -29,7 +29,7 @@ harp server ~/apps/example.com --port 3000
 我们提供了一个特殊的 URL 用来访问你的应用。在之前一个命令里，我们指定了 3000 端口，所以 Harp 应用将运行在               
 
 - `http://harpdev.io:3000`                    
-  但是，你随时可以回到默认的URI                 
+  但是，你随时可以回到默认的 URI                 
 
 - `http://127.0.0.1:3000`
 - `http://localhost:3000`                   
