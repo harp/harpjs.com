@@ -10,13 +10,13 @@
 
 ```
 { "name":
-	 "myapp", 
-	 "version": "0.1.0", 
-	 "dependencies": {
-	 			 "express": "3.x", 
-	 			 "harp": "*" 
-	 			 } 
-	 } 
+	"myapp", 
+	"version": "0.1.0", 
+	"dependencies": {
+		"express": "3.x", 
+		"harp": "*" 
+	} 
+} 
 ```
 
 ## 使用 harp.mount
