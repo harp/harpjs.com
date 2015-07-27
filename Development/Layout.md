@@ -2,9 +2,9 @@
 
 一个布局文件是一个通用模板，除了一个主要内容区域，包含所有的内容。你可以把一个布局当作局部视图相反的存在。
 - [使用 EJS 创建布局](http://harpjs.com/docs/development/layout#ejs)
-- [使用Jade创建布局](http://harpjs.com/docs/development/layout#jade)
+- [使用 Jade 创建布局](http://harpjs.com/docs/development/layout#jade)
 - [多重布局](http://harpjs.com/docs/development/layout#multiple-layouts)
-- [明确布局](http://harpjs.com/docs/development/layout#explicit-layouts)
+- [指定布局](http://harpjs.com/docs/development/layout#explicit-layouts)
 - [不使用布局](http://harpjs.com/docs/development/layout#no-layout)
 
 ## 为什么呢？
@@ -13,8 +13,8 @@
 
 ## 用法
 
-一个布局需要一个EJS或者Jade格式的布局文件，以及[a yield property](http://harpjs.com/docs/development/yield)告诉 Harp 在哪里插入内容。
-使用EJS模板的示例
+一个布局需要一个 EJS 或者 Jade 格式的布局文件，以及 [a yield property](http://harpjs.com/docs/development/yield) 告诉 Harp 在哪里插入内容。
+使用 EJS 模板的示例
 举一个相当简单的例子，app/project 是这样的结构：
 
 ``` 
@@ -196,7 +196,7 @@ myapp.harp.io/
 
 ## 嵌套布局
 
-如果你想利用 Harp 对 [Jade](http://harpjs.com/docs/development/jade) 内建支持的优势，可以使用[Jade’s Block and Extends features](http://www.devthought.com/code/use-jade-blocks-not-layouts/) 来创建嵌套布局。
+如果你想利用 Harp 对 [Jade](http://harpjs.com/docs/development/jade) 内建支持的优势，可以使用 [Jade’s Block and Extends features](http://www.devthought.com/code/use-jade-blocks-not-layouts/) 来创建嵌套布局。
 
 Harp 没有一个内建的方式来创建嵌套布局，就像 [`partial()`] 已经提供了这种方式。例如，你的 `_layout.ejs` 得长得像这样：
 
