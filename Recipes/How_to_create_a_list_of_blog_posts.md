@@ -50,6 +50,6 @@ for post, slug in public.posts._data
 <% }; %>
 ```
 
-## 情况如何？
+## 工作原理
 
 我们正在使用 `for` 迭代器来遍历 `/public/posts/_data.json` 中的数据。可以通过 `public.posts._data` 获取到贴子数据对象。
