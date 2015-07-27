@@ -5,7 +5,7 @@
 
 ## 为什么？
 
-你可能需要一个有效地方式，来给一个完全静态站点或者客户端应用添加密码保护，无论是为了内部使用，还是你在开发一个带客户端项目的暂时考量。
+你可能需要一个有效的方式，来给一个完全静态站点或者客户端应用添加密码保护，无论是为了内部使用，还是你在开发一个带客户端项目的暂时考虑。
 
 ## 示例
 
@@ -31,7 +31,7 @@
 
 ## 完整的 `harp.json` 文件
 
-`basicAuth` 数组或者字符串，[harp.json文件中的全部属性](http://harpjs.com/docs/development/harp-json)。一个更长一点的 `harp.json` 文件可能是这样的：
+`basicAuth` 数组或者字符串，[harp.json 文件中的全部属性](http://harpjs.com/docs/development/harp-json)。一个更长一点的 `harp.json` 文件可能是这样的：
 
 ``` 
 {
@@ -58,6 +58,6 @@
 
 因为 Harp 是一个可以生成静态站点的网页服务器，但又不是一个静态站点生成器，所以它具有编译成普通 HTML、CSS、以及JavaScript的额外功能，例如 basicAuth。
 
-如果你使用 Harp 进行编译，而又使用其他的网页服务器运行项目，例如 Apache，或者部署到 GitHub 页面上，这些特征将不会被那些平台支持。
+如果你使用 Harp 进行编译，而又使用其他的网页服务器运行项目，例如 Apache，或者部署到 GitHub Pages 上，这些特征将不会被那些平台支持。
 
-然而，你可以将你的应用部署到[Harp平台](https://www.harp.io/)，它支持这个功能。手动部署 Harp 到生产模式的话，也许 [Heroku](http://harpjs.com/docs/deployment/heroku) 和 [Github Pages](http://harpjs.com/docs/deployment/github-pages) 是不错的选择。
+然而，你可以将你的应用部署到 [Harp 平台](https://www.harp.io/)，它支持这个功能。手动部署 Harp 到生产模式的话，也许 [Heroku](http://harpjs.com/docs/deployment/heroku) 和 [Github Pages](http://harpjs.com/docs/deployment/github-pages) 是不错的选择。
