@@ -2,7 +2,7 @@
 
 安装Harp，需要[Node.js](http://nodejs.org/download/)环境，可以安装在OS X，Windows，Linux，以及SmartOS上。[从Node.js网站上下载](http://nodejs.org/download/)               
 
--- 插入视屏                
+![vedio](www.youtube.com/embed/SEA0G9kpVJM?rel=0)            
 
 首先，安装[Node.js](http://nodejs.org/download/). 虽然Harp使用了Node.js，但即便不懂Node.js, 甚至哪怕连JavaScript都没学过，也是可以上手Harp的。等Node.js安装完成后，就可以使用Node.js的包管理器mighty npm来安装Harp了。这是个基于命令行的工具。                      
 
