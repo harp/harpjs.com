@@ -4,7 +4,7 @@
 
 ## 1.安装 Harp Web Server      
 
-  [视频](www.youtube.com/embed/SEA0G9kpVJM?rel=0)          
+  [视频](http://www.youtube.com/embed/SEA0G9kpVJM?rel=0)          
 
   首先，安装 [Node.js](http://nodejs.org/download/). 虽然 Harp 使用了 Node.js，但即便不了解 Node.js, 或者没有接触过 JavaScript ，也是可以上手 Harp 的。在 Node.js 安装完成后，就可以使用 Node.js 的包管理器 mighty npm 来安装 Harp 了。这是个基于命令行的工具。              
 
