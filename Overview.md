@@ -33,12 +33,12 @@
 
 - [注册 Harp 平台以获取个人帮助](https://www.harp.io/)               
    开启你在 Harp 平台上的自由旅行，发布 Harp 应用的最省力方式。所有的计划都包含对 Harp 的支持。           
-- [订阅Harp每周新闻](http://harpjs.us7.list-manage1.com/subscribe?u=af92eba03471187c8aa0266e7&id=74381fea66)                 
+- [订阅 Harp 每周新闻](http://harpjs.us7.list-manage1.com/subscribe?u=af92eba03471187c8aa0266e7&id=74381fea66)                 
    每周，我们都会写一些关于客户端应用，静态站点，以及 Harp 专栏教程的新东西。                  
 - [在 #harp IRC channel 寻求帮助](http://harpjs.com/community/chat)                   
    在 IRC 频道有一个活跃的社区，他们非常乐于回答你可能会遇到的问题。                    
-- [在Github上提交一个issue](https://github.com/sintaxi/harp)                     
+- [在 Github 上提交一个 issue](https://github.com/sintaxi/harp)                     
    发现问题？有所建议？提交 issue 吧                     
 - [在推特上给 @HarpWebServer 发消息](http://twitter.com/harpwebserver)                        
-- [Stack Overflow](http://stackoverflow.com/questions/tagged/harp)通过标签"harp"，在 Stack Overflow 上提问和回答问题                
+- [Stack Overflow](http://stackoverflow.com/questions/tagged/harp)， 通过标签"harp"，在 Stack Overflow 上提问和回答问题                
 
