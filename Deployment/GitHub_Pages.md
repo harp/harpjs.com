@@ -1,26 +1,27 @@
 # 部署到 Github Pages
 
-Github Pages，也被称作 gh-pages，是Github 提供的对公共网页的免费主机服务。它通常被用来放个人博客以及网站项目。
+Github Pages，也被称作 gh-pages，是 Github 为公共网页提供的免费主机服务。它通常被用来放个人博客以及网站项目。
 如果你对在命令行下使用 git 比较熟悉，那么把你的 Harp 应用部署到 Github Pages 应该不是什么难事。
 
 ## 示例用法
 
 可以有两种不同的方法使用 GitHub Pages：
-[User & Organization Pages](http://harpjs.com/docs/deployment/github-pages#user-pages)
-[Project Pages](http://harpjs.com/docs/deployment/github-pages#project-pages)
+- [个人以及公司页面](http://harpjs.com/docs/deployment/github-pages#user-pages)
+- [项目页面](http://harpjs.com/docs/deployment/github-pages#project-pages)
+
 在 [GitHub Pages documentation](https://help.github.com/articles/user-organization-and-project-pages)，你可以阅读更多关于两种页面的区别。
 
-## 部署一个 GitHub 用户或者公司页面
+## 部署一个 GitHub 个人或者公司页面
 
 这五个步骤将会迅速带你将一个 Harp 应用部署到个人或者公司 GitHub 页面上。
 
 ### 1.创建一个新的版本库
 
-创建一个叫做 __your-github-user-name.github.io__ 的新的版本库，用你自己的个人或者公司名称替代 “your-github-user-name”。假如你的用户名是 octocat，那么你创建一个叫做 octocat.github.io 的版本库。
+创建一个叫做 __your-github-user-name.github.io__ 的新的版本库，用你自己的个人或者公司名称替代 “your-github-user-name”。假如你的用户名是 octocat，那么创建一个叫做 octocat.github.io 的版本库。
 
 ![image](https://github.com/Leolusir/harp-docs/tree/master/images/github-pages-1.png)
 
-勾选 “带有一个 README 初始化班版本库。” 这会让你 __clone__ 你新的版本库。
+勾选 “带有一个 README 初始化版本库。” 这会让你 __clone__ 你新的版本库。
 
 ### 2.克隆版本库
 
@@ -42,7 +43,7 @@ harp init _harp
 
 ### 4.编译你的 Harp 应用
 
-只要你喜欢，Harp 可以将你的应用编译成HTML、CSS以及JavaScript。默认的，Harp编译器创建一个 www 目录。因为 Github Pages 是从版本库的根目录运行，你会希望在根目录编译你的 Harp 应用。
+只要你喜欢，Harp 可以将你的应用编译成 HTML、CSS 以及 JavaScript。默认的，Harp 编译器创建一个 www 目录。因为 Github Pages 是从版本库的根目录运行，你会希望在根目录编译你的 Harp 应用。
 
 ``` 
 harp compile _harp ./ 
