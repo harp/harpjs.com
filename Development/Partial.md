@@ -1,11 +1,11 @@
 # 局部视图
 
-局部视图是 Harp 中的头等公民，并且在所有的模板语言中都以同样的方式工作。一个局部视图可以被放在 [EJS](http://harpjs.com/docs/development/els) 或 [Jade](http://harpjs.com/docs/development/jade) 文件的任何地方，并且文件的内容会被混合起来。
+局部视图是 Harp 中的最重要地部分，并且在所有的模板语言中都以同样的方式工作。一个局部视图可以被放在 [EJS](http://harpjs.com/docs/development/els) 或 [Jade](http://harpjs.com/docs/development/jade) 文件的任何地方，并且文件的内容会被混合起来。
 
 - [使用局部视图](http://harpjs.com/docs/development/partial#use)
 - [在 EJS 文件中使用局部视图](http://harpjs.com/docs/development/partial#ejs)
 - [在 Jade 文件中使用局部视图](http://harpjs.com/docs/development/partial#jade)
-- [Markdown以及局部视图函数](http://harpjs.com/docs/development/partial#markdown)
+- [Markdown 以及局部视图函数](http://harpjs.com/docs/development/partial#markdown)
 
 ## 为什么？
 
@@ -88,7 +88,7 @@ Jade 中可以引入 EJS 局部视图，反之亦然。例如，创建一个 `co
 != partial("_header", { title: "Contact me", description: "This is my Jade contact page with an EJS header" }) %> 
 ```
 
-如果你想为你的变量设置默认值——当前的例子中，`title` 和 `description` 变量的默认值，以防你不给局部视图传任何数据——你可以通过设置 [全局变量](http://harpjs.com/docs/development/globals)来完成。
+如果你想为你的变量设置默认值——当前的例子中，`title` 和 `description` 变量的默认值，以防你不给局部视图传任何数据——你可以通过设置[全局变量](http://harpjs.com/docs/development/globals)来完成。
 
 ## Markdown 和局部视图
 
