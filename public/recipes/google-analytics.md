@@ -1,34 +1,34 @@
 # How to add Google Analytics to a Harp boilerplate
 
-This recipe shows you how to add a contact form to your Harp application in a configurable manner. This makes it easier for other people to make changes to the Google Analytics settings with digging into the templates.
+This recipe shows you how to add Google Analytics to your Harp application in a configurable manner. This makes it easier for other people to make changes to the Google Analytics settings when digging into the templates.
 
 ## Adding Google Analytics
 
-Setting up Google Analytics
+First, ensure you've actually created the site details in your Google Analytics account. You'll need to go to your *Property Settings* and find the *Tracking Id* value.
 
 ## Harp
 
 ### Using Jade
+
+First, create a partial to include Google's embed code. 
 
 _shared/analytics.jade
 
 ```jade
 if service.analytics
   script.
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)
-    [0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', '#{ service.analytics }', '#{ uri }');
-    ga('send', 'pageview');
+  ga('create', '<#{ service.analytics }', 'auto');
+  ga('send', 'pageview');
 ```
 
-_harp.json or harp.json, add properties
+Then, set the values in _harp.json or harp.json:
 
 ```json
-"uri": "http://example.com",
 "service": {
   "analytics": "UA-XXXX"
 }
@@ -36,11 +36,23 @@ _harp.json or harp.json, add properties
 
 ### Using EJS
 
+First, create a partial to include Google's embed code. 
 
-## How does it work?
+_shared/analytics.jade
 
-There’s not much that Harp is doing for you here, it’s all powered by Wufoo.
+```ejs
+<% if(service && service.analytics) { %>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-The code provided by Wufoo, generates an `iframe` hosted on their site, which contains all the code necessary to get the form working, but to your visitors this seems like it’s on your site.
+  ga('create', '<%- service.analytics %>', 'auto');
+  ga('send', 'pageview');
 
-We encourage you to explore the other options for embedding your form, as they might work better for you. We chose the iframe option because it’s the easiest to implement.
+</script>
+<% } %>
+```
+Then create the same _harp.json or harp.json described above.
+
