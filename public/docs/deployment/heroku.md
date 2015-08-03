@@ -75,7 +75,7 @@ If you’d like to deploy a Harp application to Heroku manually, use the followi
 
   ```json
    {
-     "name": "My Harp App",
+     "name": "My-Harp-App",
      "version": "1.0.0",
      "description": "A Harp App on Heroku",
      "dependencies": {
