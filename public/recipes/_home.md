@@ -11,7 +11,7 @@ Showcase of commonly used _recipes_ for applications created with Harp.
 - [How to do a client-side redirect](/recipes/client-side-redirect)
 - [How to add a contact form](/recipes/marketing-contact-form)
 - [How to add Google Analytics to a boilerplate](/recipes/google-analytics)
-- [How to print out all available metadata for debigging](/recipes/print-debugging)
+- [How to print out all available metadata for debugging](/recipes/print-debugging)
 
 ## Blogging recipes
 
