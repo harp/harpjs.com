@@ -37,7 +37,9 @@ Harp now uses Sass v3.3.2, the latest version at this time. This should alleviat
 
 ## EJS
 
-<!-- TODO -->
+We have also updated [EJS to v2.3.4](https://github.com/mde/ejs/releases/tag/v2.3.4).
+
+The only significant breaking change for Harp, is the removal of built-in filters, like `truncate`. The only boilerplate that made use of this was [hb-casper](https://github.com/kennethormandy/hb-casper), which has been updated accordingly. If you have any troubles with this, feel free to mention us on Twitter.
 
 ***
 
