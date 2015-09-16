@@ -1,6 +1,6 @@
 # Harp v0.18.0 – Node v4.0.0 compatibility
 
-Earlier this week, [Node v4.0.0](https://nodejs.org/en/blog/release/v4.0.0/) was released. We’re very happy to see where things have landed with the Node.js Foundation: the future continues to look very promising for Node and we’re excited to be part of that.
+Last week, [Node v4.0.0](https://nodejs.org/en/blog/release/v4.0.0/) was released. We’re very happy to see where things have landed with the Node.js Foundation: the future continues to look very promising for Node, and we’re excited to be a small part of that through work on [Harp](https://github.com/sintaxi/harp).
 
 The following day, we updated Harp to be compatible with this new version of Node. You can install or update Harp v0.18.0 right now through npm:
 
