@@ -1,4 +1,12 @@
 {
+  "v0-19-0-npm-3-compatibility": {
+    "title": "Harp v0.19.0 – npm@3 compatibility",
+    "description": "Harp now works with npm@3. Sass and more are updated!",
+    "author": "kennethormandy",
+    "date": "September 21, 2015",
+    "tags": ["harp-weekly", "release"],
+    "published": true
+  },
   "v0-18-0-node-v4-compatibility": {
     "title": "Harp v0.18.0 – Node v4.0.0 compatibility",
     "description": "Harp now works with Node v4.0.0. Sass, EJS, and more are updated!",
