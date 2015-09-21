@@ -28,12 +28,24 @@ npm install -g harp
 
 ## Updating Harp
 
-Updating to the latest version of Harp is just as easy. Simply run the following in your terminal:
+Updating to the latest version of Harp is the same command as installing Harp. Run the following in your terminal:
 
 ```sh
-sudo npm update -g harp
+npm install -g harp
 ```
 
-You may skip using `sudo` if you have the appropriate privileges.
+You may need to preface this command with `sudo`, depending on your setup.
+
+### Troubles upgrading? Try clearing your cache
+
+If you’re having trouble upgrading to the latest version of Harp, especially if you have recently upgraded npm, or are getting an error message like `Error: Cannot find module 'minify'`, you might simply need to clear your npm cache:
+
+```
+npm uninstall -g harp
+npm cache clear
+npm install -g harp
+```
+
+You may to use `sudo` before any of those, depending on your setup. It’s possible that an older dependency of Harp is cached on your system and not finding the new version or something. The `npm cache clear` part could take a while, depending on how much is cached. That should fix the problem, however!
 
 [Need to uninstall Harp?](/docs/environment/uninstall)
