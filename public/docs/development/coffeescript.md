@@ -4,7 +4,7 @@ CoffeeScript is an feature-rich, versatile and common JavaScript preprocessor. C
 
 ## Why?
 
-Harp includes the best-of-bread preprocessors by default. This means you don’t need to waste time configuring CoffeeScript, worrying about installing dependencies, minifying your JavaScript, or even selecting the input and output location for files. Everything just works.
+Harp includes the best-of-breed preprocessors by default. This means you don’t need to waste time configuring CoffeeScript, worrying about installing dependencies, minifying your JavaScript, or even selecting the input and output location for files. Everything just works.
 
 ## Usage
 
