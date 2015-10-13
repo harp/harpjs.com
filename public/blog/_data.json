@@ -1,4 +1,11 @@
 {
+  "how-to-use-the-Harp-static-site-generator": {
+    "author": "kennethormandy",
+    "title": "How to use the Harp static site generator, by Matt Lambert",
+    "url": "http://mattlambert.ca/blog/how-to-use-the-harp-js-static-site-generator",
+    "date": "Oct 13, 2015",
+    "published": true
+  },
   "v0-19-0-npm-3-compatibility": {
     "title": "Harp v0.19.0 – npm@3 compatibility",
     "description": "Harp now works with npm@3. Sass and more are updated!",
