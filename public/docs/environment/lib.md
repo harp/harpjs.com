@@ -6,10 +6,10 @@ This example combines the power of express with all the benefits of Harp, in one
 
 1. ### Add Harp as a dependency
 
-  Include Harp as a dependency in your `package.json` of your Express app.
+  Include Harp as a dependency in the `package.json` file of your Express app.
 
   ```json
-	{
+  {
     "name": "myapp",
     "version": "0.1.0",
     "dependencies": {
@@ -38,7 +38,7 @@ This example combines the power of express with all the benefits of Harp, in one
 
 3. ### Add your Harp app
 
-  All done! Now you put Harp app’s your assets in the `public` directory. Here’s an example of what your `public` directory might look like:
+  All done! Now you put your Harp app’s assets in the `public` directory. Here’s an example of what your `public` directory might look like:
 
   ```
   /public
@@ -49,13 +49,13 @@ This example combines the power of express with all the benefits of Harp, in one
 
 You can [pass data to your template](/docs/development/metadata) the same way you do with a normal Harp app. For example, using `_data.json`:
 
-  ```json
-  {
-    "index": {
-      "title": "Hello World"
-    }
+```json
+{
+  "index": {
+    "title": "Hello World"
   }
-  ```
+}
+```
 
 For global variables, use the `_harp.json` file, like this:
 
