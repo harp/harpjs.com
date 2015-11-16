@@ -29,7 +29,7 @@ We provide a special URL for visiting your application. As port `3000` was speci
 
 - `http://harpdev.io:3000`
 
-However, you can always fall back the the default URI:
+However, you can always fall back to the default URI:
 
 - `http://127.0.0.1:3000`
 - `http://localhost:3000`
