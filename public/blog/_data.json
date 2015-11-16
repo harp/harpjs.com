@@ -1,4 +1,12 @@
 {
+  "v0-20-0-node-5-compatibility": {
+    "title": "Harp v0.20.0 – Node v5.x compatibility",
+    "description": "Harp is ready for Node v5.x. Sass and more are updated!",
+    "author": "kennethormandy",
+    "date": "November 16, 2015",
+    "tags": ["harp-weekly", "release"],
+    "published": true
+  },
   "how-to-use-the-Harp-static-site-generator": {
     "author": "kennethormandy",
     "title": "How to use the Harp static site generator, by Matt Lambert",
