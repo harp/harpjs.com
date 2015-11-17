@@ -29,9 +29,3 @@ That is subjective but fair to say Harp is fast by ”application server” stan
 ## What can be built on harp?
 
 Harp is great for building mobile web applications, blogs, docs, games, marketing sites, presentations. Pretty much anything with a front end.
-
-## What is the difference between harpjs.com and harp.io?
-
-**[harpjs.com](http://harpjs.com)** is the home for Harp, the static web server with built-in preprocessing that implements the [Harp Specification](http://spec.harp.io). Harp is open source (MIT), which makes it free to use modify, distribute, sublicense, and/or sell.
-
-**[harp.io](https://harp.io)** is the home of the hosted Harp Platform, for putting Harp applications into production. Naturally, Harp is the web server [that powers the Harp Platform](https://www.harp.io/how-it-works/).

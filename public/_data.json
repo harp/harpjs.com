@@ -9,10 +9,6 @@
     "title": "Blog",
     "description": "Updates, articles and a focus on the community around Harp, the static web server with built-in preprocessing."
   },
-  "faq": {
-    "title": "FAQ",
-    "description": "Frequently Asked Questions about Harp."
-  },
   "community": {
     "title": "Community",
     "description": "Join the Harp community."
