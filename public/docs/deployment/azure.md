@@ -10,7 +10,7 @@ First, download the [Azure Cross-Platform Command Line for Node](https://github.
 We will use this tool to help create the Azure site from the command line.
 
 ```sh
-npm install -g azure
+npm install -g azure-cli
 ```
 
 An more in-depth blog post about the tool can he found [here](http://www.hanselman.com/blog/WindowsAzureNoKidding.aspx)
@@ -40,15 +40,15 @@ An more in-depth blog post about the tool can he found [here](http://www.hanselm
 
   ```json
   {
-   "name": "My Harp app",
+   "name": "MyHarpApp",
    "version": "1.0.0",
    "description": "A Harp App on Azure",
    "dependencies": {
-     "harp": "*"
+     "harp": "0.19.0"
    },
    "engines": {
-     "node": "0.10.x",
-     "npm": "1.2.x"
+     "node": "4.1.x",
+     "npm": "3.5.1"
    }
   }
   ```
