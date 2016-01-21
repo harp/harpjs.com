@@ -11,7 +11,7 @@
 
 pre,
 .pre {
-  background-color: $silver;
+  background-color: mix($white, $black, 97%);
   color: $black;
   padding: $space-2;
   display: block;
