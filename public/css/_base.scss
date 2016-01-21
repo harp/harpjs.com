@@ -57,6 +57,22 @@ ol {
   }
 }
 
+// Horizonal rules
+//
+// Markup:
+// <hr>
+//
+// Styleguide: base.hr
+hr {
+  width: 50%;
+  margin-top: $space-4;
+  margin-bottom: $space-4;
+  // @media #{ breakpoint-lg } {
+  //   margin-top: $space-4;
+  //   margin-bottom: $space-4;
+  // }
+}
+
 figure {
   margin: $pre-margin-top 0 $pre-margin-bottom 0;
 }
