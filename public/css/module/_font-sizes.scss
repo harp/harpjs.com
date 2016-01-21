@@ -1,0 +1,36 @@
+// Responsive font sizes
+//
+// Additional font size utilities for Basscss.
+// I’m not sure why these didn’t exist already,
+// and need to look into that.
+//
+// Markup:
+// <div class="h5 md-h3">About Surge</div>
+//
+// Styleguide: module.font-sizes
+@media #{$breakpoint-sm} {
+  .sm-h1 { font-size: $h1 }
+  .sm-h2 { font-size: $h2 }
+  .sm-h3 { font-size: $h3 }
+  .sm-h4 { font-size: $h4 }
+  .sm-h5 { font-size: $h5 }
+  .sm-h6 { font-size: $h6 }
+}
+
+@media #{$breakpoint-md} {
+  .md-h1 { font-size: $h1 }
+  .md-h2 { font-size: $h2 }
+  .md-h3 { font-size: $h3 }
+  .md-h4 { font-size: $h4 }
+  .md-h5 { font-size: $h5 }
+  .md-h6 { font-size: $h6 }
+}
+
+@media #{$breakpoint-lg} {
+  .lg-h1 { font-size: $h1 }
+  .lg-h2 { font-size: $h2 }
+  .lg-h3 { font-size: $h3 }
+  .lg-h4 { font-size: $h4 }
+  .lg-h5 { font-size: $h5 }
+  .lg-h6 { font-size: $h6 }
+}

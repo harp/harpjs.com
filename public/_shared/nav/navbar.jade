@@ -1,7 +1,11 @@
+h1 Start navbar
+
 header(class="#{ typeof(classes)!=='undefined' ? classes : '' }")
   .container
-    a#toggle.navbar-toggle(href="#navigation")
-      //-| &#x2261;
-    a.navbar-brand.hidden-lg(href="/")
+    a#toggle.navbar-toggle(href="#navigation") &#x2261;
+    a.lg-hide(href="/")
       //- Validation for whether or not to use the dark wordmark should be better
-      img.wordmark(src="/images/wordmark#{ typeof(classes)==='undefined' ? '-dark' : '' }.svg", alt="#{ name }")
+      img(src="/images/wordmark#{ typeof(classes)==='undefined' ? '-dark' : '' }.svg", alt="#{ name }")
+
+
+h1 End Navbar

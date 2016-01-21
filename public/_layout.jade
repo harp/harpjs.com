@@ -8,7 +8,7 @@ html(manifest="/auto.appcache" lang="en")
     //- Show specific page title, name, and tagline. If the full title is more than 70 chars, omit the tagline
     title !{ title !== name ? title + ' &ndash; ' : '' }#{ name }#{ (title.length + name.length + tagline.length) >= 70 ? '' : ', ' + tagline.toLowerCase() }
     != partial("_shared/webfonts")
-    link(rel="stylesheet" href="/css/application.css" type="text/css")
+    link(rel="stylesheet" href="/css/index.css" type="text/css")
     //- link(rel="shortcut icon" href="/favicon.ico")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
     
@@ -24,21 +24,22 @@ html(manifest="/auto.appcache" lang="en")
     meta(name="google-site-verification" content="8B8VnWspU2WbG_QaA_IYI5aoQpLZme6vrmOAasygOeA")
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
     meta(http-equiv="cleartype" content="on")
+    - var p = public._data[Array.prototype.slice.call(current.path).reverse()[current.path.length - 1]] || {}
 
-  body
-    //- pre= JSON.stringify(current, null, 2)
-    if current.source === 'index' && current.path.length === 1
-      a.github-fork(href="https://github.com/sintaxi/harp")
-        img(src="/images/github-ribbon.png", alt="Star Harp on GitHub")
-    .st-container
-      .st-pusher
+  //- Match overflow scroll background colour to nav
+  body(class="#{ p.knockout === false ? 'bg-white' : 'bg-blue' }")
+    .bg-white
+      if current.path[current.path.length - 1] === 'index'
         //- If it’s an index template, show it.
-        //- If it’s a page in the root, wrap it in _nest.jade
-        //- If it’s a page in a folder, wrap it in that folder’s nest
-        if current.path[current.path.length - 1] === 'index' || current.path[current.path.length - 1] === 'zerty'
-          != yield
-        else if current.path.length === 1
-          != partial("/_nest.jade", { yield: yield })
-        else
-          != partial(current.path[0] + "/_nest.jade", { yield: yield })
-    != partial("_shared/footer")
+        .clearfix!= yield
+      else
+        //- Otherwise, wrap it in _nest.jade
+        != partial("_shared/nav/nav", { "knockout": p.knockout })
+        .container.p1.sm-p2.clearfix
+          if current.path.length === 1
+            .clearfix!= partial("/_nest.jade", { yield: yield })
+          else
+            .clearfix!= partial(current.path[0] + "/_nest.jade", { yield: yield })
+
+      .container.p1.sm-p2.clearfix
+        != partial("_shared/footer")

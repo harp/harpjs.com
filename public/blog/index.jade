@@ -1,19 +1,30 @@
-!= partial("../_shared/nav/nav")
-.st-content#st-content
-  != partial("../_shared/nav/navbar")
-  .container.st-content-inner.blog-container
-    .col-12.col-lg-10
-      ul.post-list
-        - var i = 1
-        for article, slug in public.blog._data
-          if article.published === true || article.published === false && environment==='development'
-            li.post-item(class="#{ article.url ? 'post-link' : '' }#{ article.published!==true ? 'post-unpublished' : '' }")
-                h2.post-title
-                  a(href="#{ article.url ? article.url : '/blog/' + slug }") #{ article.title }
-                if public.blog.contributors._data[article.author]
-                  - author = public.blog.contributors._data[article.author]
-                  span.post-meta #{ article.url ? 'External post by' : 'By' } <a href="http://twitter.com/#{ author.twitter }">#{ author.name }</a> on #{ article.date }                  
-                if i === 1 && article.published === true && !article.url
-                  - i++
-                  p!= partial(slug).split("<p>")[1].split("</p>")[0] + "&nbsp;"
-                    a(href=slug) Read more&hellip;
+!= partial("../_shared/nav/nav", { "knockout": false })
+.container.p1.sm-p2
+  .clearfix
+    ol.col-12.md-col-9.lg-col-8.mx-auto
+      - var i = 1
+      for article, slug in public.blog._data
+        if article.published === true || article.published === false && environment==='development'
+          - var recent = false
+          if i <= 3 && article.published === true
+            - i++
+            - recent = true
+
+          li.block(class="#{ article.published!==true ? 'muted' : '' }#{ recent ? 'mb4' : 'mb1' }")
+            if public.blog.contributors._data[article.author] && recent
+              - author = public.blog.contributors._data[article.author]
+              != partial("../_shared/author", { author: author, date: article.date })
+    
+            h2.mt1(class="#{ recent ? 'h1' : '' }"): a(href="#{ article.url ? article.url : '/blog/' + slug }")= article.title
+
+            if recent
+              if !article.url
+                p.h4!= partial(slug).split("<p>")[1].split("</p>")[0] + "&nbsp;"
+                  a(href=slug) Read more&hellip;
+              else
+                p.h4 A post on #{ author.name }’s site.&nbsp;
+                  a(href=slug) Read more&hellip;
+
+  //- .col.col-12.md-col-3.lg-col-4
+  //-   .bg-silver.p1.sm-p2.rounded
+  //-     h3.mt0 Twitter

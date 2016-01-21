@@ -1,0 +1,6 @@
+.clearfix.flex.flex-center.mxn1
+  if author.twitter
+    .px1.flex-auto(style="max-width: 3.5rem")
+      img.circle.center(src="https://avatars.io/twitter/#{ author.twitter }" )
+  .px1
+    span.gray #{ url ? 'External post by' : 'By' } <a href="http://twitter.com/#{ author.twitter }">#{ author.name }</a> on #{ date }

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-synthesis: none;
+}
+
+html {
+  font-size: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @supports not (font-kerning: normal) {
+    font-feature-settings: "kern" 1;
+  }
+  font-kerning: normal;
+}
+
+@each $prefix in "::-moz-selection", "::selection" {
+  #{ $prefix } {
+    background-color: $maroon;
+    color: $white;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+img,
+svg {
+  display: block;
+}
+
+// Basscss should be doing this
+// already, there’s already a variable
+b, strong {
+  font-weight: $bold-font-weight;
+}
+// Article leads
+// Maybe not the most Basscss-y way to do this
+article > p:first-of-type {
+  font-size: $h4;
+}
+
+// Heading font-weight override
+//
+// No styleguide reference.
+h1,
+.h1 {
+  font-weight: 900;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  ul,
+  ol {
+    padding-left: $space-2;
+  }
+}
+
+figure {
+  margin: $pre-margin-top 0 $pre-margin-bottom 0;
+}
+
+// Break word
+//
+// No styleguide reference.
+a,
+.break-word {
+  word-break: break-word;
+}
+
+// Anchor
+a,
+.a-faux {
+  color: $link-color;
+  transition: opacity 0.15s ease-in-out, border 0.15s ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.9;
+    border-color: $darken-2;
+  }
+}
+
+// Fix for hide (important interferes)
+// in this case (hide is done with toggling)
+// display block, but I need a block to re-display
+// as line in this case
+// http://www.basscss.com/docs/responsive-states/
+.sm-show-inline {
+  display: none !important;
+  @media #{ $breakpoint-sm } {
+    display: inline !important;
+  }
+}
+
+// Add to Basscss typography?
+.text-decoration-none {
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// “”
+.border-none {
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    border: none;
+  }
+}

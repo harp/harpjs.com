@@ -1,13 +1,8 @@
-!= partial("../_shared/nav/nav")
-.st-content#st-content
-  != partial("../_shared/nav/navbar")
-  .container.st-content-inner.blog-container
+nav.col-12.col-lg-3
+  ul.nav.nav-pills.nav-stacked.nav-aside#nav-aside
+    each section, slug in public.identity._data
+      li.nav-aside-item(class="#{ current.path[1] === slug ? 'active' : '' }")
+        a(href=slug)= section.title
 
-    nav.col-12.col-lg-3
-      ul.nav.nav-pills.nav-stacked.nav-aside#nav-aside
-        each section, slug in public.identity._data
-          li.nav-aside-item(class="#{ current.path[1] === slug ? 'active' : '' }")
-            a(href=slug)= section.title
-    
-    article.col-12.col-lg-9
-      != yield
+article.col-12.col-lg-9
+  != yield

@@ -1,5 +1,10 @@
-footer.footer.container
-    .col-12.col-lg-4.list-group
+#nav
+  // Full mobile nav goes here
+  h2 Nav TODO
+
+
+footer.footer
+    .col.col-12.md-col-4.list-group
       h3.list-group-item Latest Articles
       - i = 0
       for article, slug in public.blog._data
@@ -11,7 +16,7 @@ footer.footer.container
               if i == 1
                 span.badge new
 
-    .col-12.col-lg-4.list-group
+    .col.col-12.md-col-4.list-group
       h3.list-group-item Everything Harp
       a(href="/docs").list-group-item.list-group-underlined Documentation
       a(href="/docs/quick-start").list-group-item.list-group-underlined Quick Start
@@ -20,7 +25,7 @@ footer.footer.container
       a(href="/identity").list-group-item.list-group-underlined Identity Guide
       a(href="/blog").list-group-item.list-group-underlined Blog
 
-    .col-12.col-lg-4.list-group
+    .col.col-12.md-col-4.list-group
       h3.list-group-item The Harp Newsletter
       .list-group-item!= partial("../_shared/newsletter")
 
@@ -30,8 +35,7 @@ footer.footer.container
         a(href="https://twitter.com/HarpWebServer", class="twitter-follow-button", data-show-count="false", data-lang="en", data-size="large") Follow @HarpWebServer
         a.list-group-item.icon-irc(href="irc://irc.freenode.net/harp") Chat in ##{ service.irc.toLowerCase() } on IRC
 
-
-  != partial("nav/nav", { "id": "navigation", "classes": "st-menu--fallback jumbotron" })
+  //- != partial("nav/nav", { "id": "navigation", "classes": "st-menu--fallback jumbotron" })
 script(src="/js/application.js")
 script(src="/js/prism.js")
 script.

@@ -1,0 +1,86 @@
+// Override BassCSS variables
+//
+// No styleguide reference.
+
+$font-family: "Work Sans", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-font-family: "Georgia Pro", Georgia, serif;
+$monospace-font-family: "Source Code Pro", Iconsolas, Consolas, monospace, monospace;
+$line-height: 1.525;
+// $heading-font-family: $font-family !default;
+$heading-font-weight: 700;
+$heading-line-height: 1.125;
+// $heading-margin-top: 1em !default;
+// $heading-margin-bottom: .5em !default;
+// $paragraph-margin-top: 0 !default;
+// $paragraph-margin-bottom: $space-2 !default;
+// $list-margin-top: 0 !default;
+// $list-margin-bottom: $space-2 !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 2rem !default;
+$space-4: 4rem !default;
+// $pre-font-size: inherit !default;
+$pre-margin-top: 0;
+$pre-margin-bottom: $space-2;
+// $aqua: #7fdbff !default;
+$blue: #6B919E;
+$navy: #546D7A; // Was blue dark
+$teal: #D3DEE1; // Was blue light
+// $green: #2ecc40 !default;
+// $olive: #3d9970 !default;
+// $lime: #01ff70 !default;
+// $yellow: #ffdc00 !default;
+// $orange: #ff851b !default;
+// $red: #ff4136 !default;
+$purple: #7E576A; // Was pink dark
+$maroon: #81586C; // Was pink
+$fuchsia: lighten($maroon, 25%); // Was pink light
+$white: #FFFFFF;
+$silver: #E5E5E5; // Was gray
+// $gray: #aaa !default;
+$black: #3B3B3B;
+$h1: 3rem;
+$h2: 2rem;
+$h3: 1.8rem;
+$h4: 1.5rem;
+$h5: 1.175rem;
+$body-font-size: 1.175em;
+$h6: 0.9rem;
+$bold-font-weight: 500;
+// $form-field-font-size: 1rem !default;
+// $form-field-height: 2.25rem !default;
+// $form-field-padding-y: .5rem !default;
+// $form-field-padding-x: .5rem !default;
+// $button-font-size: inherit !default;
+$button-font-weight: $bold-font-weight;
+// $button-line-height: 1.125rem !default;
+// $button-padding-y: .5rem !default;
+// $button-padding-x: 1rem !default;
+$container-width: 64em !default;
+// $darken-1: rgba(0,0,0,.0625) !default;
+// $darken-2: rgba(0,0,0,.125) !default;
+// $darken-3: rgba(0,0,0,.25) !default;
+// $darken-4: rgba(0,0,0,.5) !default;
+// $lighten-1: rgba(255,255,255,.0625) !default;
+// $lighten-2: rgba(255,255,255,.125) !default;
+// $lighten-3: rgba(255,255,255,.25) !default;
+// $lighten-4: rgba(255,255,255,.5) !default;
+// $border-width: 1px !default;
+// $border-radius: 3px !default;
+// $border-color: $darken-2 !default;
+// $body-color: $black !default;
+// $body-background-color: $white !default;
+$link-color: $blue;
+// $link-text-decoration: none !default;
+$link-hover-text-decoration: none;
+// $pre-background-color: transparent !default; // Leave this as transparent because it’s setting pre and code
+// $pre-border-radius: $border-radius !default;
+// $rule-border-style: solid !default;
+// $rule-border-width: $border-width !default;
+// $rule-border-color: $border-color !default;
+//
+// // Custom Media Query Variables
+//
+// $breakpoint-sm: '(min-width: 40em)' !default;
+// $breakpoint-md: '(min-width: 52em)' !default;
+// $breakpoint-lg: '(min-width: 64em)' !default;

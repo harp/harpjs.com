@@ -7,7 +7,8 @@
   },
   "blog": {
     "title": "Blog",
-    "description": "Updates, articles and a focus on the community around Harp, the static web server with built-in preprocessing."
+    "description": "Updates, articles and a focus on the community around Harp, the static web server with built-in preprocessing.",
+    "knockout": false
   },
   "community": {
     "title": "Community",
@@ -15,5 +16,8 @@
   },
   "sitemap": {
     "layout":false
+  },
+  "identity": {
+    "knockout": false
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "harpjs.com",
-  "version": "0.0.0",
+  "version": "1.0.0-beta",
   "description": "The website for Harp, the static web server with built-in preprocessing.",
   "homepage": "http://harpjs.com",
   "private": true,
@@ -27,13 +27,19 @@
     "coffeescript"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\"",
+    "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appreciated.\"",
     "start": "harp server",
     "compile": "harp compile",
-    "deploy": "npm run compile && surge ./www harpjs.com"
+    "deploy": "npm run compile && surge ./www next.harpjs.com"
+  },
+  "dependencies": {
+    "basscss-sass": "3.0.0",
+    "normalize.css": "3.0.3",
+    "utility-opentype": "0.1.3"
   },
   "devDependencies": {
-    "harp": "0.20.0",
-    "surge": "latest"
+    "harp": "0.20.1",
+    "surge": "latest",
+    "terraform": "kennethormandy/terraform#ko-browserify-and-data"
   }
 }
