@@ -130,3 +130,26 @@ a,
     border: none;
   }
 }
+
+// Field
+//
+// Basscss fix for padding in field. I only
+// did the class overrides I needed. This
+// is used in the newsletter partial.
+//
+// Markup:
+// <input type="text" class="field p2 sm-p3 h3">
+//
+// No styleguide reference.
+.field.p2 {
+  padding: $space-2;
+  height: auto;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+.field.p2.sm-p3 {
+  padding: $space-3;
+  height: auto;
+  font-size: inherit;
+}
