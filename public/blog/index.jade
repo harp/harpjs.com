@@ -15,7 +15,7 @@
               - author = public.blog.contributors._data[article.author]
               != partial("../_shared/author", { author: author, date: article.date })
     
-            h2.mt1(class="#{ recent ? 'h1' : '' }"): a(href="#{ article.url ? article.url : '/blog/' + slug }")= article.title
+            h2.mt1(class="#{ recent ? 'h1' : 'h4 regular' }"): a(href="#{ article.url ? article.url : '/blog/' + slug }")= article.title
 
             if recent
               if !article.url
