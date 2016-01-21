@@ -27,7 +27,7 @@
     "coffeescript"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appreciated.\"",
+    "test": "mocha",
     "start": "harp server",
     "compile": "harp compile",
     "deploy": "npm run compile && surge ./www next.harpjs.com"
@@ -38,7 +38,11 @@
     "utility-opentype": "0.1.3"
   },
   "devDependencies": {
+    "cssstats": "2.1.2",
     "harp": "0.20.1",
+    "mocha": "2.3.4",
+    "numeral": "1.5.3",
+    "should": "8.1.1",
     "surge": "latest",
     "terraform": "kennethormandy/terraform#ko-browserify-and-data"
   }
