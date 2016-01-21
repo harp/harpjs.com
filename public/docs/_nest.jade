@@ -1,17 +1,20 @@
-.col.col-12.md-col-3.lg-col-4
-  nav.md-show
-    != partial("_shared/search")
-    != partial("_shared/nav")
-article.col.col-12.md-col-9.lg-col-8
-  //-!= partial("_shared/video")
-  unless published === false
-    != yield
-    footer
-        a.mx-auto.block.center.black.text-decoration-none.border-none(href="https://github.com/" + service.contributing + "/edit/master/public/" + current.path.join('/') + ".md")
-          small See something that could be better?&nbsp;
-            span.a-faux Edit this page.
+.clearfix.mxn2
+  nav.col.col-12.md-col-3.lg-col-4.p2
+    details#js-toc.rounded(open)
+      summary.md-hide.border.p1.btn.btn-primary.bg-gray Table of Contents
+      != partial("_shared/search")
+      != partial("_shared/nav")
 
-      .clearfix.mt3
-      != partial("_shared/next")
-  else
-    != partial("../404")
+  article.col.col-12.md-col-9.lg-col-8.p2
+    //-!= partial("_shared/video")
+    unless published === false
+      != yield
+      footer
+          a.mx-auto.block.center.black.text-decoration-none.border-none(href="https://github.com/" + service.contributing + "/edit/master/public/" + current.path.join('/') + ".md")
+            small See something that could be better?&nbsp;
+              span.a-faux Edit this page.
+
+        .clearfix.mt3
+        != partial("_shared/next")
+    else
+      != partial("../404")
