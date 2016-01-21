@@ -28,8 +28,8 @@
   ],
   "scripts": {
     "test": "mocha",
-    "start": "harp server",
-    "compile": "harp compile",
+    "start": "harp ./",
+    "compile": "harp www",
     "deploy": "npm run compile && surge ./www next.harpjs.com"
   },
   "dependencies": {
@@ -42,11 +42,10 @@
   },
   "devDependencies": {
     "cssstats": "2.1.2",
-    "harp": "0.20.1",
+    "harp": "sintaxi/harp#cli-surge-test",
     "mocha": "2.3.4",
     "numeral": "1.5.3",
     "should": "8.1.1",
-    "surge": "latest",
-    "terraform": "git://github.com/kennethormandy/terraform.git#adceba0be6fde3dbd7578291f443fb6b3732e215"
+    "surge": "latest"
   }
 }
