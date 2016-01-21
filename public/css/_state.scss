@@ -1,0 +1,17 @@
+// Generic anchor taget
+//
+// Highlights an anchored element (something
+// with an ID) when it is in the URL. This
+// lets our menu navigation work with CSS
+// only, but it could also be applied to
+// other things. Used in `footer.jade`.
+//
+// Markup:
+// <a href="#scroll-here">Click me</a>
+// <div class="is-target" id="scroll-here">Scroll Here</div>
+//
+// Styleguide: state.is-target
+.is-target:target {
+  transition: background 0.25s ease, color 0.25s ease;
+  background-color: $silver;
+}
