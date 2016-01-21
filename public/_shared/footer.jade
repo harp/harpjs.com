@@ -1,38 +1,34 @@
-#nav
-  // Full mobile nav goes here
-  h2 Nav TODO
-
-
 footer.footer
-    .col.col-12.md-col-4.list-group
-      h3.list-group-item Latest Articles
-      - i = 0
-      for article, slug in public.blog._data
-        if article.published == true && !article.url
-          - i++
-          if i <= 5
-            a.list-group-item.list-group-underlined(href="/blog/#{ slug }")
-              != article.title
-              if i == 1
-                span.badge new
 
-    .col.col-12.md-col-4.list-group
-      h3.list-group-item Everything Harp
-      a(href="/docs").list-group-item.list-group-underlined Documentation
-      a(href="/docs/quick-start").list-group-item.list-group-underlined Quick Start
-      a(href="/recipes").list-group-item.list-group-underlined Recipes
-      a(href="/community").list-group-item.list-group-underlined Community
-      a(href="/identity").list-group-item.list-group-underlined Identity Guide
-      a(href="/blog").list-group-item.list-group-underlined Blog
+  #nav.is-target.col.col-12.md-col-4.list-group
+    h3 Everything Harp
+    ol.block.h4.md-h5
+      li: a(href="/docs") Documentation
+      li: a(href="/docs/quick-start") Quick Start
+      li: a(href="/recipes") Recipes
+      li: a(href="/community") Community
+      li: a(href="/identity") Identity Guide
+      li: a(href="/blog") Blog
 
-    .col.col-12.md-col-4.list-group
-      h3.list-group-item The Harp Newsletter
-      .list-group-item!= partial("../_shared/newsletter")
+  .col.col-12.md-col-4.list-group
+    h3.list-group-item Latest Articles
+    - i = 0
+    for article, slug in public.blog._data
+      if article.published == true && !article.url
+        - i++
+        if i <= 5
+          a.list-group-item.list-group-underlined(href="/blog/#{ slug }")
+            != article.title
+            if i == 1
+              span.badge new
 
-      h3.list-group-item Connect with Harp
-      .list-group-item
-        iframe(src="http://ghbtns.com/github-btn.html?user=sintaxi&repo=harp&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="100%", height="30px")
-        a(href="https://twitter.com/HarpWebServer", class="twitter-follow-button", data-show-count="false", data-lang="en", data-size="large") Follow @HarpWebServer
-        a.list-group-item.icon-irc(href="irc://irc.freenode.net/harp") Chat in ##{ service.irc.toLowerCase() } on IRC
 
-  //- != partial("nav/nav", { "id": "navigation", "classes": "st-menu--fallback jumbotron" })
+  .col.col-12.md-col-4.list-group
+    h3.list-group-item The Harp Newsletter
+    .list-group-item!= partial("../_shared/newsletter")
+
+    h3.list-group-item Connect with Harp
+    .list-group-item
+      iframe(src="http://ghbtns.com/github-btn.html?user=sintaxi&repo=harp&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="100%", height="30px")
+      a(href="https://twitter.com/HarpWebServer", class="twitter-follow-button", data-show-count="false", data-lang="en", data-size="large") Follow @HarpWebServer
+      a.list-group-item.icon-irc(href="irc://irc.freenode.net/harp") Chat in ##{ service.irc.toLowerCase() } on IRC
