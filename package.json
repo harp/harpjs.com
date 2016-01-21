@@ -34,7 +34,10 @@
   },
   "dependencies": {
     "basscss-sass": "3.0.0",
+    "fg-loadcss": "0.2.4",
+    "fontfaceobserver": "1.6.3",
     "normalize.css": "3.0.3",
+    "smoothscroll": "0.2.2",
     "utility-opentype": "0.1.3"
   },
   "devDependencies": {
@@ -44,6 +47,6 @@
     "numeral": "1.5.3",
     "should": "8.1.1",
     "surge": "latest",
-    "terraform": "kennethormandy/terraform#ko-browserify-and-data"
+    "terraform": "git://github.com/kennethormandy/terraform.git#adceba0be6fde3dbd7578291f443fb6b3732e215"
   }
 }
