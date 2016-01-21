@@ -26,6 +26,14 @@ html(manifest="#{ environment === 'production' ? '/auto.appcache' : '' }" lang="
     meta(http-equiv="cleartype" content="on")
     - var p = public._data[Array.prototype.slice.call(current.path).reverse()[current.path.length - 1]] || {}
 
+    //-
+      This should get replaces with a post-Browserify partial
+      once Harp can do that (inline pre-compiled files)
+    <script>
+    include ../node_modules/fg-loadcss/loadCSS.js
+    include ./js/core.js
+    </script>
+
   //- Match overflow scroll background colour to nav
   body(class="#{ p.knockout === false ? 'bg-white' : 'bg-blue' }")
     .bg-white
