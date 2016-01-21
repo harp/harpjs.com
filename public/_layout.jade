@@ -1,7 +1,7 @@
 doctype
 //[if lt IE 8]><html lang="en" class="ie"><![endif]
 //[if gt IE 8]><!
-html(manifest="/auto.appcache" lang="en")
+html(manifest="#{ environment === 'production' ? '/auto.appcache' : '' }" lang="en")
   //<![endif]
   head
     meta(charset="utf-8")
