@@ -4,7 +4,11 @@ This guide will help you install Harp. You’ll create and serve a simple projec
 
 1. ## Install the Harp Web Server
 
-  <div class="videoWrapper"><iframe width="853" height="480" src="//www.youtube.com/embed/SEA0G9kpVJM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+  <figure>
+    <div class="embed-container">
+    <iframe width="853" height="480" src="//www.youtube.com/embed/SEA0G9kpVJM?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </figure>
 
   First, install [Node.js](http://nodejs.org/download/). Harp uses Node.js, but you don’t need to know about Node.js or even JavaScript to use Harp. Once it’s finished installing, you can install Harp using the mighty npm: Node.js’ package manager. You’ll use the command prompt to do this.
 
