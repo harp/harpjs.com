@@ -8,6 +8,6 @@ article.col-12.md-col-9.lg-col-8.mx-auto
 
       h1.h1.mt1!= yield.split("<h1>")[1].split("</h1>")[0]
     != yield.split("</h1>")[1]
-    != partial("../_shared/closing")
+    != partial("../_shared/newsletter-cta")
   else
     != partial("../404")

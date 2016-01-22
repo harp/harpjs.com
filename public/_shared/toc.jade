@@ -1,0 +1,33 @@
+details#js-toc.rounded.is-target.md-is-transparent(open)
+  summary.md-hide.border.p1.btn.btn-primary.bg-gray.col-12.p2.mb2 Table of Contents
+  .px2
+    != partial("search")
+  ul.list-reset.clearfix.mt3
+    li(class="#{ current.path[1] === 'index' ? 'active' : '' }"): a.px2.border-none.regular.block(href="/docs/"): span.a-faux Overview
+    li(class="#{ current.path[1] === 'quick-start' ? 'active' : '' }"): a.px2.border-none.regular.block(href="/docs/quick-start"): span.a-faux Quick Start
+
+    each section, slug in public.docs._data
+      unless slug === 'index'
+        li(class="#{ current.path[1] === slug ? 'active' : '' }")
+          - i = 0;
+          if typeof(public.docs[slug])!=='undefined'
+            each thing, link in public.docs[slug]._data
+              unless i >= 1
+                - i++;
+                h3.px2= section.title
+                ul.list-reset.clearfix
+                  each subsection, subslug in public.docs[slug]._data
+                    unless subslug === 'index' || subsection.published === false
+                      if (subsection.tags && subsection.tags.indexOf(["preprocessor"])) && preprocessors!==true
+                        li
+                          h4.px2 Preprocessors
+                        - preprocessors = true
+                      li(class="#{ current.source === subslug ? 'active active-last' : ''}")
+                        a.px2.border-none.regular.block(href="/docs/#{ slug }/#{ subslug }"): span.a-faux= subsection.title
+    li(class="#{ current.path[1] === 'recipes' ? 'active' : '' }")
+      h3.px2 Recipes
+      ul.list-reset.clearfix
+        li: a.px2.border-none.regular.block(href="/recipes/blog-posts-list"): span.a-faux How to create a list of blog posts
+        li: a.px2.border-none.regular.block(href="/recipes/custom-title-description"): span.a-faux How to add a custom title and description per page
+        li: a.px2.border-none.regular.block(href="/recipes"): span.a-faux More recipes…
+      

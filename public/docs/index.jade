@@ -1,58 +1,58 @@
-!= partial("../_shared/nav/nav", { "knockout": true })
+!= partial("../_shared/nav", { "knockout": true })
 .container.p1.sm-p2
-  .col.col-12.md-col-3.lg-col-4
-    nav.md-show
-      != partial("_shared/search")
-      != partial("_shared/nav")
-  article.col.col-12.md-col-9.lg-col-8
-    //-!= partial("_shared/video")
-    :markdown
-      # Harp Documentation
+  .clearfix.mxn2
+    nav.col.col-12.md-col-3.lg-col-4.p2
+      != partial("../_shared/toc")
 
-      [Install Harp](/docs/quick-start)<br/>
-      Get started quickly with a screencast and tutorial.
+    article.col.col-12.md-col-9.lg-col-8
+      //-!= partial("_shared/video")
+      :markdown
+        # Harp Documentation
 
-      [Understanding the basics](/docs/development/rules)</br>
-      Five simple rules you can count on while making your own Harp applications.
+        [Install Harp](/docs/quick-start)<br/>
+        Get started quickly with a screencast and tutorial.
 
-      ## Environment
+        [Understanding the basics](/docs/development/rules)</br>
+        Five simple rules you can count on while making your own Harp applications.
 
-      Learn how to run Harp wherever you need it:
+        ## Environment
 
-      * [Locally](/docs/environment/install), while you design and develop static sites or client-side applications
-      * [As Middleware](/docs/environment/lib), making Harp the asset pipeline for a larger application built with Express and Node.js
-      * [In Production](/docs/environment/server), where Harp will act as a web server, caching and can serve static content
+        Learn how to run Harp wherever you need it:
 
-      ## Development
+        * [Locally](/docs/environment/install), while you design and develop static sites or client-side applications
+        * [As Middleware](/docs/environment/lib), making Harp the asset pipeline for a larger application built with Express and Node.js
+        * [In Production](/docs/environment/server), where Harp will act as a web server, caching and can serve static content
 
-      Read [The Rules](/docs/development/rules), a single page crash course in getting the most out of Harp right away.
+        ## Development
 
-      If you are using preprocessors to write HTML, CSS, or JavaScript, Harp will make your project dramatically easier. Harp supports [Markdown](/docs/development/markdown), [EJS](/docs/development/ejs), [Jade](/docs/development/jade), [LESS](/docs/development/less), [Sass](/docs/development/sass), [Stylus](/docs/development/stylus), and [CoffeeScript](/docs/development/coffeescript).
+        Read [The Rules](/docs/development/rules), a single page crash course in getting the most out of Harp right away.
 
-      ## Deployment
+        If you are using preprocessors to write HTML, CSS, or JavaScript, Harp will make your project dramatically easier. Harp supports [Markdown](/docs/development/markdown), [EJS](/docs/development/ejs), [Jade](/docs/development/jade), [LESS](/docs/development/less), [Sass](/docs/development/sass), [Stylus](/docs/development/stylus), and [CoffeeScript](/docs/development/coffeescript).
 
-      Learn how to deploy Harp in production mode, and have it serve your application. Or, compile your project into HTML, CSS, and JavaScript, so it’s ready host it anywhere.
+        ## Deployment
 
-      <!-- TODO replace with `harp publish` You can skip this entirely with [the Harp Platform](https://www.harp.io), the easiest way to get a Harp app online. -->
+        Learn how to deploy Harp in production mode, and have it serve your application. Or, compile your project into HTML, CSS, and JavaScript, so it’s ready host it anywhere.
 
-      ## Contribute
+        <!-- TODO replace with `harp publish` You can skip this entirely with [the Harp Platform](https://www.harp.io), the easiest way to get a Harp app online. -->
 
-      * [Contributing to Harp](https://github.com/sintaxi/harp/#contributing)<br/>
-      Harp is lucky to have a community that contributes back to it. Whether you are interested in fixing a bug or adding new functionality, it is covered in this guide.
+        ## Contribute
 
-      ## Get help with Harp
-      
-      * [Subscribe to the Harp Weekly newsletter](http://harpjs.us7.list-manage1.com/subscribe?u=af92eba03471187c8aa0266e7&id=74381fea66)<br/>
-      Each week, we write about what’s new with client-side applications, static sites, and Harp specific tutorials.
-      * [Message @HarpWebServer on Twitter](http://twitter.com/harpwebserver)
-      * [Ask for help in the #harp IRC channel](../community/chat)<br/>
-      There’s an active community of people using Harp in the IRC channel who are often available to answer any questions you might have.
-      * [Open an issue on GitHub](https://github.com/sintaxi/harp)<br/>
-      Found a problem? Have a suggestion? Feel free to open an issue.
-      * [Stack Overflow](http://stackoverflow.com/questions/tagged/harp)</br>
-      Ask and answer questions on Stack Overflow with the tag “harp.”
+        * [Contributing to Harp](https://github.com/sintaxi/harp/#contributing)<br/>
+        Harp is lucky to have a community that contributes back to it. Whether you are interested in fixing a bug or adding new functionality, it is covered in this guide.
 
-    footer
-      a.mx-auto.block.center.black.text-decoration-none.border-none(href="https://github.com/" + service.contributing + "/edit/master/public/" + current.path.join('/') + ".md")
-        small See something that could be better?&nbsp;
-          span.a-faux Edit this page.
+        ## Get help with Harp
+        
+        * [Subscribe to the Harp Weekly newsletter](http://harpjs.us7.list-manage1.com/subscribe?u=af92eba03471187c8aa0266e7&id=74381fea66)<br/>
+        Each week, we write about what’s new with client-side applications, static sites, and Harp specific tutorials.
+        * [Message @HarpWebServer on Twitter](http://twitter.com/harpwebserver)
+        * [Ask for help in the #harp IRC channel](../community/chat)<br/>
+        There’s an active community of people using Harp in the IRC channel who are often available to answer any questions you might have.
+        * [Open an issue on GitHub](https://github.com/sintaxi/harp)<br/>
+        Found a problem? Have a suggestion? Feel free to open an issue.
+        * [Stack Overflow](http://stackoverflow.com/questions/tagged/harp)</br>
+        Ask and answer questions on Stack Overflow with the tag “harp.”
+
+      footer
+        a.mx-auto.block.center.black.text-decoration-none.border-none(href="https://github.com/" + service.contributing + "/edit/master/public/" + current.path.join('/') + ".md")
+          small See something that could be better?&nbsp;
+            span.a-faux Edit this page.

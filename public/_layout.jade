@@ -42,7 +42,7 @@ html(manifest="#{ environment === 'production' ? '/auto.appcache' : '' }" lang="
         .clearfix!= yield
       else
         //- Otherwise, wrap it in _nest.jade
-        != partial("_shared/nav/nav", { "knockout": p.knockout })
+        != partial("_shared/nav", { "knockout": p.knockout })
         .container.p1.sm-p2.clearfix
           if current.path.length === 1
             .clearfix!= partial("/_nest.jade", { yield: yield })

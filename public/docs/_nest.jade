@@ -1,9 +1,6 @@
 .clearfix.mxn2
   nav.col.col-12.md-col-3.lg-col-4.p2
-    details#js-toc.rounded(open)
-      summary.md-hide.border.p1.btn.btn-primary.bg-gray Table of Contents
-      != partial("_shared/search")
-      != partial("_shared/nav")
+    != partial("../_shared/toc")
 
   article.col.col-12.md-col-9.lg-col-8.p2
     //-!= partial("_shared/video")
