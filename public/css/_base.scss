@@ -25,7 +25,10 @@ html {
 }
 
 img,
-svg {
+svg,
+iframe,
+object,
+embed {
   display: block;
   width: 100%;
 }
