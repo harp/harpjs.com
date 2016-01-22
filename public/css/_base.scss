@@ -98,8 +98,16 @@ a,
   &:hover,
   &:focus,
   &:active {
-    opacity: 0.9;
+    opacity: 0.66;
     border-color: $darken-2;
+  }
+}
+
+a.btn {
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.9;
   }
 }
 
