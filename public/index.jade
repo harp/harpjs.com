@@ -1,52 +1,111 @@
-a.md-show.border-none(href="https://github.com/sintaxi/harp" style="position: absolute; top: 0; right: 0;")
+a.lg-show.border-none(href="https://github.com/sintaxi/harp" style="position: absolute; top: 0; right: 0;")
   img.block(src="/images/github-ribbon.png", alt="Star Harp on GitHub" style="max-width: 7.5em")
 
 header.bg-blue
   != partial("_shared/nav")
   .clearfix
     .container.p1.sm-p2.clearfix
-      h1.h0-responsive.white The static web server with built-in preprocessing
-      p.h4 Harp serves Markdown, Sass, CoffeeScript, EJS, Jade, LESS, and more as HTML, CSS & JavaScript—no configuration necessary.
-      .btn.btn-primary(href="#") Get started
+      .col-12.center
+        h1.h1-responsive.white The static web server with built-in preprocessing
+        p.h4 Harp serves Markdown, Sass, CoffeeScript, EJS, Jade, LESS, and more as HTML, CSS & JavaScript—no configuration necessary.
+        .btn.btn-primary(href="#") Get started
+      .col-12
+        pre.bg-navy.teal.language-sh: code
+          | <span class="select-none">$&nbsp;</span>npm install --global harp
+          | <span class="select-none">$&nbsp;</span>harp ./myproject
+          | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
+
 
 .container.px1.sm-px2.clearfix
   .col-12.md-col-9.lg-col-8.mx-auto
-    :markdown
-      ```sh
-      # Install Harp
-      sudo npm install --global harp
+    pre.language-sh: code
+      | <span class="select-none"># Install Harp</span>
+      | <span class="select-none">$&nbsp;</span>npm install --global harp
+      | 
+      | <span class="select-none"># Make a new project, and serve</span>
+      | <span class="select-none"># it at http://localhost:9000</span>
+      | <span class="select-none">$&nbsp;</span>harp ./myproject
+      | 
+      | <span class="select-none"># Deploy it to the web with one command</span>
+      | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
 
-      # Make a new static site
-      harp init myproject
+    ul
+      li Sign up for the Harp newsletter
+      li Follow @HarpWebServer
 
-      # Serve it at http://localhost:9000
-      harp server myproject
-
-      # Deploy it to the web with one command
-      harp publish myproject
-      ```
-
-      - Sign up for the Harp newsletter
-      - Follow @HarpWebServer
-
-.bg-navy.teal
+.bg-black.teal.py3
   .container.px1.sm-px2.clearfix
     .col-12.md-col-9.lg-col-8.mx-auto
+      blockquote.h2.center Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
+        footer.clearfix.center.h5.mt2
+          a.inline-block.border-none(href="https://twitter.com/pravcox/status/577844274894635008")
+            .flex.flex-center
+              img.flex-auto.circle.mr1(src="https://avatars.io/twitter/pravcox" style="max-width: 2rem")
+              span.a-faux Pravina Cox
+
       h2 Who’s using Harp
       p Amazing individuals and teams build static projects with Harp.
-
-    .clearfix.mx2n
+      
+    .clearfix.mxn2
       .col.sm-col-4.p2
-        h3 npm
-        p npm, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their [public?] documentation.
-
-      .col.sm-col-4.p2
-        h3 Angular.io
-        p Google’s Angular.io team chose Harp to build an amazing new site for Angular 2, the latest version of the popular and powerful web and mobile application framework.
+        img(src="/images/logo-npm.svg" alt="npm")
+        //- h3.mt0.center npm
+        p.h6 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
 
       .col.sm-col-4.p2
-        h3 Huge Inc.
-        p Huge, the digital agency with clients like Nike, TED, and HBO, uses Harp within Styleguide, a tool that makes creating and maintaining their styleguides easy.
+        img(src="/images/logo-angular.svg" alt="Angular")
+        //- h3.mt0.center Angular.io
+        p.h6 Google’s <strong>Angular.io</strong> team chose Harp to build an amazing new site for Angular 2, the latest version of the popular and powerful web and mobile application framework.
+
+      .col.sm-col-4.p2
+        img(src="/images/logo-huge.svg" alt="Huge")
+        //- h3.mt0.center Huge Inc.
+        p.h6 <strong>Huge Inc.</strong> is a digital agency with clients like Nike, TED, and HBO, uses Harp within Styleguide, a tool that makes creating and maintaining their styleguides easy.
+
+.bg-black.teal.py3
+  .clearfix.flex.flex-stretch
+    .col-6.flex-auto.clearfix.flex.flex-center
+      .col-12.px1.sm-px2.flex-auto
+        .md-col-10.lg-col-8.right.mr4
+          h3 How npm uses Harp
+          p.h6.md-h5.lg-h4 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
+    .col-6
+      //-
+        .bg-gray.py2.rounded-top.flex.flex-center
+          .ml2(role="presentation")
+            .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
+            .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
+            .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
+          .flex-auto
+            .rounded.bg-silver.p1.gray npmjs.org
+      img.rounded-bottom(src="/images/example-npm-crop.png")
+        
+
+.bg-purple.teal.py3
+  .container.px1.sm-px2.clearfix
+    .col-12.md-col-9.lg-col-8.mx-auto
+      blockquote.h2.center Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
+        footer.clearfix.center.h5.mt2
+          a.inline-block.border-none(href="https://twitter.com/pravcox/status/577844274894635008")
+            .flex.flex-center
+              img.flex-auto.circle.mr1(src="https://avatars.io/twitter/pravcox" style="max-width: 2rem")
+              span.a-faux.black Pravina Cox
+
+      h2.center Efficient web developers use Harp.
+      p The preprocessors and helpers you want are already built into Harp. Write a <code>.scss</code> file, and Harp automatically serves it as CSS. Write a <code>require</code> statement, and it will automatically be compiled with Browserify—and a lot more.
+            
+    .clearfix.mxn2
+      .col.sm-col-4.p2
+        img(src="/images/logo-npm.svg" alt="npm")
+        //- h3.mt0.center npm
+        p.h6 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
+
+
+  .clearfix.mx2n.mt4
+    .center.col-12.p2.mx-auto
+      p …and you? Harp is open source and free.
+      a.btn.btn-primary.bg-maroon.p2(href="/docs/quick-start") Get started
+
 
 .bg-transparent
   .col-12.md-col-9.lg-col-8.mx-auto
@@ -95,7 +154,11 @@ header.bg-blue
       - https://twitter.com/raymondcamden/status/515575726226300929
       - https://twitter.com/AndresJCremades/status/516854729595691008
       - https://twitter.com/fox/status/523790890658459648
-      - https://twitter.com/jbucaran/status/524082242708992001
+      
+      blockquote
+        p @HarpWebServer, the best static web server + preprocessor money can't buy, because it's open and free. You guys rock!
+        footer https://twitter.com/jbucaran/status/524082242708992001
+
       - https://twitter.com/kedronrhodes/status/535159621141684224
       - https://twitter.com/matt_mcclure/status/536667542631501824
       - https://twitter.com/francoislaberge/status/537234603363557376
