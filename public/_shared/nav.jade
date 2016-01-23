@@ -4,14 +4,14 @@
 
 nav.clearfix(role="navigation" class="#{ knockout === false ? 'bg-white' : 'bg-blue' }")
   .container.flex.flex-center.p1.sm-p2
-    .sm-col.flex-auto
-      a.block.mx-auto.left.border-none(href="/" style="max-width: 5.5em")
-        img.block.mx-auto(src="/images/wordmark#{ knockout === false ? '-dark' : '' }.svg" alt="#{ name }" style="height: 2.5em")
-    .sm-col-right.h6.sm-h5(class="#{ knockout === false ? 'gray' : 'teal' }")
-      a.btn.p1.border-none(href="/docs") Documentation
-      a.btn.p1.border-none.sm-show-inline(href="/blog") Blog
-      a.btn.p1.border-none.sm-show-inline(href="/community") Commmunity
-      a.btn.p1.border-none.sm-show-inline(href="https://github.com/sintaxi/harp") GitHub
-      a.btn.p2.border-none.sm-show-inline.bg-maroon.rounded(href="/docs/quick-start")
-        span.white Quick Start
-      a.btn.p1.border-none.sm-hide(href="#nav") More…
+      .sm-col.flex-auto
+        a.block.mx-auto.left.border-none(href="/" style="max-width: 5.5em")
+          img.block.mx-auto(src="/images/wordmark#{ knockout === false ? '-dark' : '' }.svg" alt="#{ name }" style="height: 2.5em")
+      .sm-col-right.h6.md-h5(class="#{ knockout === false ? 'gray' : 'teal' }")
+        a.btn.regular.p1.border-none(href="/docs") Documentation
+        a.btn.regular.p1.border-none.sm-show-inline(href="/blog") Blog
+        a.btn.regular.p1.border-none.sm-show-inline(href="/community") Commmunity
+        a.btn.regular.p1.border-none.sm-show-inline(href="https://github.com/sintaxi/harp") GitHub
+        a.btn.p2.border-none.sm-show-inline.bg-maroon.rounded(href="/docs/quick-start")
+          span.white Quick Start
+        a.btn.regular.p1.border-none.sm-hide(href="#nav") More…
