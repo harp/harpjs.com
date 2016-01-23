@@ -1,6 +1,6 @@
 # The Rules
 
-### Five simple rules you can count on when making templates for a Harp Application.
+Five simple rules you can count on when making templates for a Harp application.
 
 Rather than offering a complex feature set, Harp has simple rules on how it works. Harp is a katana, not a swiss army knife. By understanding the rules, one will know how to effectively use harp.
 
