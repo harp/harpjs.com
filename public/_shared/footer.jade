@@ -1,14 +1,14 @@
-footer.footer.mt4.mxn2
+footer.footer.py4.clearfix.mxn2
 
   #nav.is-target.md-is-transparent.col.col-12.md-col-4.list-group.px2
     h3 Everything Harp
-    ol.block.h4.md-h5
-      li: a(href="/docs") Documentation
-      li: a(href="/docs/quick-start") Quick Start
-      li: a(href="/recipes") Recipes
-      li: a(href="/community") Community
-      li: a(href="/identity") Identity Guide
-      li: a(href="/blog") Blog
+    ol.block.h4.md-h5.list-reset
+      li: a.py1.border-none.block(href="/docs") Documentation
+      li: a.py1.border-none.block(href="/docs/quick-start") Quick Start
+      li: a.py1.border-none.block(href="/recipes") Recipes
+      li: a.py1.border-none.block(href="/community") Community
+      li: a.py1.border-none.block(href="/identity") Identity Guide
+      li: a.py1.border-none.block(href="/blog") Blog
 
   .col.col-12.md-col-4.list-group.px2
     h3.list-group-item Latest Articles
@@ -17,18 +17,18 @@ footer.footer.mt4.mxn2
       if article.published == true && !article.url
         - i++
         if i <= 5
-          a.list-group-item.list-group-underlined(href="/blog/#{ slug }")
+          a.py1.border-none.block(href="/blog/#{ slug }")
             != article.title
             if i == 1
-              span.badge new
+              span.ml1.purple new
 
 
   .col.col-12.md-col-4.list-group.px2
     h3.list-group-item The Harp Newsletter
     .list-group-item!= partial("../_shared/newsletter")
 
-    h3.list-group-item Connect with Harp
-    .list-group-item
-      iframe(src="http://ghbtns.com/github-btn.html?user=sintaxi&repo=harp&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="100%", height="30px")
-      a(href="https://twitter.com/HarpWebServer", class="twitter-follow-button", data-show-count="false", data-lang="en", data-size="large") Follow @HarpWebServer
-      a.list-group-item.icon-irc(href="irc://irc.freenode.net/harp") Chat in ##{ service.irc.toLowerCase() } on IRC
+    h3 Connect with Harp
+    .py1.border-none.block
+      iframe(src="http://ghbtns.com/github-btn.html?user=sintaxi&repo=harp&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="100%" height="30px")
+    a.py1.border-none.block(href="https://twitter.com/HarpWebServer" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large") Follow @HarpWebServer
+    a.py1.border-none.block(href="irc://irc.freenode.net/harp") Chat in ##{ service.irc.toLowerCase() } on IRC
