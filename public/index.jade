@@ -27,10 +27,11 @@ header.bg-blue
               span.h6 Windows
 
 .container.px1.sm-px2.clearfix
-  pre.bg-navy.teal.language-sh: code
-    | <span class="select-none">$&nbsp;</span>npm install --global harp
-    | <span class="select-none">$&nbsp;</span>harp ./myproject
-    | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
+  //- This is the non-commented version
+  //- pre.bg-navy.teal.language-sh: code
+  //-   | <span class="select-none">$&nbsp;</span>npm install --global harp
+  //-   | <span class="select-none">$&nbsp;</span>harp ./myproject
+  //-   | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
 
 
   .col-12.md-col-9.lg-col-8.mx-auto
@@ -48,6 +49,35 @@ header.bg-blue
     ul
       li Sign up for the Harp newsletter
       li Follow @HarpWebServer
+
+.container
+  .clearfix.mxn2
+    .col.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Easy to get started.</strong> Zero-configuration necessary. Preprocessors are built right in.
+    .col.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Go beyond blogs.</strong> Static sites are powerful: Harp helps build them.
+
+    .col.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Multi-platform.</strong> Your whole team can run Harp: Windows, Mac, and Linux, CLI or app.
+    .col.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">No lock-in.</strong> Compile to HTML, CSS, & JS, wrap in Cordova or Electron, and publish to the web.
+    .col.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Built for speed.</strong> Harp’s intelligent compliation means there’s no need to wait for your entire static site to rebuild.
+    .col.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Static is secure.</strong> Plus, built-in publishing to HTTPS subdomains. Add-on password protection.
+
 
 .bg-black.teal.py3
   .container.px1.sm-px2.clearfix
@@ -102,7 +132,7 @@ header.bg-blue
       img.rounded-bottom(src="/images/example-npm-crop.png")
         
 
-.bg-purple.teal.py3
+.bg-purple.white.py3
   .container.px1.sm-px2.clearfix
     .col-12.md-col-9.lg-col-8.mx-auto
       blockquote.h2.center Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
@@ -110,11 +140,11 @@ header.bg-blue
           a.inline-block.border-none(href="https://twitter.com/pravcox/status/577844274894635008")
             .flex.flex-center
               img.flex-auto.circle.mr1(src="https://avatars.io/twitter/pravcox" style="max-width: 2rem")
-              span.a-faux.black Pravina Cox
+              span.a-faux.muted.white Pravina Cox
 
       h2.center Efficient web developers use Harp.
-      p The preprocessors and helpers you want are already built into Harp. Write a <code>.scss</code> file, and Harp automatically serves it as CSS. Write a <code>require</code> statement, and it will automatically be compiled with Browserify—and a lot more.
-            
+      p The preprocessors you want are built into Harp. Write a <code>.scss</code> file, and Harp automatically serves it as CSS. Write a <code>require</code> statement, and it will automatically be compiled with Browserify—and a lot more.
+      
       .clearfix.mxn2.flex.flex-center
         a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/jade")
           include ../node_modules/preprocessor-logos/jade/jade-knockout-padded.svg
@@ -136,48 +166,17 @@ header.bg-blue
         a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/autoprefixer")
           img(src="http://substack.net/images/browserify_logo.png")
 
-
-  .clearfix.mx2n.mt4
-    .center.col-12.p2.mx-auto
-      p …and you? Harp is open source and free.
-      a.btn.btn-primary.bg-maroon.p2(href="/docs/quick-start") Get started
-
-
 .bg-transparent
   .col-12.md-col-9.lg-col-8.mx-auto
     :markdown
       ## Preprocessors are built-in
 
       The preprocessors you want are already built-in—no need to configure anything. Create a new `.scss` file, and it will automatically be preprocessed as Sass. Write a new `.js` file, and automatically include `require` modules via Browserify.
-
-      - Sass (Very fast via Node-sass and Libsass)
-      - LESS
-      - Stylus
-      - CoffeeScript
-      - Jade
-      - EJS
-      - Markdown
-
       - Flexible metadata
       - Autoprefixer
       - Browserify
       - Minification
       - Source Maps (?)
-
-      ## Multi-platform
-
-      - OS X
-      - Windows
-      - Linux
-
-      - CLI
-      - GUI
-
-      - Zero-configuration to get started
-      - Multi-platform, multi-client: Windows, Mac, and Linux, CLI or app
-      - Take your code anywhere: compile, publish, or wrap (Cordova, Electron)
-      - Fast: incremental compiles on demand, don’t wait for your entire static site to rebuild
-      - Secure: compiled content is static, published with HTTPS on harpjs.com domains
 
       ## Quotes to feature
 
