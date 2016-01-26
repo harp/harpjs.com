@@ -11,5 +11,6 @@ if typeof(public.docs[current.path[1]])==='object'
       else if next === true
         a.block.bg-navy.p1.md-p3.rounded(href="/docs/#{ current.path[1] }/#{ slug }")
           h3.mt0 What’s Next?
-          p !{ item.description.replace(" (", " (<code>").replace(")", "</code>)") } &rarr;
+          if item.description
+            p !{ item.description.replace(" (", " (<code>").replace(")", "</code>)") } &rarr;
         - return

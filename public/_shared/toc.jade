@@ -3,13 +3,13 @@ details#js-toc.rounded.is-target.md-is-transparent(open)
   .p1
     != partial("search")
   ul.list-reset.clearfix.mt3
-    li(class="#{ current.path[1] === 'index' ? 'bg-darken-1 rounded' : '' }"): a.p1.border-none.regular.block(href="/docs/") Overview
-    li(class="#{ current.path[1] === 'quick-start' ? 'bg-darken-1 rounded' : '' }"): a.p1.border-none.regular.block(href="/docs/quick-start") Quick Start
+    li: a.p1.border-none.regular.block(href="/docs/" class="#{ current.path[1] === 'index' ? 'bg-silver rounded' : '' }") Overview
+    li: a.p1.border-none.regular.block(href="/docs/quick-start" class="#{ current.path[1] === 'quick-start' ? 'bg-silver rounded' : '' }") Quick Start
 
     each section, slug in public.docs._data
       unless slug === 'index'
         li
-          //- (class="#{ current.path[1] === slug ? 'bg-darken-1' : '' }")
+          //- (class="#{ current.path[1] === slug ? 'bg-' : '' }")
           - i = 0;
           if typeof(public.docs[slug])!=='undefined'
             each thing, link in public.docs[slug]._data
@@ -23,12 +23,5 @@ details#js-toc.rounded.is-target.md-is-transparent(open)
                         li
                           h4.p1 Preprocessors
                         - preprocessors = true
-                      li(class="#{ current.source === subslug ? 'bg-darken-1 rounded' : ''}")
-                        a.p1.border-none.regular.block(href="/docs/#{ slug }/#{ subslug }")= subsection.title
-    li(class="#{ current.path[1] === 'recipes' ? 'bg-darken-1 rounded' : '' }")
-      h3.p1 Recipes
-      ul.list-reset.clearfix
-        li: a.p1.border-none.regular.block(href="/recipes/blog-posts-list") How to create a list of blog posts
-        li: a.p1.border-none.regular.block(href="/recipes/custom-title-description") How to add a custom title and description per page
-        li: a.p1.border-none.regular.block(href="/recipes") More recipes…
-      
+                      li
+                        a.p1.border-none.regular.block(href="/docs/#{ slug }/#{ subslug }" class="#{ current.source === subslug ? 'bg-silver rounded' : ''}")= subsection.title
