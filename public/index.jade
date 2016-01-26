@@ -9,14 +9,22 @@ header.bg-blue
         h1.h1-responsive.white The static web server with built-in preprocessing
         p.h4 Harp serves Markdown, Sass, CoffeeScript, EJS, Jade, LESS, and more as HTML, CSS & JavaScript—no configuration necessary.
         .btn.btn-primary(href="#") Get started
-    .clearfix
-      .col.col-6
-        div Node.js v4+
-      .col.col-6
-        strong Runs on
-        div OS X
-        div Linux
-        div Windows
+      .clearfix
+        .col-12.sm-col-6.md-col-4.center.mx-auto.mt4
+          .flex.flex-center.flex-justify
+            a.block.teal.border-none.md-p1(href="/docs/environment/node")
+              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+              span.h6 Node.js v4+
+
+            a.block.teal.border-none.md-p1(href="/docs/environment/os-x")
+              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+              span.h6 OS X
+            a.block.teal.border-none.md-p1(href="/docs/environment/linux")
+              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+              span.h6 Linux
+            a.block.teal.border-none.md-p1(href="/docs/environment/window")
+              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+              span.h6 Windows
 
 .container.px1.sm-px2.clearfix
   pre.bg-navy.teal.language-sh: code
@@ -70,6 +78,11 @@ header.bg-blue
         //- h3.mt0.center Huge Inc.
         p.h6 <strong>Huge Inc.</strong> is a digital agency with clients like Nike, TED, and HBO, uses Harp within Styleguide, a tool that makes creating and maintaining their styleguides easy.
 
+      //- .col.sm-col-6.md-col-3.p2
+      //-   img(src="/images/logo-intel.svg" alt="Huge")
+      //-   //- h3.mt0.center Huge Inc.
+      //-   p.h6 <strong>Intel</strong> used Harp to re-build their Crosswalk Project site, which helps
+
 .bg-black.teal.py3
   .clearfix.flex.flex-stretch
     .col-6.flex-auto.clearfix.flex.flex-center
@@ -102,11 +115,26 @@ header.bg-blue
       h2.center Efficient web developers use Harp.
       p The preprocessors and helpers you want are already built into Harp. Write a <code>.scss</code> file, and Harp automatically serves it as CSS. Write a <code>require</code> statement, and it will automatically be compiled with Browserify—and a lot more.
             
-    .clearfix.mxn2
-      .col.sm-col-4.p2
-        img(src="/images/logo-npm.svg" alt="npm")
-        //- h3.mt0.center npm
-        p.h6 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
+      .clearfix.mxn2.flex.flex-center
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/jade")
+          include ../node_modules/preprocessor-logos/jade/jade-knockout-padded.svg
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/markdown")
+          include ../node_modules/preprocessor-logos/markdown/markdown-knockout-padded.svg
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/less")
+          include ../node_modules/preprocessor-logos/less/less-knockout-padded.svg
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/coffeescript")
+          include ../node_modules/preprocessor-logos/coffeescript/coffeescript-knockout-padded.svg
+          //- img(src="/images/icons/coffeescript-logo.svg" alt="CoffeeScript logo")
+
+      .clearfix.mxn2
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/sass")
+          include ../node_modules/preprocessor-logos/sass/sass-knockout-padded.svg
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/stylus")
+          include ../node_modules/preprocessor-logos/stylus/stylus-knockout-padded.svg
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/autoprefixer")
+          include ../node_modules/preprocessor-logos/autoprefixer/autoprefixer-knockout-padded.svg
+        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/autoprefixer")
+          img(src="http://substack.net/images/browserify_logo.png")
 
 
   .clearfix.mx2n.mt4
