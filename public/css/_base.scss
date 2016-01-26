@@ -116,9 +116,21 @@ a.btn {
 // display block, but I need a block to re-display
 // as line in this case
 // http://www.basscss.com/docs/responsive-states/
-.sm-show-inline {
+.md-show-inline {
   display: none !important;
-  @media #{ $breakpoint-sm } {
+  @media #{ $breakpoint-md } {
+    display: inline !important;
+  }
+}
+
+.md-col-auto {
+  @media #{ $breakpoint-md } {
+    width: auto !important;
+  }
+}
+
+.md-show-inline {
+  @media #{ $breakpoint-md } {
     display: inline !important;
   }
 }
