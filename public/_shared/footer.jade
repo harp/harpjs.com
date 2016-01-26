@@ -1,6 +1,6 @@
-footer.footer.mt4
+footer.footer.mt4.mxn2
 
-  #nav.is-target.md-is-transparent.col.col-12.md-col-4.list-group
+  #nav.is-target.md-is-transparent.col.col-12.md-col-4.list-group.px2
     h3 Everything Harp
     ol.block.h4.md-h5
       li: a(href="/docs") Documentation
@@ -10,7 +10,7 @@ footer.footer.mt4
       li: a(href="/identity") Identity Guide
       li: a(href="/blog") Blog
 
-  .col.col-12.md-col-4.list-group
+  .col.col-12.md-col-4.list-group.px2
     h3.list-group-item Latest Articles
     - i = 0
     for article, slug in public.blog._data
@@ -23,7 +23,7 @@ footer.footer.mt4
               span.badge new
 
 
-  .col.col-12.md-col-4.list-group
+  .col.col-12.md-col-4.list-group.px2
     h3.list-group-item The Harp Newsletter
     .list-group-item!= partial("../_shared/newsletter")
 
