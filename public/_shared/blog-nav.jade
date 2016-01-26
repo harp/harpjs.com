@@ -1,0 +1,19 @@
+- var blog = []
+for entry, slug in public["blog"]._data
+  if entry.date && entry.published===true && typeof entry.url === 'undefined'
+    - entry.slug = slug
+    - blog.push(public["blog"]._data[slug])
+
+for entry, i in blog.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b>a?-1:b<a?1:0; }).slice(0, postlimit)
+  if entry.slug == current.source
+      //- Previous is one before this array item
+      //- Next is one after
+      //- Variables make it easy to template
+      - prev = blog[i - 1]
+      - next = blog[i + 1]
+      //- The actual links
+      ol.clearfix.mxn2
+        if prev
+          a.border-none.col.col-6.col-left.p2.left-align(href="#{ prev.slug }")= prev.title
+        if next
+          a.border-none.col.col-6.col-right.p2.right-align(href="#{ next.slug }")= next.title

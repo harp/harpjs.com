@@ -1,13 +1,20 @@
-article.col-12.md-col-9.lg-col-8.mx-auto
-  if published === true || environment==='development'
-    header.mb3.pnum.onum
-      if public.blog.contributors._data[author]
-        - author = public.blog.contributors._data[author]
+.mxn2.clearfix
+  .col.col-right.col-12.lg-col-2.px2.lg-show(style="transform: translateY(500px)")
+    a.p2.bg-silver.black.rounded.h6.block(href="/pricing")
+      p Publish your Harp project to a CDN, and a lot more.
+      .btn.btn-primary.bg-maroon.col-12.center Harp Pro
 
-      != partial("../_shared/author", { author: author })
+  article.col-12.md-col-9.lg-col-8.mx-auto.px2
+    if published === true || environment==='development'
+      header.mb3.pnum.onum
+        if public.blog.contributors._data[author]
+          - author = public.blog.contributors._data[author]
 
-      h1.h1.mt1!= yield.split("<h1>")[1].split("</h1>")[0]
-    != yield.split("</h1>")[1]
-    != partial("../_shared/newsletter-cta")
-  else
-    != partial("../404")
+        != partial("../_shared/author", { author: author })
+
+        h1.h1.mt1!= yield.split("<h1>")[1].split("</h1>")[0]
+      != yield.split("</h1>")[1]
+      != partial("../_shared/newsletter-cta")
+      != partial("../_shared/blog-nav")
+    else
+      != partial("../404")
