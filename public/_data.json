@@ -19,5 +19,8 @@
   },
   "identity": {
     "knockout": false
+  },
+  "pricing": {
+    "knockout":false
   }
 }
