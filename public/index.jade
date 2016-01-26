@@ -9,25 +9,33 @@ header.bg-blue
         h1.h1-responsive.white The static web server with built-in preprocessing
         p.h4 Harp serves Markdown, Sass, CoffeeScript, EJS, Jade, LESS, and more as HTML, CSS & JavaScript—no configuration necessary.
         .btn.btn-primary(href="#") Get started
-      .col-12
-        pre.bg-navy.teal.language-sh: code
-          | <span class="select-none">$&nbsp;</span>npm install --global harp
-          | <span class="select-none">$&nbsp;</span>harp ./myproject
-          | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
-
+    .clearfix
+      .col.col-6
+        div Node.js v4+
+      .col.col-6
+        strong Runs on
+        div OS X
+        div Linux
+        div Windows
 
 .container.px1.sm-px2.clearfix
+  pre.bg-navy.teal.language-sh: code
+    | <span class="select-none">$&nbsp;</span>npm install --global harp
+    | <span class="select-none">$&nbsp;</span>harp ./myproject
+    | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
+
+
   .col-12.md-col-9.lg-col-8.mx-auto
-    pre.language-sh: code
-      | <span class="select-none"># Install Harp</span>
-      | <span class="select-none">$&nbsp;</span>npm install --global harp
+    pre.bg-navy.teal.language-sh: code
+      | <span class="select-none muted"># Install Harp</span>
+      | <span class="select-none muted">$&nbsp;</span>npm install --global harp
       | 
-      | <span class="select-none"># Make a new project, and serve</span>
-      | <span class="select-none"># it at http://localhost:9000</span>
-      | <span class="select-none">$&nbsp;</span>harp ./myproject
+      | <span class="select-none muted"># Make a new project, and serve</span>
+      | <span class="select-none muted"># it at http://localhost:9000</span>
+      | <span class="select-none muted">$&nbsp;</span>harp ./myproject
       | 
-      | <span class="select-none"># Deploy it to the web with one command</span>
-      | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
+      | <span class="select-none muted"># Deploy to the web</span>
+      | <span class="select-none muted">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
 
     ul
       li Sign up for the Harp newsletter
