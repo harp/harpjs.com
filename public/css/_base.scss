@@ -187,14 +187,16 @@ a.btn {
   text-transform: uppercase;
 }
 
-blockquote {
-  border-left: 1px solid $border-color;
-  padding-left: $space-3;
-  padding-top: $space-1;
-  padding-bottom: $space-1;
-  margin-right: 0;
-  margin-left: 0;
-  footer {
-    display: block;
-  }
+article {
+  blockquote {
+    border-left: 1px solid $border-color;
+    padding-left: $space-3;
+    padding-top: $space-1;
+    padding-bottom: $space-1;
+    margin-right: 0;
+    margin-left: 0;
+    footer {
+      display: block;
+    }
+  }  
 }
