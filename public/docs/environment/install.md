@@ -46,6 +46,6 @@ npm cache clear
 npm install -g harp
 ```
 
-You may to use `sudo` before any of those, depending on your setup. It’s possible that an older dependency of Harp is cached on your system and not finding the new version or something. The `npm cache clear` part could take a while, depending on how much is cached. That should fix the problem, however!
+You may need to use `sudo` before any of those, depending on your setup. It’s possible that an older dependency of Harp is cached on your system and not finding the new version or something. The `npm cache clear` part could take a while, depending on how much is cached. That should fix the problem, however!
 
 [Need to uninstall Harp?](/docs/environment/uninstall)
