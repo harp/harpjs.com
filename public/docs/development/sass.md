@@ -79,12 +79,6 @@ body
 	font: 12px Helvetica, Arial, sans-serif
 ```
 
-<h2 id="libsass">Caveats</h2>
-
-Virtually all prominent features of Sass 3.2 are available in Harp’s version of Sass, but Sass 3.3 is not supported.
-
-Harp is using <a href="http://libsass.org/">libsass</a>, a C++ implementation of Sass, for its preprocessing. As this isn’t the original version of Sass, it may not include the latest Sass 3.3 features.
-
 If you have questions, are unsure if a feature is missing in Libsass or if there’s a bug in Harp feel free to <a href="https://github.com/sintaxi/harp/issues">file a GitHub issue</a>.
 
 ## Also see
