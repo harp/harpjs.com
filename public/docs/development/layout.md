@@ -86,6 +86,7 @@ myapp.harp.io/
 
 ```jade
 doctype
+html
   head
     title My Site
     script(src="/javascripts/jquery.js")
