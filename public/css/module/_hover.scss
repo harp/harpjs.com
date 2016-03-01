@@ -1,0 +1,7 @@
+.hover-bg-silver {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $silver;
+  }
+}
