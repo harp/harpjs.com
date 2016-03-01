@@ -1,0 +1,15 @@
+!= partial("../_shared/nav", { "knockout": true })
+.container.p1.sm-p2
+  .clearfix
+    header.col-12.md-col-8.px2.right
+      h1 Harp Boilerplates
+      p.h4 Open source, liberally licensed boilerplates and starting points you can use with Harp.
+      p.mb4: a.btn.btn-primary.p2(href="https://github.com/harp-boilerplates/registry") Add your own
+  .clearfix
+    .col-12
+      #js-container
+
+script(src="https://cdn.rawgit.com/rogie/Dug.js/master/dug.js")
+<script>
+include ../js/_boilerplates.js  
+</script>
