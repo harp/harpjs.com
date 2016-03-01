@@ -67,9 +67,9 @@ html(manifest="#{ environment === 'production' ? '/auto.appcache' : '' }" lang="
         != partial("_shared/nav", { "knockout": p.knockout })
         .container.p1.sm-p2.clearfix
           if current.path.length === 1
-            .clearfix!= partial("/_nest.jade", { yield: yield })
+            != partial("/_nest.jade", { yield: yield })
           else
-            .clearfix!= partial(current.path[0] + "/_nest.jade", { yield: yield })
+            != partial(current.path[0] + "/_nest.jade", { yield: yield })
 
       .container.p1.sm-p2.clearfix
         != partial("_shared/footer")

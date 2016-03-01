@@ -1,6 +1,6 @@
-footer.footer.py4.clearfix.mxn2
+footer.footer.py4.clearfix
 
-  #nav.is-target.md-is-transparent.col.col-12.md-col-4.list-group.px2
+  #nav.is-target.md-is-transparent.col.col-12.md-col-4.p2
     h3 Everything Harp
     ol.block.h4.md-h5.list-reset
       li: a.py1.border-none.block(href="/docs") Documentation
@@ -10,8 +10,8 @@ footer.footer.py4.clearfix.mxn2
       li: a.py1.border-none.block(href="/identity") Identity Guide
       li: a.py1.border-none.block(href="/blog") Blog
 
-  .col.col-12.md-col-4.list-group.px2
-    h3.list-group-item Latest Articles
+  .col.col-12.md-col-4.p2
+    h3 Latest Articles
     - i = 0
     for article, slug in public.blog._data
       if article.published == true && !article.url
@@ -23,9 +23,9 @@ footer.footer.py4.clearfix.mxn2
               span.ml1.purple new
 
 
-  .col.col-12.md-col-4.list-group.px2
-    h3.list-group-item The Harp Newsletter
-    .list-group-item!= partial("../_shared/newsletter")
+  .col.col-12.md-col-4.p2
+    h3 The Harp Newsletter
+    != partial("../_shared/newsletter")
 
     h3 Connect with Harp
     .py1.border-none.block
