@@ -1,15 +1,17 @@
 a.lg-show.border-none(href="https://github.com/sintaxi/harp" style="position: absolute; top: 0; right: 0;")
   img.block(src="/images/github-ribbon.png", alt="Star Harp on GitHub" style="max-width: 7.5em")
 
-header.bg-blue
+header.bg-blue#js-header.overflow-hidden.shift-down
+  .col-12.relative(style="overflow-y: visible; height: 0; z-index: 0")
+    canvas(style="width: 110%; margin-left: -5%;").col-12.position-absolute#js-headerwaves
   != partial("_shared/nav")
-  .clearfix
+  .clearfix.relative(style="z-index: 1")
     .container.p1.sm-p2.clearfix
       .col-12.center
         h1.h1-responsive.white The static web server with built-in preprocessing
         p.h4 Harp serves Markdown, Sass, CoffeeScript, EJS, Jade, LESS, and more as HTML, CSS & JavaScript—no configuration necessary.
-        .btn.btn-primary(href="#") Get started
-      .clearfix
+        .btn.btn-primary.p2.bg-purple(href="#") Get started
+      .clearfix.mb2
         .col-12.sm-col-6.md-col-4.center.mx-auto.mt4
           .flex.flex-center.flex-justify
             a.block.teal.border-none.md-p1(href="/docs/environment/node")
@@ -230,3 +232,5 @@ header.bg-blue
       ## Go beyond blogs
 
       Harp works great for blogs, but that’s just where static site start. Harp is a general purpose static site generator, not just specifically for blogs, so you can build any kind of static application you need: documentation sites, style guides, marketing sites, or even more comprehensive applications that get wrapped in PhoneGap or Electron
+
+script(src="/js/vendor/sine-waves.js")

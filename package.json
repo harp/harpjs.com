@@ -38,6 +38,7 @@
     "fontfaceobserver": "1.6.3",
     "normalize.css": "3.0.3",
     "preprocessor-logos": "git://github.com/chloi/preprocessor-logos.git#73498016cb0750692c9df3f555deb307b5f3fa17",
+    "sine-waves": "git://github.com/isuttell/sine-waves.git#abbb074e269d2fb29fb5dd23ed2a07cce8829367",
     "smoothscroll": "0.2.2",
     "utility-opentype": "0.1.3"
   },
