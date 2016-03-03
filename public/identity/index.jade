@@ -4,7 +4,6 @@
     nav.col.col-12.md-col-4.p2
       details#js-toc.rounded.is-target.md-is-transparent(open)
         summary.md-hide.border.p1.btn.btn-primary.bg-gray.col-12.p2.mb2 Table of Contents
-        ul.list-reset.clearfix.mt3
           each section, slug in public.identity._data
             unless slug === 'index' || (section.published===false && environment!=='development')
               li(class="#{ current.path[1] === slug ? 'active' : '' }")
