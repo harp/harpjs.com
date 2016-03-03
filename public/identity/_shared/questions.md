@@ -1,6 +1,6 @@
 ## Questions
 
-If you have any questions, or are looking for additional materials, feel free to email Kenneth at [kenneth@chloi.io](mailto:kenneth@chloi.io), or [open an issue on GitHub](https://github.com/sintaxi/harp/issues).
+If you have any questions, or are looking for additional materials, feel free to [open an issue on GitHub](https://github.com/harp/harpjs.com/issues) and tag [@kennethormandy](https://github.com/kennethormandy). 
 
 ## License
 
