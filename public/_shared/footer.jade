@@ -1,17 +1,17 @@
-footer.footer.py4.clearfix
+footer.footer.clearfix.py4
 
-  #nav.is-target.md-is-transparent.col.col-12.md-col-4.p2
+  #nav.is-target.md-is-transparent.col.col-12.md-col-4
     h3 Everything Harp
-    ol.block.h4.md-h5.list-reset
-      li: a.py1.border-none.block(href="/docs") Documentation
-      li: a.py1.border-none.block(href="/docs/quick-start") Quick Start
-      li: a.py1.border-none.block(href="/recipes") Recipes
-      li: a.py1.border-none.block(href="/community") Community
-      li: a.py1.border-none.block(href="/boilerplates") Boilerplates
-      li: a.py1.border-none.block(href="/identity") Identity Guide
-      li: a.py1.border-none.block(href="/blog") Blog
+    ol.block.h4.md-h5.list-reset.mxn2
+      li: a.p2.border-none.block(href="/docs") Documentation
+      li: a.p2.border-none.block(href="/docs/quick-start") Quick Start
+      li: a.p2.border-none.block(href="/recipes") Recipes
+      li: a.p2.border-none.block(href="/community") Community
+      li: a.p2.border-none.block(href="/boilerplates") Boilerplates
+      li: a.p2.border-none.block(href="/identity") Identity Guide
+      li: a.p2.border-none.block(href="/blog") Blog
 
-  .col.col-12.md-col-4.p2
+  .col.col-12.md-col-4
     h3 Latest Articles
     - i = 0
     for article, slug in public.blog._data
@@ -24,7 +24,7 @@ footer.footer.py4.clearfix
               span.ml1.purple new
 
 
-  .col.col-12.md-col-4.p2
+  .col.col-12.md-col-4
     h3 The Harp Newsletter
     != partial("../_shared/newsletter")
 

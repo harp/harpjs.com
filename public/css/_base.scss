@@ -123,6 +123,13 @@ a.btn {
   }
 }
 
+.lg-show-inline {
+  display: none !important;
+  @media #{ $breakpoint-lg } {
+    display: inline !important;
+  }
+}
+
 .md-col-auto {
   @media #{ $breakpoint-md } {
     width: auto !important;
@@ -198,5 +205,5 @@ article {
     footer {
       display: block;
     }
-  }  
+  }
 }

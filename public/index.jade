@@ -28,7 +28,7 @@ header.bg-blue#js-header.overflow-hidden.shift-down
               img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
               span.h6 Windows
 
-.container.px1.sm-px2.clearfix
+.container.px2.clearfix
   .col-12
     //- This is the non-commented version
     //- pre.bg-navy.teal.language-sh: code
@@ -53,37 +53,36 @@ header.bg-blue#js-header.overflow-hidden.shift-down
         li Sign up for the Harp newsletter
         li Follow @HarpWebServer
 
-    .container
-    .clearfix.mxn2
-      .col.sm-col-6.p2
-        a.block.black.border-none.flex.flex-center(href="#")
-          img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
-          p.m0 <strong class="maroon">Easy to get started.</strong> Zero-configuration necessary. Preprocessors are built right in.
-      .col.sm-col-6.p2
-        a.block.black.border-none.flex.flex-center(href="#")
-          img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
-          p.m0 <strong class="maroon">Go beyond blogs.</strong> Static sites are powerful: Harp helps build them.
-
-      .col.sm-col-6.p2
-        a.block.black.border-none.flex.flex-center(href="#")
-          img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
-          p.m0 <strong class="maroon">Multi-platform.</strong> Your whole team can run Harp: Windows, Mac, and Linux, CLI or app.
-      .col.sm-col-6.p2
-        a.block.black.border-none.flex.flex-center(href="#")
-          img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
-          p.m0 <strong class="maroon">No lock-in.</strong> Compile to HTML, CSS, & JS, wrap in Cordova or Electron, and publish to the web.
-      .col.sm-col-6.p2
-        a.block.black.border-none.flex.flex-center(href="#")
-          img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
-          p.m0 <strong class="maroon">Built for speed.</strong> Harp’s intelligent compliation means there’s no need to wait for your entire static site to rebuild.
-      .col.sm-col-6.p2
-        a.block.black.border-none.flex.flex-center(href="#")
-          img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
-          p.m0 <strong class="maroon">Static is secure.</strong> Plus, built-in publishing to HTTPS subdomains. Add-on password protection.
+.clearfix
+  .container.flex.flex-wrap
+    .flex-auto.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Easy to get started.</strong> Zero-configuration necessary. Preprocessors are built right in.
+    .flex-auto.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Go beyond blogs.</strong> Static sites are powerful: Harp helps build them.
+    .flex-auto.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Multi-platform.</strong> Your whole team can run Harp: Windows, Mac, and Linux, CLI or app.
+    .flex-auto.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">No lock-in.</strong> Compile to HTML, CSS, & JS, wrap in Cordova or Electron, and publish to the web.
+    .flex-auto.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Built for speed.</strong> Harp’s intelligent compliation means there’s no need to wait for your entire static site to rebuild.
+    .flex-auto.sm-col-6.p2
+      a.block.black.border-none.flex.flex-center(href="#")
+        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        p.m0 <strong class="maroon">Static is secure.</strong> Plus, built-in publishing to HTTPS subdomains. Add-on password protection.
 
 
 .bg-black.teal.py3
-  .container.px1.sm-px2.clearfix
+  .container.px2.clearfix
     .col-12.md-col-9.lg-col-8.mx-auto
       blockquote.h2.center Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
         footer.clearfix.center.h5.mt2
@@ -95,48 +94,48 @@ header.bg-blue#js-header.overflow-hidden.shift-down
       h2 Who’s using Harp
       p Amazing individuals and teams build static projects with Harp.
       
-    .clearfix.mxn2
-      .col.sm-col-4.p2
-        img(src="/images/logo-npm.svg" alt="npm")
-        //- h3.mt0.center npm
-        p.h6 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
+    .clearfix.overflow-hidden
+      .mxn2
+        .col.sm-col-4.p2
+          img(src="/images/logo-npm.svg" alt="npm")
+          //- h3.mt0.center npm
+          p.h6 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
 
-      .col.sm-col-4.p2
-        img(src="/images/logo-angular.svg" alt="Angular")
-        //- h3.mt0.center Angular.io
-        p.h6 Google’s <strong>Angular.io</strong> team chose Harp to build an amazing new site for Angular 2, the latest version of the popular and powerful web and mobile application framework.
+        .col.sm-col-4.p2
+          img(src="/images/logo-angular.svg" alt="Angular")
+          //- h3.mt0.center Angular.io
+          p.h6 Google’s <strong>Angular.io</strong> team chose Harp to build an amazing new site for Angular 2, the latest version of the popular and powerful web and mobile application framework.
 
-      .col.sm-col-4.p2
-        img(src="/images/logo-huge.svg" alt="Huge")
-        //- h3.mt0.center Huge Inc.
-        p.h6 <strong>Huge Inc.</strong> is a digital agency with clients like Nike, TED, and HBO, uses Harp within Styleguide, a tool that makes creating and maintaining their styleguides easy.
+        .col.sm-col-4.p2
+          img(src="/images/logo-huge.svg" alt="Huge")
+          //- h3.mt0.center Huge Inc.
+          p.h6 <strong>Huge Inc.</strong> is a digital agency with clients like Nike, TED, and HBO, uses Harp within Styleguide, a tool that makes creating and maintaining their styleguides easy.
 
       //- .col.sm-col-6.md-col-3.p2
       //-   img(src="/images/logo-intel.svg" alt="Huge")
       //-   //- h3.mt0.center Huge Inc.
       //-   p.h6 <strong>Intel</strong> used Harp to re-build their Crosswalk Project site, which helps
 
-.bg-black.teal.py3
-  .clearfix.flex.flex-stretch
-    .col-6.flex-auto.clearfix.flex.flex-center
-      .col-12.px1.sm-px2.flex-auto
-        .md-col-10.lg-col-8.right.mr4
-          h3 How npm uses Harp
-          p.h6.md-h5.lg-h4 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
-    .col-6
-      //-
-        .bg-gray.py2.rounded-top.flex.flex-center
-          .ml2(role="presentation")
-            .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
-            .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
-            .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
-          .flex-auto
-            .rounded.bg-silver.p1.gray npmjs.org
-      img.rounded-bottom(src="/images/example-npm-crop.png")
+.clearfix.bg-black.teal.py3.md-flex.flex-stretch
+  .col.col-12.md-col-7.md-flex.flex-center
+    .col-12.px2.flex-auto
+      .md-col-10.lg-col-8.right.mr4
+        h3 How npm uses Harp
+        p.h6.md-h5.lg-h4 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
+  .col.col-12.md-col-5
+    //-
+      .bg-gray.py2.rounded-top.flex.flex-center
+        .ml2(role="presentation")
+          .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
+          .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
+          .circle.bg-silver.inline-block.mr1(style="width: 1em; height: 1em")
+        .flex-auto
+          .rounded.bg-silver.p1.gray npmjs.org
+    img.rounded-bottom(src="/images/example-npm-crop.png")
         
 
 .bg-purple.white.py3
-  .container.px1.sm-px2.clearfix
+  .container.px2.clearfix
     .col-12.md-col-9.lg-col-8.mx-auto
       blockquote.h2.center Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
         footer.clearfix.center.h5.mt2
@@ -148,7 +147,8 @@ header.bg-blue#js-header.overflow-hidden.shift-down
       h2.center Efficient web developers use Harp.
       p The preprocessors you want are built into Harp. Write a <code>.scss</code> file, and Harp automatically serves it as CSS. Write a <code>require</code> statement, and it will automatically be compiled with Browserify—and a lot more.
       
-      .clearfix.mxn2.flex.flex-center
+    .clearfix.p2
+      .mxn2.flex.flex-center
         a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/jade")
           include ../node_modules/preprocessor-logos/jade/jade-knockout-padded.svg
         a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/markdown")
@@ -159,7 +159,8 @@ header.bg-blue#js-header.overflow-hidden.shift-down
           include ../node_modules/preprocessor-logos/coffeescript/coffeescript-knockout-padded.svg
           //- img(src="/images/icons/coffeescript-logo.svg" alt="CoffeeScript logo")
 
-      .clearfix.mxn2
+    .clearfix.p2
+      .mxn2.flex.flex-center
         a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/sass")
           include ../node_modules/preprocessor-logos/sass/sass-knockout-padded.svg
         a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/stylus")
@@ -170,67 +171,68 @@ header.bg-blue#js-header.overflow-hidden.shift-down
           img(src="http://substack.net/images/browserify_logo.png")
 
 .bg-transparent
-  .col-12.md-col-9.lg-col-8.mx-auto
-    :markdown
-      ## Preprocessors are built-in
+  .container.px2.clearfix
+    .col-12.md-col-9.lg-col-8.mx-auto
+      :markdown
+        ## Preprocessors are built-in
 
-      The preprocessors you want are already built-in—no need to configure anything. Create a new `.scss` file, and it will automatically be preprocessed as Sass. Write a new `.js` file, and automatically include `require` modules via Browserify.
+        The preprocessors you want are already built-in—no need to configure anything. Create a new `.scss` file, and it will automatically be preprocessed as Sass. Write a new `.js` file, and automatically include `require` modules via Browserify.
 
-      - Flexible metadata
-      - Autoprefixer
-      - Browserify
-      - Minification
-      - Source Maps (?)
+        - Flexible metadata
+        - Autoprefixer
+        - Browserify
+        - Minification
+        - Source Maps (?)
 
-      ## Quotes to feature
+        ## Quotes to feature
 
-      - [Elastisearch](https://twitter.com/SpencerAlger/status/413052701849579520)
-      - [Remy](https://twitter.com/rem/status/428184106187636736), https://twitter.com/rem/status/428857826631745536, https://twitter.com/rem/status/433980367964749824
-      - https://twitter.com/samarkandiy/status/431557750444027904
-      - https://twitter.com/krrishd/status/432605586325114880
-      - https://twitter.com/didelico/status/449786285566095360
-      - https://twitter.com/Nadee/status/479384048066781184, https://twitter.com/didelico/status/600536497469661184
-      - https://twitter.com/raymondcamden/status/515575726226300929
-      - https://twitter.com/AndresJCremades/status/516854729595691008
-      - https://twitter.com/fox/status/523790890658459648
-      
-      blockquote
-        p @HarpWebServer, the best static web server + preprocessor money can't buy, because it's open and free. You guys rock!
-        footer https://twitter.com/jbucaran/status/524082242708992001
+        - [Elastisearch](https://twitter.com/SpencerAlger/status/413052701849579520)
+        - [Remy](https://twitter.com/rem/status/428184106187636736), https://twitter.com/rem/status/428857826631745536, https://twitter.com/rem/status/433980367964749824
+        - https://twitter.com/samarkandiy/status/431557750444027904
+        - https://twitter.com/krrishd/status/432605586325114880
+        - https://twitter.com/didelico/status/449786285566095360
+        - https://twitter.com/Nadee/status/479384048066781184, https://twitter.com/didelico/status/600536497469661184
+        - https://twitter.com/raymondcamden/status/515575726226300929
+        - https://twitter.com/AndresJCremades/status/516854729595691008
+        - https://twitter.com/fox/status/523790890658459648
+        
+        blockquote
+          p @HarpWebServer, the best static web server + preprocessor money can't buy, because it's open and free. You guys rock!
+          footer https://twitter.com/jbucaran/status/524082242708992001
 
-      - https://twitter.com/kedronrhodes/status/535159621141684224
-      - https://twitter.com/matt_mcclure/status/536667542631501824
-      - https://twitter.com/francoislaberge/status/537234603363557376
-      - https://twitter.com/cambrian_era/status/537732630909685762, https://twitter.com/cambrian_era/status/589946329205329920
-      - [SassMeister](https://twitter.com/sassmeisterapp/status/538554838041518081)
-      - https://twitter.com/adeperio/status/555956698947403776
-      - https://twitter.com/robmuh/status/557972433333153794
-      - https://twitter.com/simonswiss/status/559503875808313346
-      - https://twitter.com/_davideast/status/568413073544884224
-      - [Auth0](https://twitter.com/mgonto/status/575451320045281280)
-      - [JS.LA](https://twitter.com/davidguttman/status/576437384125890561)
-      - https://twitter.com/pravcox/status/577844274894635008
-      - [Rebecca Murphy](https://twitter.com/rmurphey/status/584795061637885952)
-      - https://twitter.com/johnbarton/status/623419732813676544
-      - [Huge Inc.](https://twitter.com/colinjohnston/status/623634308553678849)
-      - https://twitter.com/Seromarin/status/664643282459316225
+        - https://twitter.com/kedronrhodes/status/535159621141684224
+        - https://twitter.com/matt_mcclure/status/536667542631501824
+        - https://twitter.com/francoislaberge/status/537234603363557376
+        - https://twitter.com/cambrian_era/status/537732630909685762, https://twitter.com/cambrian_era/status/589946329205329920
+        - [SassMeister](https://twitter.com/sassmeisterapp/status/538554838041518081)
+        - https://twitter.com/adeperio/status/555956698947403776
+        - https://twitter.com/robmuh/status/557972433333153794
+        - https://twitter.com/simonswiss/status/559503875808313346
+        - https://twitter.com/_davideast/status/568413073544884224
+        - [Auth0](https://twitter.com/mgonto/status/575451320045281280)
+        - [JS.LA](https://twitter.com/davidguttman/status/576437384125890561)
+        - https://twitter.com/pravcox/status/577844274894635008
+        - [Rebecca Murphy](https://twitter.com/rmurphey/status/584795061637885952)
+        - https://twitter.com/johnbarton/status/623419732813676544
+        - [Huge Inc.](https://twitter.com/colinjohnston/status/623634308553678849)
+        - https://twitter.com/Seromarin/status/664643282459316225
 
-      ## Team?
+        ## Team?
 
-      From the co-creators of Apache Cordova / PhoneGap, Harp was one of the first Node.js-based static site generators and is just as relevant for front-end developers today.
+        From the co-creators of Apache Cordova / PhoneGap, Harp was one of the first Node.js-based static site generators and is just as relevant for front-end developers today.
 
-      - Contributors from npm, CSS Conf, etc. etc.
-      - It’s easier to contirbute than you think. Here’s our getting started guide for running things locally.
+        - Contributors from npm, CSS Conf, etc. etc.
+        - It’s easier to contirbute than you think. Here’s our getting started guide for running things locally.
 
-      ## Process
+        ## Process
 
-      - Great for students and classrooms → this is an opportunity to offer up workshops
-      - Prototypes before you move onto something integrated with a backend / or run Harp as middleware in Express
-      - Individual developers who need to actually get their work done instead of configuring their build tool all the time
-      - Teams that need to know everyone’s using the same version of something
+        - Great for students and classrooms → this is an opportunity to offer up workshops
+        - Prototypes before you move onto something integrated with a backend / or run Harp as middleware in Express
+        - Individual developers who need to actually get their work done instead of configuring their build tool all the time
+        - Teams that need to know everyone’s using the same version of something
 
-      ## Go beyond blogs
+        ## Go beyond blogs
 
-      Harp works great for blogs, but that’s just where static site start. Harp is a general purpose static site generator, not just specifically for blogs, so you can build any kind of static application you need: documentation sites, style guides, marketing sites, or even more comprehensive applications that get wrapped in PhoneGap or Electron
+        Harp works great for blogs, but that’s just where static site start. Harp is a general purpose static site generator, not just specifically for blogs, so you can build any kind of static application you need: documentation sites, style guides, marketing sites, or even more comprehensive applications that get wrapped in PhoneGap or Electron
 
 script(src="/js/vendor/sine-waves.min.js")
