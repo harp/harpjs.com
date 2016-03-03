@@ -2,7 +2,6 @@
 var scroll = require('smoothscroll')
 var FontFaceObserver = require('fontfaceobserver')
 var header = require('./_header')
-require('./vendor/sine-waves.js')
 // var Waypoint = require('waypoints/lib/commonjs.waypoints')
 // var Inview = require('waypoints/lib/shortcuts/inview')
 require('./vendor/prism.js')
