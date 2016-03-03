@@ -2,7 +2,7 @@
     ie. Docs, Blog, FAQ, Community, Source,
     which are all are pulled from the corresponding data.json.
 
-nav.clearfix(role="navigation" class="#{ knockout === false ? 'bg-white' : 'bg-blue' }")
+nav.clearfix.relative(role="navigation" class="#{ knockout === false ? 'bg-white' : 'bg-blue' }" style="z-index: 1")
   .container.flex.flex-center.p1.md-p2.mxn2
       .flex-auto.px2.flex
         a.block.left.border-none(href="/" style="max-width: 5.5em")
