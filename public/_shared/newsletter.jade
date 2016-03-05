@@ -1,5 +1,8 @@
-form.form-horizontal#mc-embedded-subscribe-form.validate(action="http://harpjs.us7.list-manage.com/subscribe/post?u=af92eba03471187c8aa0266e7&id=74381fea66", method="post", role="form", name="mc-embedded-subscribe-form", target="_blank")
-  fieldset.form-group.mc-field-group
-    // label.control-label(for="mce-EMAIL") Email Address
-    input.form-control#mce-EMAIL.required.email(type="email", value="", placeholder="you@example.com", name="EMAIL")
-  input#mc-embedded-subscribe.btn(type="submit", value="Subscribe", name="subscribe", class=btnClass ? btnClass : 'btn-default')
+form#newsletter(action="http://harpjs.us7.list-manage.com/subscribe/post?u=af92eba03471187c8aa0266e7&id=74381fea66" method="post" target="_blank" validate="")
+  label.p1.md-p2.rounded.bg-silver.block
+    span.hide Email Address
+    .clearfix.mxn1.sm-flex.flex-stretch.h6
+      .col.col-12.sm-col-7.px1.flex
+        input.field.p2.col-12.border-none(type="email" value="" placeholder="you@example.com" name="EMAIL" required="")
+      .col.col-12.sm-col-5.px1.flex
+        input#mc-embedded-subscribe.btn.btn-primary.bg-maroon.p2.col-12(type="submit" value="Subscribe" name="subscribe")

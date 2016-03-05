@@ -1,39 +1,35 @@
-footer.footer.container
-    .col-12.col-lg-4.list-group
-      h3.list-group-item Latest Articles
-      - i = 0
-      for article, slug in public.blog._data
-        if article.published == true && !article.url
-          - i++
-          if i <= 5
-            a.list-group-item.list-group-underlined(href="/blog/#{ slug }")
-              != article.title
-              if i == 1
-                span.badge new
+footer.footer.clearfix.py4
 
-    .col-12.col-lg-4.list-group
-      h3.list-group-item Everything Harp
-      a(href="/docs").list-group-item.list-group-underlined Documentation
-      a(href="/docs/quick-start").list-group-item.list-group-underlined Quick Start
-      a(href="/recipes").list-group-item.list-group-underlined Recipes
-      a(href="/community").list-group-item.list-group-underlined Community
-      a(href="/identity").list-group-item.list-group-underlined Identity Guide
-      a(href="/blog").list-group-item.list-group-underlined Blog
+  #nav.is-target.md-is-transparent.col.col-12.md-col-4
+    h3 Everything Harp
+    ol.block.h4.md-h5.list-reset.mxn2
+      li: a.p2.border-none.block(href="/docs") Documentation
+      li: a.p2.border-none.block(href="/docs/quick-start") Quick Start
+      li: a.p2.border-none.block(href="/recipes") Recipes
+      li: a.p2.border-none.block(href="/community") Community
+      li: a.p2.border-none.block(href="/boilerplates") Boilerplates
+      li: a.p2.border-none.block(href="/identity") Identity Guide
+      li: a.p2.border-none.block(href="/blog") Blog
 
-    .col-12.col-lg-4.list-group
-      h3.list-group-item The Harp Newsletter
-      .list-group-item!= partial("../_shared/newsletter")
-
-      h3.list-group-item Connect with Harp
-      .list-group-item
-        iframe(src="http://ghbtns.com/github-btn.html?user=sintaxi&repo=harp&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="100%", height="30px")
-        a(href="https://twitter.com/HarpWebServer", class="twitter-follow-button", data-show-count="false", data-lang="en", data-size="large") Follow @HarpWebServer
-        a.list-group-item.icon-irc(href="irc://irc.freenode.net/harp") Chat in ##{ service.irc.toLowerCase() } on IRC
+  .col.col-12.md-col-4
+    h3 Latest Articles
+    - i = 0
+    for article, slug in public.blog._data
+      if article.published == true && !article.url
+        - i++
+        if i <= 5
+          a.py1.border-none.block(href="/blog/#{ slug }")
+            != article.title
+            if i == 1
+              span.ml1.purple new
 
 
-  != partial("nav/nav", { "id": "navigation", "classes": "st-menu--fallback jumbotron" })
-script(src="/js/application.js")
-script(src="/js/prism.js")
-script.
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-!= partial("analytics")
+  .col.col-12.md-col-4
+    h3 The Harp Newsletter
+    != partial("../_shared/newsletter")
+
+    h3 Connect with Harp
+    .py1.border-none.block
+      iframe(src="http://ghbtns.com/github-btn.html?user=sintaxi&repo=harp&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="100%" height="30px")
+    a.py1.border-none.block(href="https://twitter.com/HarpWebServer" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large") Follow @HarpWebServer
+    a.py1.border-none.block(href="irc://irc.freenode.net/harp") Chat in ##{ service.irc.toLowerCase() } on IRC

@@ -1,16 +1,20 @@
-!= partial("../_shared/nav/nav")
-.st-content#st-content
-  != partial("../_shared/nav/navbar")
-  .container.st-content-inner
+!= partial("../_shared/nav", { "knockout": false })
+.container.p2
+  .clearfix.mxn2
+    nav.col.col-12.md-col-4.p2
+      details#js-toc.rounded.is-target.md-is-transparent(open)
+        summary.md-hide.border.p1.btn.btn-primary.bg-gray.col-12.p2.mb2 Table of Contents
+        ul.list-reset.clearfix.mt3.md-mxn1
+          each section, slug in public.identity._data
+            unless slug === 'index' || (section.published===false && environment!=='development')
+              li(class="#{ current.path[1] === slug ? 'active' : '' }")
+                a.p1.border-none.regular.block(href="#" + slug)= section.title
 
-    nav.col-12.col-lg-3
-      ul.nav.nav-pills.nav-stacked.nav-aside#nav-aside
-        each section, slug in public.identity._data
-          unless slug === 'index' || (section.published===false && environment!=='development')
-            li.nav-aside-item(class="#{ current.path[1] === slug ? 'active' : '' }")
-              a(href="#" + slug)= section.title
-
-    article.col-12.col-lg-9
+    article.col.col-12.md-col-8.p2
       each section, slug in public.identity._data
         unless slug === 'index' || (section.published===false && environment!=='development')
           section.identity-section(id=slug)!= partial("_shared/" + slug)
+      footer
+          a.mx-auto.block.center.black.text-decoration-none.border-none(href="https://github.com/" + service.contributing + "/edit/master/public/" + current.path.join('/') + ".md")
+            small See something that could be better?&nbsp;
+              span.a-faux Edit this page.

@@ -1,20 +1,46 @@
+- var c = Array.prototype.slice.call(current.path).reverse()
+- var p = public._data[c[current.path.length - 1]] || {}
+
 doctype
 //[if lt IE 8]><html lang="en" class="ie"><![endif]
 //[if gt IE 8]><!
-html(manifest="/auto.appcache" lang="en")
+if environment === 'production'
+  <html manifest="/auto.appcache" lang="en">
+else
+  <html lang="en">
   //<![endif]
   head
     meta(charset="utf-8")
     //- Show specific page title, name, and tagline. If the full title is more than 70 chars, omit the tagline
     title !{ title !== name ? title + ' &ndash; ' : '' }#{ name }#{ (title.length + name.length + tagline.length) >= 70 ? '' : ', ' + tagline.toLowerCase() }
     != partial("_shared/webfonts")
-    link(rel="stylesheet" href="/css/application.css" type="text/css")
+    link(rel="stylesheet" href="/css/index.css" type="text/css")
     //- link(rel="shortcut icon" href="/favicon.ico")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
     
     link(rel="alternate" type="application/rss+xml" href="/blog/feed.xml" title="#{ name }")
     meta(name="description" content!=description)
     meta(name="author" content="#{ author }")
+
+    meta(name="og:url" content="#{ url }")
+    meta(name="og:title" content="#{ title }")
+    meta(name="og:description" content="#{ description }")
+    meta(name="og:site_name" content="#{ name }")
+    if author || c[current.path.length - 1] === 'docs'
+      meta(name="og:type" content="article")
+      if author.name
+        meta(name="article:author" content="#{ author.name }")
+      if author.twitter
+        meta(name="twitter:creator" content="@#{ author.twitter }")
+    meta(name="twitter:site" content="@#{ service.twitter }")
+    meta(name="twitter:card" content="summary_large_image")
+    if og && og.image
+      meta(name="og:image" content="#{ url }#{ og.image }")
+      meta(name="twitter:image:src" content="#{ url }#{ og.image }")
+    else
+      meta(name="og:image" content="#{ url }/images/og-image.png")
+      meta(name="twitter:image:src" content="#{ url }/images/og-image.png")
+
     meta(name="handheldfriendly" content="true")
     meta(name="mobileoptimized" content="320")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -25,20 +51,44 @@ html(manifest="/auto.appcache" lang="en")
     meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
     meta(http-equiv="cleartype" content="on")
 
-  body
-    //- pre= JSON.stringify(current, null, 2)
-    if current.source === 'index' && current.path.length === 1
-      a.github-fork(href="https://github.com/sintaxi/harp")
-        img(src="/images/github-ribbon.png", alt="Star Harp on GitHub")
-    .st-container
-      .st-pusher
+    //-
+      This should get replaces with a post-Browserify partial
+      once Harp can do that (inline pre-compiled files)
+    <script>
+    include ../node_modules/fg-loadcss/loadCSS.js
+    include ./js/core.js
+    </script>
+
+  //- Match overflow scroll background colour to nav
+  body(class="#{ p.knockout === false ? 'bg-white' : 'bg-blue' }")
+    .bg-white
+      if current.path[current.path.length - 1] === 'index'
         //- If it’s an index template, show it.
-        //- If it’s a page in the root, wrap it in _nest.jade
-        //- If it’s a page in a folder, wrap it in that folder’s nest
-        if current.path[current.path.length - 1] === 'index' || current.path[current.path.length - 1] === 'zerty'
-          != yield
-        else if current.path.length === 1
-          != partial("/_nest.jade", { yield: yield })
-        else
-          != partial(current.path[0] + "/_nest.jade", { yield: yield })
-    != partial("_shared/footer")
+        .clearfix!= yield
+      else
+        //- Otherwise, wrap it in _nest.jade
+        != partial("_shared/nav", { "knockout": p.knockout })
+        .container.p2.clearfix
+          if current.path.length === 1
+            != partial("/_nest.jade", { yield: yield })
+          else
+            != partial(current.path[0] + "/_nest.jade", { yield: yield })
+
+      .container.p2.clearfix
+        != partial("_shared/footer")
+
+    script(src="/js/index.js")
+    //- script.
+    //-   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    script.
+      //<![CDATA[
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '#{ service.analytics }', 'harpjs.com');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+      //]]>
+</html>

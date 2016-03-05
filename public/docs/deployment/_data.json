@@ -1,7 +1,7 @@
 {
-  "harp-platform": {
-    "title": "Harp Platform",
-    "description": "The easiest way to publish Harp applications: use Dropbox and the Harp Platform",
+  "harp-pro": {
+    "title": "Harp Pro",
+    "description": "The easiest way to publish Harp applications.",
     "tags": [ "apps", "sites" ]
   },
   "apache-cordova": {

@@ -1,0 +1,18 @@
+// Pre code styles
+//
+// Some of this overrides Basscss, which is doing it
+// in kind of a strange way. Review what I did on
+// Utility OpenType.
+//
+// Markup:
+// <pre class="language-css"><code>body { color: blue }</code></pre>
+//
+// module.pre
+
+pre,
+.pre {
+  background-color: mix($white, $black, 97%);
+  color: $black;
+  padding: $space-2;
+  display: block;
+}

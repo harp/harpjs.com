@@ -1,0 +1,30 @@
+// Generic anchor taget
+//
+// Highlights an anchored element (something
+// with an ID) when it is in the URL. This
+// lets our menu navigation work with CSS
+// only, but it could also be applied to
+// other things. Used in `footer.jade`.
+//
+// Markup:
+// <a href="#scroll-here">Click me</a>
+// <div class="is-target" id="scroll-here">Scroll Here</div>
+//
+// Styleguide: state.is-target
+.is-target:target,
+.is-target[open] {
+  transition: background 0.25s ease, color 0.25s ease;
+  background-color: $silver;
+}
+
+// This allows the background of the nav
+// (in conjunction with `.is-target` in
+// `_state.scss`) to go back to
+// transparent for the full screen
+// nav, maybe think of a more
+// elegant way to do this?
+@media #{ $breakpoint-md } {
+  .md-is-transparent {
+    background: transparent !important;
+  }
+}

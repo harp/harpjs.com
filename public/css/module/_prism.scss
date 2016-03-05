@@ -1,0 +1,111 @@
+// Prism
+//
+// Styles for code syntaxes.
+//
+// Markup:
+// <pre class="language-css"><code>body { color: blue }</code></pre>
+//
+// Styleguide: module.prism
+
+// Code Comments
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: mix($gray, $black, 75%);
+}
+
+.token.punctuation {
+  color: mix($teal, $black, 75%);
+}
+
+.namespace {
+  color: mix($blue, $black, 75%);
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: mix($blue, $black, 75%);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: mix($navy, $black, 75%);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: mix($gray, $black, 75%);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: mix($maroon, $black, 75%);
+}
+
+
+.token.regex,
+.token.important {
+  color: mix($silver, $black, 75%);
+}
+
+.token.important {
+  font-weight: bold;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+// Prisim Line-Numbers Plugin
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+  position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  user-select: none;
+
+}
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+.window .language-markup, .window .language-css, .window .language-json {
+  line-height: 19px;
+  font-size:12px;
+}

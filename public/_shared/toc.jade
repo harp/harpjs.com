@@ -1,0 +1,27 @@
+details#js-toc.rounded.is-target.md-is-transparent(open)
+  summary.md-hide.border.p1.btn.btn-primary.bg-gray.col-12.p2.mb2 Table of Contents
+  .p1.md-p0
+    != partial("search")
+  ul.list-reset.clearfix.mt3
+    li: a.p1.border-none.regular.block(href="/docs/" class="#{ current.path[1] === 'index' ? 'bg-silver rounded' : '' }") Overview
+    li: a.p1.border-none.regular.block(href="/docs/quick-start" class="#{ current.path[1] === 'quick-start' ? 'bg-silver rounded' : '' }") Quick Start
+
+    each section, slug in public.docs._data
+      unless slug === 'index'
+        li
+          //- (class="#{ current.path[1] === slug ? 'bg-' : '' }")
+          - i = 0;
+          if typeof(public.docs[slug])!=='undefined'
+            each thing, link in public.docs[slug]._data
+              unless i >= 1
+                - i++;
+                h3.p1= section.title
+                ul.list-reset.clearfix
+                  each subsection, subslug in public.docs[slug]._data
+                    unless subslug === 'index' || subsection.published === false
+                      if (subsection.tags && subsection.tags.indexOf(["preprocessor"])) && preprocessors!==true
+                        li
+                          h4.p1 Preprocessors
+                        - preprocessors = true
+                      li
+                        a.p1.border-none.regular.block(href="/docs/#{ slug }/#{ subslug }" class="#{ current.source === subslug ? 'bg-silver rounded' : ''}")= subsection.title

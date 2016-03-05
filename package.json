@@ -1,6 +1,6 @@
 {
   "name": "harpjs.com",
-  "version": "0.0.0",
+  "version": "1.0.0-beta",
   "description": "The website for Harp, the static web server with built-in preprocessing.",
   "homepage": "http://harpjs.com",
   "private": true,
@@ -27,13 +27,28 @@
     "coffeescript"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified…yet! Pull requests on harp/harpjs.com are always appriciated.\"",
-    "start": "harp server",
-    "compile": "harp compile",
-    "deploy": "npm run compile && surge ./www harpjs.com"
+    "test": "mocha",
+    "start": "harp ./",
+    "compile": "harp ./ www",
+    "deploy": "npm run compile && surge ./www next.harpjs.com"
+  },
+  "dependencies": {
+    "basscss-sass": "3.0.0",
+    "fg-loadcss": "0.2.4",
+    "fontfaceobserver": "1.6.3",
+    "normalize.css": "3.0.3",
+    "preprocessor-logos": "git://github.com/chloi/preprocessor-logos.git#73498016cb0750692c9df3f555deb307b5f3fa17",
+    "sine-waves": "git://github.com/isuttell/sine-waves.git#abbb074e269d2fb29fb5dd23ed2a07cce8829367",
+    "smoothscroll": "0.2.2",
+    "utility-opentype": "0.1.3"
   },
   "devDependencies": {
-    "harp": "0.20.0",
-    "surge": "latest"
+    "cssstats": "2.1.2",
+    "harp": "sintaxi/harp#cli-surge-test",
+    "mocha": "2.3.4",
+    "numeral": "1.5.3",
+    "should": "8.1.1",
+    "surge": "latest",
+    "utility-opentype": "0.1.3"
   }
 }

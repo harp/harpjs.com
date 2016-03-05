@@ -1,0 +1,11 @@
+!= partial("../_shared/nav", { "classes": "jumbotron-knockout" })
+.st-content#st-content
+  != partial("../_shared/nav/navbar", { "classes": "jumbotron-knockout" })
+  != partial("../_shared/search")
+  .container.st-content-inner
+    != partial("../docs/_shared/nav")
+    article.col-12.col-lg-9.article-docs
+      != partial("_home.md")
+
+//- script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js").
+//- script(src="/js/recipes.js")

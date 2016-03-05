@@ -1,0 +1,11 @@
+form#newsletter(action="http://harpjs.us7.list-manage.com/subscribe/post?u=af92eba03471187c8aa0266e7&id=74381fea66" method="post" target="_blank" validate="")
+  label.p2.md-p3.mt4.mb4.md-mr4.md-ml4.rounded.bg-silver.block.bg-blue.teal
+    if simple !== true
+      h3.h1.m0.mb2.center Stay static
+      p.center.h4 Subscribe to the Harp newsletter to know when a new version of Harp is&nbsp;available.
+    span.hide Email Address
+    .clearfix.mxn1.sm-flex.flex-stretch.h3
+      .col.col-12.sm-col-8.px1.flex
+        input.field.p2.col-12.border-none.black(type="email" value="" placeholder="you@example.com" name="EMAIL" required="")
+      .col.col-12.sm-col-4.px1.flex
+        input#mc-embedded-subscribe.btn.btn-primary.bg-maroon.p2.col-12.h5(type="submit" value="Subscribe" name="subscribe")
