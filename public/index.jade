@@ -7,25 +7,26 @@ header.bg-blue#js-header.overflow-hidden.shift-down
   != partial("_shared/nav")
   .clearfix.relative(style="z-index: 1")
     .container.p1.sm-p2.clearfix
-      .col-12.center
-        h1.h1-responsive.white The static web server with built-in preprocessing
-        p.h4 Harp serves Markdown, Sass, CoffeeScript, EJS, Jade, LESS, and more as HTML, CSS & JavaScript—no configuration necessary.
-        .btn.btn-primary.p2.bg-purple(href="#") Get started
+      .col-12.center.white
+        h1.h3.h1-responsive The static web server with <div>built-in preprocessing</div>
+        .col-12.md-col-8.mx-auto
+          p.h5.md-h4 Harp serves Markdown, Sass, CoffeeScript, EJS, Jade, LESS, and more as HTML, CSS & JavaScript—no configuration&nbsp;necessary.
+          .btn.btn-primary.p2.bg-purple(href="#") Get started
       .clearfix.mb2
         .col-12.sm-col-6.md-col-4.center.mx-auto.mt4
           .flex.flex-center.flex-justify
-            a.block.teal.border-none.md-p1(href="/docs/environment/node")
-              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+            a.block.teal.border-none(href="/docs/environment/node")
+              //- img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
               span.h6 Node.js v4+
 
-            a.block.teal.border-none.md-p1(href="/docs/environment/os-x")
-              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+            a.block.teal.border-none(href="/docs/environment/os-x")
+              //- img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
               span.h6 OS X
-            a.block.teal.border-none.md-p1(href="/docs/environment/linux")
-              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+            a.block.teal.border-none(href="/docs/environment/linux")
+              //- img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
               span.h6 Linux
-            a.block.teal.border-none.md-p1(href="/docs/environment/window")
-              img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
+            a.block.teal.border-none(href="/docs/environment/windows")
+              //- img.circle.bg-white.block.mx-auto(src="/images/icons/cordova-logo.svg" style="width: 50px; height: 50px")
               span.h6 Windows
 
 .container.px2.clearfix
@@ -37,7 +38,7 @@ header.bg-blue#js-header.overflow-hidden.shift-down
     //-   | <span class="select-none">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
 
 
-    .col-12.md-col-9.lg-col-8.mx-auto
+    .col-12.md-col-9.lg-col-8.mx-auto.mb3
       pre.bg-navy.teal.language-sh: code
         | <span class="select-none muted"># Install Harp</span>
         | <span class="select-none muted">$&nbsp;</span>npm install --global harp
@@ -49,50 +50,51 @@ header.bg-blue#js-header.overflow-hidden.shift-down
         | <span class="select-none muted"># Deploy to the web</span>
         | <span class="select-none muted">$&nbsp;</span>harp ./myproject http://myproject.harpjs.com
 
-      ul
-        li Sign up for the Harp newsletter
-        li Follow @HarpWebServer
+      //- ul
+      //-   li Sign up for the Harp newsletter
+      //-   li Follow @HarpWebServer
 
 .clearfix
-  .container.flex.flex-wrap
+  .container.flex.flex-wrap.mb4
     .flex-auto.sm-col-6.p2
       a.block.black.border-none.flex.flex-center(href="#")
-        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        //- img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
         p.m0 <strong class="maroon">Easy to get started.</strong> Zero-configuration necessary. Preprocessors are built right in.
     .flex-auto.sm-col-6.p2
       a.block.black.border-none.flex.flex-center(href="#")
-        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        //- img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
         p.m0 <strong class="maroon">Go beyond blogs.</strong> Static sites are powerful: Harp helps build them.
     .flex-auto.sm-col-6.p2
       a.block.black.border-none.flex.flex-center(href="#")
-        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        //- img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
         p.m0 <strong class="maroon">Multi-platform.</strong> Your whole team can run Harp: Windows, Mac, and Linux, CLI or app.
     .flex-auto.sm-col-6.p2
       a.block.black.border-none.flex.flex-center(href="#")
-        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        //- img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
         p.m0 <strong class="maroon">No lock-in.</strong> Compile to HTML, CSS, & JS, wrap in Cordova or Electron, and publish to the web.
     .flex-auto.sm-col-6.p2
       a.block.black.border-none.flex.flex-center(href="#")
-        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        //- img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
         p.m0 <strong class="maroon">Built for speed.</strong> Harp’s intelligent compliation means there’s no need to wait for your entire static site to rebuild.
     .flex-auto.sm-col-6.p2
       a.block.black.border-none.flex.flex-center(href="#")
-        img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
+        //- img.mr2(src="/images/icons/cordova-logo.svg" style="width: 100px; height: 100px")
         p.m0 <strong class="maroon">Static is secure.</strong> Plus, built-in publishing to HTTPS subdomains. Add-on password protection.
 
 
 .bg-black.teal.py3
   .container.px2.clearfix
     .col-12.md-col-9.lg-col-8.mx-auto
-      blockquote.h2.center Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
+      blockquote.h5.md-h2.center.mb4 Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
         footer.clearfix.center.h5.mt2
           a.inline-block.border-none(href="https://twitter.com/pravcox/status/577844274894635008")
             .flex.flex-center
               img.flex-auto.circle.mr1(src="https://avatars.io/twitter/pravcox" style="max-width: 2rem")
-              span.a-faux Pravina Cox
+              span.a-faux.muted.white Pravina Cox
 
-      h2 Who’s using Harp
-      p Amazing individuals and teams build static projects with Harp.
+      .center
+        h2 Who’s using Harp
+        p Amazing individuals and teams build static projects with Harp.
       
     .clearfix.overflow-hidden
       .mxn2
@@ -122,6 +124,8 @@ header.bg-blue#js-header.overflow-hidden.shift-down
       .md-col-10.lg-col-8.right.mr4
         h3 How npm uses Harp
         p.h6.md-h5.lg-h4 <strong>npm</strong>, the package manager for JavaScript that distributes over [x packages]—including Harp—with over [x downloads per day], uses Harp to build their documentation.
+        a(href="/docs/quick-start").btn.btn-primary.p3 Start your project
+
   .col.col-12.md-col-5
     //-
       .bg-gray.py2.rounded-top.flex.flex-center
@@ -134,15 +138,10 @@ header.bg-blue#js-header.overflow-hidden.shift-down
     img.rounded-bottom(src="/images/example-npm-crop.png")
         
 
-.bg-purple.white.py3
+.bg-purple.white.py3.lg-py4
   .container.px2.clearfix
     .col-12.md-col-9.lg-col-8.mx-auto
-      blockquote.h2.center Just ran my first <code>harp compile</code>. Thanks for making me feel like I have&nbsp;superpowers.
-        footer.clearfix.center.h5.mt2
-          a.inline-block.border-none(href="https://twitter.com/pravcox/status/577844274894635008")
-            .flex.flex-center
-              img.flex-auto.circle.mr1(src="https://avatars.io/twitter/pravcox" style="max-width: 2rem")
-              span.a-faux.muted.white Pravina Cox
+      //- Another quote could go here
 
       h2.center Efficient web developers use Harp.
       p The preprocessors you want are built into Harp. Write a <code>.scss</code> file, and Harp automatically serves it as CSS. Write a <code>require</code> statement, and it will automatically be compiled with Browserify—and a lot more.
@@ -161,78 +160,190 @@ header.bg-blue#js-header.overflow-hidden.shift-down
 
     .clearfix.p2
       .mxn2.flex.flex-center
-        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/sass")
+          a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/sass")
           include ../node_modules/preprocessor-logos/sass/sass-knockout-padded.svg
-        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/stylus")
+          a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/stylus")
           include ../node_modules/preprocessor-logos/stylus/stylus-knockout-padded.svg
-        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/autoprefixer")
+          a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/autoprefixer")
           include ../node_modules/preprocessor-logos/autoprefixer/autoprefixer-knockout-padded.svg
-        a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/autoprefixer")
-          img(src="http://substack.net/images/browserify_logo.png")
+          a.block.border-none.col.sm-col-3.p2.flex-auto(href="/docs/development/autoprefixer")
+            img(src="http://substack.net/images/browserify_logo.png")
 
-.bg-transparent
-  .container.px2.clearfix
-    .col-12.md-col-9.lg-col-8.mx-auto
-      :markdown
-        ## Preprocessors are built-in
+.bg-transparent.py3.md-py4
+  .container.py3.md-py4.flex.flex-wrap.flex-center.mxn2
+    .flex-auto.sm-col-6.px2
+      img(src="/images/features/feature-preprocessors.png")
+    .sm-col-6.px2
+      h3.mt0 Automatic preprocessing
+      p Harp automatically preprocesses code and serves it to the browser as HTML, CSS, and JavaScript. Now you can focus on writing instead of wrangling.
+  .container.py3.md-py4.flex.flex-wrap.mxn2
+    .flex-auto.sm-col-6.px2
+      h3.h4.mt0.center Write <code>main.scss</code>
+      pre
+        code(class="language-scss")
+          | $text-color: #F938AB;
+          | &nbsp;
+          | body {
+          |   color: $text-color;
+          | }
+    .flex-auto.sm-col-6.px2
+      h3.h4.mt0.center …Harp serves <code>main.css</code> automatically
+      pre
+        code(class="language-css")
+          | body {
+          |  color: #F938AB; }
+      pre
+        code(class="language-markup")
+          | &lt;link href="main.css" rel="stylesheet"&gt;
 
-        The preprocessors you want are already built-in—no need to configure anything. Create a new `.scss` file, and it will automatically be preprocessed as Sass. Write a new `.js` file, and automatically include `require` modules via Browserify.
+  .container.py3.md-py4.flex.flex-wrap.flex-center.mxn2
+    .flex-auto.sm-col-6.px2
+      img(src="/images/features/feature-layout-partial.png")
+    .sm-col-6.px2
+      h3.mt0 The beloved Layout/Partial paradigm
+      p Keep your code clean and organized: reuse common elements with <a href="/docs/development/partial">partials</a>, and maintain a consistent site design with <a href="/docs/development/layout">layouts</a>. Harp makes both paradigms available to Jade and <abbr>EJS</abbr>.
 
-        - Flexible metadata
-        - Autoprefixer
-        - Browserify
-        - Minification
-        - Source Maps (?)
+  .container.py3.md-py4.flex.flex-wrap.flex-center.mxn2
+    .col.sm-col-6.px2
+      h3.mt0.h4.center Write <code>_nav.ejs…</code>
+      pre
+        code(class="language-markup")
+          | &lt;!-- _nav.ejs --&gt;
+          | &lt;nav&gt;
+          |   &lt;a href="#">Home&lt;/a&gt;
+          |   &lt;a href="#"&gt;Product&lt;/a&gt;
+          |   &lt;a href="#"&gt;Services&lt;/a&gt;
+          | &lt;/nav&gt;
+    .col.sm-col-6.px2
+      h3.mt0.h4.center …include it anywhere, like <code>main.ejs</code>
+      pre
+        code(class="language-markup")
+          | &lt;body&gt;
+          |   &lt;!-- Include _nav.ejs --&gt;
+          |   &lt;%- partial("_nav") %&gt;
+          |   &lt;h1&gt;Services&lt;/h1&gt
+          |   &lt;!-- etc. --&gt;
+          | &lt;/body&gt;
 
-        ## Quotes to feature
+  .container.py3.md-py4.flex.flex-wrap.mxn2
+    .sm-col-6.px2
+      h3.mt0 All inside a fast, lightweight web&nbsp;server
+      p Harp intelligently compiles assets as the browser needs them, so it’s insanely fast. All you have to do is Save and Refresh.
+    .sm-col-6.px2
+      img(src="/images/features/feature-server.png")
 
-        - [Elastisearch](https://twitter.com/SpencerAlger/status/413052701849579520)
-        - [Remy](https://twitter.com/rem/status/428184106187636736), https://twitter.com/rem/status/428857826631745536, https://twitter.com/rem/status/433980367964749824
-        - https://twitter.com/samarkandiy/status/431557750444027904
-        - https://twitter.com/krrishd/status/432605586325114880
-        - https://twitter.com/didelico/status/449786285566095360
-        - https://twitter.com/Nadee/status/479384048066781184, https://twitter.com/didelico/status/600536497469661184
-        - https://twitter.com/raymondcamden/status/515575726226300929
-        - https://twitter.com/AndresJCremades/status/516854729595691008
-        - https://twitter.com/fox/status/523790890658459648
-        
-        blockquote
-          p @HarpWebServer, the best static web server + preprocessor money can't buy, because it's open and free. You guys rock!
-          footer https://twitter.com/jbucaran/status/524082242708992001
+  .container.py3.md-py4.flex.flex-wrap.flex-center.mxn2
+    .flex-auto.sm-col-6.px2
+        img(src="/images/features/feature-datajson.png")
+    .sm-col-6.px2
+      h3.mt0 Flexible, custom metadata
+      p Move from static assets to truly dynamic content by passing metadata into your views and pages. Using your favorite templating engine, variables and loops make writing Harp applications fun and powerful.
 
-        - https://twitter.com/kedronrhodes/status/535159621141684224
-        - https://twitter.com/matt_mcclure/status/536667542631501824
-        - https://twitter.com/francoislaberge/status/537234603363557376
-        - https://twitter.com/cambrian_era/status/537732630909685762, https://twitter.com/cambrian_era/status/589946329205329920
-        - [SassMeister](https://twitter.com/sassmeisterapp/status/538554838041518081)
-        - https://twitter.com/adeperio/status/555956698947403776
-        - https://twitter.com/robmuh/status/557972433333153794
-        - https://twitter.com/simonswiss/status/559503875808313346
-        - https://twitter.com/_davideast/status/568413073544884224
-        - [Auth0](https://twitter.com/mgonto/status/575451320045281280)
-        - [JS.LA](https://twitter.com/davidguttman/status/576437384125890561)
-        - https://twitter.com/pravcox/status/577844274894635008
-        - [Rebecca Murphy](https://twitter.com/rmurphey/status/584795061637885952)
-        - https://twitter.com/johnbarton/status/623419732813676544
-        - [Huge Inc.](https://twitter.com/colinjohnston/status/623634308553678849)
-        - https://twitter.com/Seromarin/status/664643282459316225
+  .container.py3.md-py4.flex.flex-wrap.flex-center.mxn2
+    .flex-auto.sm-col-6.px2
+      h3.mt0.h4.center Store metadata in <code>_data.json</code>
+      pre
+        code(class="language-json" data-filename="_data.json")
+          | "team": {
+          |   "title": "Team page",
+          |   "members": ["Rob", "Brock", "Jorge"]
+          | }
+    .flex-auto.sm-col-6.px2
+        h3.mt0.h4.center Use it with Jade or EJS
+        pre
+          code(class="language-markup" data-filename="team.jade")
+            | h1= title
+            | ul
+            |   each member in members
+            |     li= member
 
-        ## Team?
+  .container.py3.md-py4.flex.flex-wrap.flex-center.mxn2
+    .flex-auto.sm-col-6.px2
+      h3.mt0 Compile and deploy
+      p Whether you’re making a GitHub project page, or a mobile application using Apache Cordova/PhoneGap, you can easily compile your code to <abbr>HTML</abbr>, <abbr>CSS</abbr> &amp; JavaScript and host it anywhere.
+    .sm-col-6.flex.flex-wrap
+      .block.col-6
+        a(href="/docs/deployment/github-pages")
+          img(title="GitHub" src="/images/icons/github-logo.svg")
+      .block.col-6
+        a(href="/docs/deployment/heroku")
+          img(title="Heroku" src="/images/icons/heroku-logo.svg")
+      .block.col-6
+        img(title="Cordova" src="/images/icons/cordova-logo.svg")
+      .block.col-6
+        img(title="FireFox OS" src="/images/icons/firefox-os-logo.svg")
 
-        From the co-creators of Apache Cordova / PhoneGap, Harp was one of the first Node.js-based static site generators and is just as relevant for front-end developers today.
+  .container.py3.md-py4.flex.flex-wrap.flex-center.mxn2
+    .col-12.md-col-6.mx-auto.px2
+      h3.mt0.center Get started
+      p Harp doesn’t require any configuration to get started. Install Harp in your terminal using the command: <code>npm install -g harp</code> or follow the <a href="/docs/quick-start">Quick Start guide</a>.
+      != partial("_shared/install")
+      a.col-12.btn.btn-primary.p3.center(href="/docs/quick-start") Install Harp
 
-        - Contributors from npm, CSS Conf, etc. etc.
-        - It’s easier to contirbute than you think. Here’s our getting started guide for running things locally.
 
-        ## Process
 
-        - Great for students and classrooms → this is an opportunity to offer up workshops
-        - Prototypes before you move onto something integrated with a backend / or run Harp as middleware in Express
-        - Individual developers who need to actually get their work done instead of configuring their build tool all the time
-        - Teams that need to know everyone’s using the same version of something
+//- New content that could be used
+//-
+  .bg-transparent
+    .container.px2.clearfix
+      .col-12.md-col-9.lg-col-8.mx-auto
+        :markdown
+          ## Quotes to feature
 
-        ## Go beyond blogs
+          - [Elastisearch](https://twitter.com/SpencerAlger/status/413052701849579520)
+          - [Remy](https://twitter.com/rem/status/428184106187636736), https://twitter.com/rem/status/428857826631745536, https://twitter.com/rem/status/433980367964749824
+          - https://twitter.com/samarkandiy/status/431557750444027904
+          - https://twitter.com/krrishd/status/432605586325114880
+          - https://twitter.com/didelico/status/449786285566095360
+          - https://twitter.com/Nadee/status/479384048066781184, https://twitter.com/didelico/status/600536497469661184
+          - https://twitter.com/raymondcamden/status/515575726226300929
+          - https://twitter.com/AndresJCremades/status/516854729595691008
+          - https://twitter.com/fox/status/523790890658459648
+          
+          blockquote
+            p @HarpWebServer, the best static web server + preprocessor money can't buy, because it's open and free. You guys rock!
+            footer https://twitter.com/jbucaran/status/524082242708992001
 
-        Harp works great for blogs, but that’s just where static site start. Harp is a general purpose static site generator, not just specifically for blogs, so you can build any kind of static application you need: documentation sites, style guides, marketing sites, or even more comprehensive applications that get wrapped in PhoneGap or Electron
+          - https://twitter.com/kedronrhodes/status/535159621141684224
+          - https://twitter.com/matt_mcclure/status/536667542631501824
+          - https://twitter.com/francoislaberge/status/537234603363557376
+          - https://twitter.com/cambrian_era/status/537732630909685762, https://twitter.com/cambrian_era/status/589946329205329920
+          - [SassMeister](https://twitter.com/sassmeisterapp/status/538554838041518081)
+          - https://twitter.com/adeperio/status/555956698947403776
+          - https://twitter.com/robmuh/status/557972433333153794
+          - https://twitter.com/simonswiss/status/559503875808313346
+          - https://twitter.com/_davideast/status/568413073544884224
+          - [Auth0](https://twitter.com/mgonto/status/575451320045281280)
+          - [JS.LA](https://twitter.com/davidguttman/status/576437384125890561)
+          - https://twitter.com/pravcox/status/577844274894635008
+          - [Rebecca Murphy](https://twitter.com/rmurphey/status/584795061637885952)
+          - https://twitter.com/johnbarton/status/623419732813676544
+          - [Huge Inc.](https://twitter.com/colinjohnston/status/623634308553678849)
+          - https://twitter.com/Seromarin/status/664643282459316225
+
+          <!--
+
+          ## Team
+
+          From the co-creators of Apache Cordova / PhoneGap, Harp was one of the first Node.js-based static site generators and is just as relevant for front-end developers today. Harp has contributions from developers at CSSConf, npm, Mobify, Heroku, Adobe, and more.
+
+          It’s easier to contirbute than you think. Here’s our getting started guide for locally.
+
+          -->
+          
+          <!--
+
+          ## Process
+
+          - Great for students and classrooms → this is an opportunity to offer up workshops
+          - Prototypes before you move onto something integrated with a backend / or run Harp as middleware in Express
+          - Individual developers who need to actually get their work done instead of configuring their build tool all the time
+          - Teams that need to know everyone’s using the same version of something
+
+          -->
+
+          ## Go beyond blogs
+
+          Harp works great for blogs, but that’s just where static site start. Harp is a general purpose static site generator, not just specifically for blogs, so you can build any kind of static application you need: documentation sites, style guides, marketing sites, or even more comprehensive applications that get wrapped in PhoneGap or Electron
 
 script(src="/js/vendor/sine-waves.min.js")
