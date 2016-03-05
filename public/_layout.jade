@@ -4,7 +4,10 @@
 doctype
 //[if lt IE 8]><html lang="en" class="ie"><![endif]
 //[if gt IE 8]><!
-html(manifest="#{ environment === 'production' ? '/auto.appcache' : '' }" lang="en")
+if environment === 'production'
+  <html manifest="/auto.appcache" lang="en">
+else
+  <html lang="en">
   //<![endif]
   head
     meta(charset="utf-8")
@@ -88,3 +91,4 @@ html(manifest="#{ environment === 'production' ? '/auto.appcache' : '' }" lang="
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
       //]]>
+</html>
