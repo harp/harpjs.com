@@ -4,6 +4,7 @@ module.exports = function (id) {
 
   var el = document.getElementById(id)
 
+  if (el) {
   var waves = new window.SineWaves({
     // Canvas Element
     el: el,
@@ -94,7 +95,7 @@ module.exports = function (id) {
       // }
     }
   })
-
+  }
   // el.style.marginBottom = (parseInt(el.style.height, 10) * -1) + 'px'
 
   // Set frame as background image

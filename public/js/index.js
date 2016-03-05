@@ -19,7 +19,7 @@ var breakpoint = {
 var resizeTimer
 
 observer.check().then(function () {
-  console.log('Font available')
+  // console.log('Font available')
 }, function () {
   console.warn('Font unavailable')
 })
@@ -45,7 +45,9 @@ if (win) {
   })
 }
 
-header('js-headerwaves')
+if (typeof header !== 'undefined') {
+  header('js-headerwaves')
+}
 
 
 // Stay in Standalone mode, MIT via http://git.io/iApOyQ
