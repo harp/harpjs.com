@@ -20,6 +20,8 @@ var resizeTimer
 
 observer.check().then(function () {
   // console.log('Font available')
+  html.classList.add('fonts-loaded')
+  sessionStorage.fontsloaded = true
 }, function () {
   console.warn('Font unavailable')
 })
