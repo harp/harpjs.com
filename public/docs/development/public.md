@@ -21,7 +21,7 @@ It’s also possible to have a root-style application, where the public director
 
 ```
 myapp/                       <--- public directory
-	|- _harp.json
+  |- _harp.json
   |- _secrets.txt            <--- won't be served
   +- index.html              <--- will be served
 ```
