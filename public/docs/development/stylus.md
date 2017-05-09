@@ -8,7 +8,7 @@ Harp has baked in the best-of-bread pre-compilers automatically. This means you 
 
 ## Usage
 
-Harp's Asset Pipeline is super easy to use. All the pre-compiling happens implicitly so there is nothing to setup. Just name your file with a `.styl` extension instead of `.css` and the Harp web server will see it as if it is an `.css` file.
+Harp's Asset Pipeline is super easy to use. All the pre-compiling happens implicitly, so there's nothing to set up. Just name your file with a `.styl` extension instead of `.css` and the Harp web server will see it as if it is an `.css` file.
 
 ## Example
 
@@ -23,7 +23,7 @@ myapp.harp.io/
             +- _variables.styl 
 ```
 
-You would simple setup your `index.ejs` as follows
+You would simply setup your `index.ejs` as follows
 
 ```html
 <html>
@@ -46,7 +46,7 @@ body
 
 ## Managing Imports
 
-If you are familiar with Sass, you will accustomed to naming your partials with a leading underscore. This is permitted with Stylus, but not required. Because of this, you must explicitly reference the leading underscore when using `@import` to bring in a partial. For example, if you have a partial called `_example.styl`, you must use import it using `@import "_example". Simply saying `@import "example"` will not work in Stylus.
+If you are familiar with Sass, you will accustomed to naming your partials with a leading underscore. This is permitted with Stylus, but not required. Because of this, you must explicitly reference the leading underscore when using `@import` to bring in a partial. For example, if you have a partial called `_example.styl`, you must use import it using `@import "_example"`. Simply saying `@import "example"` will not work in Stylus.
 
 ## Using Nib
 
