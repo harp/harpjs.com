@@ -26,7 +26,7 @@ if service.analytics
   ga('send', 'pageview');
 ```
 
-Then, set the values in _harp.json (or harp.json) file in the root of your project:
+Then, set the values under the `globals` variable in _harp.json (or harp.json) file in the root of your project:
 
 ```json
 "service": {
