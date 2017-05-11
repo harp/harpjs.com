@@ -22,11 +22,11 @@ Harp permits [flexible metadata](/docs/development/metadata), so your data might
 {
   "my-first-post": {
     "title": "My post title",
-    "date": "2013-01-01"
+    "date": "2013-01-01 PDT"
   },
   "my-second-post": {
     "title": "My second post",
-    "date": "2013-02-02"
+    "date": "2013-02-02 PDT"
   }
 }
 ```
@@ -95,7 +95,7 @@ Create a new file named `feed.xml.ejs` and copy/paste the snippet below:
       <item>
         <title><%- post.title %></title>
         <description><![CDATA[<%- partial("blog/" + slug) %>]]></description>
-        <pubDate><%- Date(post.date) %></pubDate>
+        <pubDate><%- new Date(post.date) %></pubDate>
         <link><%- url %>/blog/<%- slug %></link>
         <guid isPermaLink="true"><%- url %>/blog/<%- slug %></guid>
       </item>
