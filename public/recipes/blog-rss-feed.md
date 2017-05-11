@@ -96,8 +96,8 @@ Create a new file named `feed.xml.ejs` and copy/paste the snippet below:
         <title><%- post.title %></title>
         <description><![CDATA[<%- partial("blog/" + slug) %>]]></description>
         <pubDate><%- Date(post.date) %></pubDate>
-        <link><%- url %>/blog/<%- post %></link>
-        <guid isPermaLink="true"><%- url %>/blog/<%- post %></guid>
+        <link><%- url %>/blog/<%- slug %></link>
+        <guid isPermaLink="true"><%- url %>/blog/<%- slug %></guid>
       </item>
     <% } %>
   </channel>
