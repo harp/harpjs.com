@@ -57,7 +57,7 @@ doctype
 html(lang="en")
   head
     title= title
-    meta(name="description" content="#{ description })
+    meta(name="description" content="#{ description }")
   body
     != yield
 ```
