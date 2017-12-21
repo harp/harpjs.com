@@ -38,6 +38,6 @@ You may find yourself wanting to create another, markup-based file other than `.
 
 ## Also see
 
-- [EJS documentation](https://github.com/visionmedia/ejs)
+- [EJS documentation](http://ejs.co/#docs)
 - [Jade templating](jade)
 - [Markdown](markdown)
