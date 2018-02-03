@@ -13,7 +13,7 @@ This guide will help you install Harp. You’ll create and serve a simple projec
   Access the command prompt using the Terminal application. On OS X, it’s located in Applications → Utilities → Terminal. On Ubuntu, find it in Applications → Terminal. Then, run the following command:
 
   ```bash
-  sudo npm install -g harp
+  npm install -g harp
   ```
 
   ### On Windows
