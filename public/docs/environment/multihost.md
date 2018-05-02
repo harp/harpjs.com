@@ -95,4 +95,4 @@ Now, your applications will be available at:
 
 ### Ending “indefinite” multihost
 
-If you need to end multihost on port `80` (or anything else for that matter), find [how to respolve port conflicts](port-conflicts).
+If you need to end multihost on port `80` (or anything else for that matter), find [how to resolve port conflicts](port-conflicts).
