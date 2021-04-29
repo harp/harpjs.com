@@ -72,7 +72,7 @@ The final result:
 
 <h2 id="jade">Example using Jade Templating</h2>
 
-Harp allows you to apply a `.jade` file extension on your layout as well. Mixing and matching templates is also acceptable such as in the following case where we have a `_layout.jade` and `index.ejs`.
+Harp allows you to apply a `.jade` file extension on your layout as well. Mixing and matching templates is also acceptable such as in the following case where we have a `_layout.jade` and `index.jade`.
 
 Given a really simple app / project with this structure:
 
