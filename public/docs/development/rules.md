@@ -2,11 +2,11 @@
 
 ### Five simple rules you can count on when making templates for a Harp Application.
 
-Rather than offering a complex feature set, Harp has simple rules on how it works. Harp is a katana, not a swiss army knife. By understanding the rules, one will know how to effectively use harp.
+Rather than offering a complex feature set, Harp has simple rules on how it works. Harp is a katana, not a swiss army knife. By understanding the rules, one will know how to effectively use Harp.
 
 1. ## Convention over Configuration.
 
-    Harp will function with as little as a `public/index.html` file and **doesn't require any configuration** to get going. To add more routes just add more files. All harp's features are based off conventions that you will discover by learning the rest of these rules.
+    Harp will function with as little as a `public/index.html` file and **doesn't require any configuration** to get going. To add more routes just add more files. All Harp's features are based off conventions that you will discover by learning the rest of these rules.
 
     Harp is about offering a sane development framework which follows established best practices. Harp is not designed to be everything to everyone, but what it does, it does perfectly.
 
@@ -72,7 +72,7 @@ Rather than offering a complex feature set, Harp has simple rules on how it work
 
 4. ## Dead simple asset pipeline.
 
-    Harp serves jade, ejs, stylus, less and coffee script. Just add an extension of `.jade`, `.ejs`, `.styl`, `.less` or `.coffee` to your file and harp's asset pipeline will do the rest.
+    Harp serves jade, ejs, stylus, less and coffee script. Just add an extension of `.jade`, `.ejs`, `.styl`, `.less` or `.coffee` to your file and Harp's asset pipeline will do the rest.
 
     Harp automatically pre-compiles, just add the file extension, and reference its counterpart.
 
